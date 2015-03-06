@@ -11,8 +11,7 @@ class Page implements iPage{
     }
     
     public function setPage($page){
-        //$this->page=\URL::to('/') . DIRECTORY_SEPARATOR . 'portfolio2' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . $page;
-        $this->page="http://localhost/portfolio2/public/";
+        $this->page= config('app.url') . '/' . $page;
     }
     
     public function getPage(){

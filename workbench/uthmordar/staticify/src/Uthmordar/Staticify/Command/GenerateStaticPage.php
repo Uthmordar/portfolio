@@ -41,8 +41,6 @@ class GenerateStaticPage extends Command{
         $static=$this->argument('static');
         
         $inst=new Page($page, $static);
-        echo $inst->getPage();
-        echo \Config::get('url');
         Staticify::generateStatic($inst);
         
         return $this->info("La page $page a bien ete cree en version statique dans le dir views."); 

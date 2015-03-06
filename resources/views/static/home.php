@@ -43,7 +43,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>
-				<div class="quote">Smile, breathe, and go slowly. - Thich Nhat Hanh</div>
+				<div class="quote">Simplicity is an acquired taste. - Katharine Gerould</div>
 			</div>
 		</div>
 	</body>
