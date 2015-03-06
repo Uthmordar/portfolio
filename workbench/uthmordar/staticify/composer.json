@@ -1,6 +1,6 @@
 {
     "name": "uthmordar/static",
-    "description": "",
+    "description": "laravel package for web view static page generation",
     "authors": [
         {
             "name": "Tanguy Godin",

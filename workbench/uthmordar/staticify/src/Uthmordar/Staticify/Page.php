@@ -11,7 +11,7 @@ class Page implements iPage{
     }
     
     public function setPage($page){
-        $this->page= config('app.url') . '/' . $page;
+        $this->page=config('app.url') . '/' . $page;
     }
     
     public function getPage(){
