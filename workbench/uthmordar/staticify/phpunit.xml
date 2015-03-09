@@ -10,6 +10,11 @@
          stopOnFailure="false"
          syntaxCheck="false"
 >
+    <filter>
+        <blacklist>
+              <directory>./vendor</directory>
+        </blacklist>
+    </filter>
     <testsuites>
         <testsuite name="Package Test Suite">
             <directory suffix=".php">./tests/</directory>

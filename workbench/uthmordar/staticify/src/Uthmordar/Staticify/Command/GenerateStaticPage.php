@@ -28,7 +28,7 @@ class GenerateStaticPage extends Command{
      * @return void
      */
     public function __construct(){
-            parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -37,13 +37,17 @@ class GenerateStaticPage extends Command{
      * @return mixed
      */
     public function fire(){
-        $page=$this->argument('page');
-        $static=$this->argument('static');
-        
-        $inst=new Page($page, $static);
-        Staticify::generateStatic($inst);
-        
-        return $this->info("La page $page a bien ete cree en version statique dans le dir views."); 
+        try{
+            $page=$this->argument('page');
+            $static=$this->argument('static');
+
+            $inst=new Page($page, $static);
+            Staticify::generateStatic($inst);
+
+            return $this->info("La page $page a bien ete cree en version statique dans le dir views.");
+        }catch(\RuntimeException $e){
+            return $this->info($e->getMessage());
+        }
     }
 
     /**
