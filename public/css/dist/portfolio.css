@@ -1,0 +1,393 @@
+/*!
+* www.KNACSS.com V3.0.3 (2014-05-19) @author:Raphael Goetter, Alsacreations
+* Licence WTFPL http://www.wtfpl.net/
+*/
+.clearfix:after,.line:after,blockquote:after,blockquote:before,q:after,q:before{content:""}
+.txtleft,caption,td,th{text-align:left}
+a,body,h1,h2,h3,input,li,p,textarea{text-shadow:0 0 -1px rgba(0,0,0,.03);-webkit-font-smoothing:subpixel-antialiased}
+li,p{hyphens:auto;-o-hyphens:auto;-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto}
+ul,ul.unstyled{list-style:none}
+.clear,.line,.row{clear:both}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+body,html{margin:0;padding:0}
+ol,ul{padding-left:2em}
+img{height:auto;vertical-align:middle;border:0}
+.col,.inbl,.row>*{vertical-align:top}
+audio,canvas,video{display:inline-block}
+svg:not(:root){overflow:hidden}
+body{background-color:#FFF;color:#000;line-height:1.2;-o-font-feature-settings:"liga","dlig"}
+.p-like,blockquote,caption,details,dl,figure,label,ol,p,pre,td,textarea,th,ul{margin-top:.75em;margin-bottom:0;line-height:1.5;-webkit-font-smoothing:subpixel-antialiased;text-shadow:0 0 -1px rgba(0,0,0,.03);-moz-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.h1-like,h1{font-size:3.2rem}
+.h2-like,h2{font-size:2.8rem}
+.h3-like,h3{font-size:2.4rem}
+.h4-like,h4{font-size:2rem}
+.h5-like,h5{font-size:1.8rem}
+.h6-like,h6{font-size:1.4rem;margin:0;font-weight:600}
+img.alignright{float:right}
+.left,.start,img.alignleft{float:left}
+.smaller{font-size:.71em}
+.small{font-size:.86em}
+.big{font-size:1.14em}
+.bigger{font-size:1.29em}
+.biggest{font-size:1.43em}
+code,kbd,pre,samp{white-space:pre-line;white-space:pre-wrap;font-family:Consolas,'DejaVu Sans Mono',Courier,monospace;line-height:normal}
+body,footer #wrapperFooter #contactForm .form_message{font-family:Quicksand,sans-serif}
+.em,address,cite,dfn,em,i,var{font-style:italic}
+.no-em{font-style:normal}
+.strong,strong{font-weight:700}
+.no-strong,caption,td,th{font-weight:400}
+small,sub,sup{font-size:smaller}
+.visually-hidden{position:absolute!important;border:0!important;height:1px!important;width:1px!important;padding:0!important;overflow:hidden!important;clip:rect(1px,1px,1px,1px)!important}
+body>script{display:none!important}
+@media (max-width:480px){.no-small-screen{display:none}}
+@media (min-width:1024px){.no-large-screen{display:none}}
+.p-like:first-child,blockquote:first-child,dl:first-child,h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child,ol:first-child,p:first-child,pre:first-child,ul:first-child{margin-top:0}
+li .p-like,li ol,li p,li ul{margin-top:0;margin-bottom:0}
+table{border-collapse:separate;border-spacing:0;margin-bottom:2em}
+blockquote,q{quotes:"" ""}
+blockquote,code,input,pre,table,td,textarea,video{max-width:100%}
+.mod{overflow:hidden}
+.clearfix:after,.line:after{display:table;clear:both}
+.row{display:table;table-layout:fixed;width:100%}
+.col,.row>*{display:table-cell}
+.inbl{display:inline-block}
+img.left,img.start{margin-right:1em}
+.end,.right{float:right}
+img.end,img.right{margin-left:1em}
+img.end,img.left,img.right,img.start{margin-bottom:.5em}
+.center{margin-left:auto;margin-right:auto}
+.txtright{text-align:right}
+.txtcenter{text-align:center}
+.w10{width:10%}
+.w20{width:20%}
+.w25{width:25%}
+.w30{width:30%}
+.w33{width:33.3333%}
+.w40{width:40%}
+.w50{width:50%}
+.w60{width:60%}
+.w66{width:66.6666%}
+.w70{width:70%}
+.w75{width:75%}
+.w80{width:80%}
+.w90{width:90%}
+.w100{width:100%}
+.w50p{width:50px}
+.w100p{width:100px}
+.w150p{width:150px}
+.w200p{width:200px}
+.w300p{width:300px}
+.w400p{width:400px}
+.w500p{width:500px}
+.w600p{width:600px}
+.w700p{width:700px}
+.w800p{width:800px}
+.w960p{width:960px}
+.mw960p{max-width:960px}
+.w1140p{width:1140px}
+.ie678 img,.wauto{width:auto}
+.mw1140p{max-width:1140px}
+.man{margin:0}
+.pan{padding:0}
+.mas{margin:1em}
+.mam{margin:2em}
+.mal{margin:4em}
+.pas{padding:1em}
+.pam{padding:2em}
+.pal{padding:4em}
+.mtn{margin-top:0}
+.mts{margin-top:1em}
+.mtm{margin-top:2em}
+.mtl{margin-top:4em}
+.mrn{margin-right:0}
+.mrs{margin-right:1em}
+.mrm{margin-right:2em}
+.mrl{margin-right:4em}
+.mbn{margin-bottom:0}
+.mbs{margin-bottom:1em}
+.mbm{margin-bottom:2em}
+.mbl{margin-bottom:4em}
+.mln{margin-left:0}
+.mls{margin-left:1em}
+.mlm{margin-left:2em}
+.mll{margin-left:4em}
+.ptn{padding-top:0}
+.pts{padding-top:1em}
+.ptm{padding-top:2em}
+.ptl{padding-top:4em}
+.prn{padding-right:0}
+.prs{padding-right:1em}
+.prm{padding-right:2em}
+.prl{padding-right:4em}
+.pbn{padding-bottom:0}
+.pbs{padding-bottom:1em}
+.pbm{padding-bottom:2em}
+.pbl{padding-bottom:4em}
+.pln{padding-left:0}
+.pls{padding-left:1em}
+.plm{padding-left:2em}
+.pll{padding-left:4em}
+.ie678 .h1-like,.ie678 h1{font-size:2.29em}
+.ie678 .h2-like,.ie678 h2{font-size:2em}
+.ie678 .h3-like,.ie678 h3{font-size:1.71em}
+.ie678 .h4-like,.ie678 h4{font-size:1.43em}
+.ie678 .h5-like,.ie678 h5{font-size:1.29em}
+.ie678 .h6-like,.ie678 h6{font-size:1.14em}
+.ie678 .gm-style img{height:100%}
+.ie8 .grid>*,.ie8 [class*=autogrid]>*{letter-spacing:-.31em;text-rendering:optimizespeed}
+.ie8 .grid>*>*,.ie8 [class*=autogrid]>*>*{letter-spacing:normal;word-spacing:normal;text-rendering:auto}
+.ie678 input[type=checkbox],.ie678 input[type=radio]{padding:0}
+.ie678 textarea{overflow:auto}
+.hidden{display:none}
+html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:62.5%}
+body{width:100%;min-width:320px;max-width:1900px;margin:0 auto;font-size:1.5rem;background:#d3d4d5;-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-webkit-font-feature-settings:"liga","dlig";font-feature-settings:"liga","dlig";text-rendering:optimizeLegibility}
+a,h1,h2,h3,input,li,p,textarea{text-rendering:optimizeLegibility;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+#wrapper #about #aboutPos #aboutWrap #skills .data .remplData,#wrapper #worksSlide .projectBanner .veil,header #wrapperHeader #menuHeader{-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d}
+body *{max-width:100%}
+h1{font-size:5rem}
+h2{font-size:4.2rem}
+h3{font-size:3.4rem;line-height:3.8rem}
+p{font-size:2.38rem;width:60ex;line-height:2.8rem}
+a{text-decoration:none;color:inherit}
+.bold{font-weight:700}
+.emph{font-style:italic}
+.error,.errorForm{color:#dc143c;font-size:1.82rem}
+.successForm{color:#41836a;font-size:1.82rem}
+.colorRed{color:#9c4c61}
+.colorWhite{color:#FFF}
+@keyframes blink{from{color:#30614f;opacity:.6}
+to{opacity:1;color:#71b99e}}
+@-webkit-keyframes blink{from{color:#30614f;opacity:.6}
+to{opacity:1;color:#71b99e}}
+header{width:100%;background-color:#0d1218;color:#9fa1a3;height:8.5rem;position:fixed;z-index:50;top:0;left:0}
+header #wrapperHeader{width:90%;max-width:1900px;margin:0 auto;padding:.5rem}
+header #wrapperHeader #logo{width:27rem;height:6rem;margin:.5rem;padding:.5rem;cursor:pointer;float:left;position:relative;z-index:100;line-height:3.6rem}
+header #wrapperHeader #logo h1{font-size:3rem;color:#9fa1a3;cursor:pointer;font-weight:700}
+header #wrapperHeader #logo p{font-size:2.2rem}
+header #wrapperHeader #menuHeader{width:70rem;position:fixed;left:35rem;top:2.6rem;transition:all 1.5s;transition-timing-function:linear;transition-delay:.3s;-moz-transition:all 1.5s;-moz-transition-timing-function:linear;-moz-transition-delay:.3s;-webkit-transition:all 1.5s;-webkit-transition-timing-function:linear;-webkit-transition-delay:.3s;transform-style:preserve-3d;-moz-perspective:500px}
+header #wrapperHeader #menuHeader li{min-width:10.5rem;font-size:3.36rem;display:inline-block;border-bottom:2px solid #9fa1a3;margin:.4rem;padding:.2rem;cursor:pointer;font-weight:700;-webkit-box-reflect:below -3px -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(255,255,255,.2)))}
+header #wrapperHeader #menuHeader li.active{color:#41836a;border-bottom:3px solid #499478}
+header #wrapperHeader #menuHeader li:hover{color:#71b99e;border-bottom:4px solid #82c1aa}
+@media (max-width:1279px){header #wrapperHeader #menuHeader{left:33rem;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}}
+@media (max-width:930px){header #wrapperHeader #menuHeader{margin-left:5%;top:9rem;left:0;position:fixed;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}
+header{height:15rem}}
+@media (max-width:600px){header #wrapperHeader #menuHeader{top:10rem;width:35rem}
+header{height:20rem}}
+#wrapper{width:100%;position:relative;margin:0}
+#wrapper #fondBase{height:95rem;background:url(../../images/backgroundHome.png)fixed}
+#wrapper #introSlide{background-color:transparent;margin:1rem;position:absolute;top:20rem;left:3%;max-width:90%}
+#wrapper #introSlide #intro{color:#9fa1a3;margin:1rem;padding:2rem;max-width:100%}
+#wrapper #introSlide #intro h1{margin:1rem;padding:.5rem}
+#wrapper #introSlide #intro p{font-size:4.06rem;line-height:4.62rem;margin:2rem auto;padding:1rem}
+#wrapper #learn{max-width:30%;display:block;margin:1rem auto;position:absolute;top:80rem;left:40%}
+#wrapper #learn p{margin:.5rem 0;padding:.25rem;width:100%;font-size:3.08rem;color:#51a686;cursor:pointer;animation-name:blink;animation-duration:2s;animation-iteration-count:infinite;animation-timing-function:ease-out;animation-direction:alternate;-webkit-animation-name:blink;-webkit-animation-duration:2s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-out;-webkit-animation-direction:alternate}
+#wrapper #learn p:hover{color:#93cab5}
+#wrapper #learn .fleche{background:url(../../images/fleche.png)no-repeat;width:2.8rem;height:2.8rem;display:block;margin:0 auto;cursor:pointer}
+#wrapper #learn .fleche:hover{background:url(../../images/flecheHover.png)no-repeat}
+@media (max-width:1300px){#wrapper #learn{max-width:40%}}
+@media (max-width:1200px){#wrapper #learn{max-width:45%}}
+@media (max-width:1100px){#wrapper #learn{max-width:50%;left:35%}}
+@media (max-width:750px){#wrapper #learn{max-width:60%;left:30%;top:82rem}}
+@media (max-width:650px){#wrapper #learn{left:25%}}
+@media (max-width:580px){#wrapper #learn{max-width:70%;left:22%}}
+@media (max-width:520px){#wrapper #learn{max-width:90%;left:15%}}
+@media (max-width:450px){#wrapper #learn{max-width:90%;left:10%;top:84rem}
+#wrapper #learn p{font-size:2.8rem}}
+@media (max-width:380px){#wrapper #learn{left:5%}}
+@media (max-width:360px){#wrapper #learn{left:3%}
+#wrapper #learn p{font-size:2.52rem;margin:.5rem}}
+@media (max-width:850px){#wrapper #introSlide #intro h1{font-size:4rem}
+#wrapper #introSlide #intro p{font-size:3.64rem;line-height:5.46rem}
+#wrapper #introSlide #intro #learn{width:60%}}
+@media (max-width:800px){#wrapper #introSlide{top:15rem}}
+@media (max-width:750px){#wrapper #introSlide{top:10rem;max-width:90%}
+#wrapper #introSlide #intro #learn{width:70%}}
+@media (max-width:620px){#wrapper #introSlide{top:10rem;left:2%}
+#wrapper #introSlide #intro h1{font-size:3.8rem}
+#wrapper #introSlide #intro p{font-size:3.36rem;line-height:4.9rem}}
+@media (max-width:600px){#wrapper #introSlide{top:16.5rem;left:1%}
+#wrapper #introSlide #intro{padding:1rem;max-width:100%}
+#wrapper #introSlide #intro p{margin:2rem auto;padding:1rem}}
+@media (max-width:560px){#wrapper #introSlide{top:18rem;left:0;max-width:95%}
+#wrapper #introSlide #intro h1{margin:.6rem;padding:.3rem}
+#wrapper #introSlide #intro p{font-size:3.08rem;line-height:4.2rem}}
+@media (max-width:490px){#wrapper #introSlide #intro h1{margin:.5rem;padding:.25rem}
+#wrapper #introSlide #intro p{line-height:3.92rem;margin:1.5rem auto;padding:.75rem}}
+@media (max-width:440px){#wrapper #introSlide #intro{margin:.8rem;padding:.75rem}
+#wrapper #introSlide #intro h1{font-size:3.6rem}
+#wrapper #introSlide #intro p{font-size:3.08rem;line-height:3.64rem}}
+@media (max-width:390px){#wrapper #introSlide{top:20rem}
+#wrapper #introSlide #intro{margin:.9rem 0;padding:.5rem}
+#wrapper #introSlide #intro h1{margin:.4rem;padding:.2rem}
+#wrapper #introSlide #intro p{font-size:2.94rem;line-height:3.5rem;margin:1.2rem auto;padding:.6rem}}
+@media (max-width:360px){#wrapper #introSlide #intro{margin:.8rem 0;padding:.4rem 0}
+#wrapper #introSlide #intro h1{font-size:3.5rem}
+#wrapper #introSlide #intro p{font-size:2.66rem;line-height:3.36rem;margin:1.2rem 0;padding:.6rem 0}}
+#wrapper #worksSlide{width:90%;margin:5rem auto}
+#wrapper #worksSlide h2{font-size:4.48rem;color:#0d1218;margin:1rem 0}
+#wrapper #worksSlide #menuFilter li{display:inline-block;font-size:2.8rem;color:#9fa1a3;background-color:#0d1218;margin:.2rem .4rem;padding:.6rem;cursor:pointer;font-weight:700}
+#wrapper #worksSlide #menuFilter li.active{color:#41836a;border-bottom:4px solid #499478}
+#wrapper #worksSlide #menuFilter li:hover{color:#71b99e}
+@media (max-width:460px){#wrapper #worksSlide #menuFilter li{width:50%;min-width:22rem}}
+#wrapper #worksSlide .projectBanner{width:100%;margin:1rem 0;border:6px solid #0d1218;height:18rem;position:relative;cursor:pointer;z-index:0;overflow:hidden}
+#wrapper #worksSlide .projectBanner .veil{width:100%;position:absolute;top:0;left:0;height:100%;z-index:0;background-color:#0d1218;opacity:.9;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 1s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;transform-style:preserve-3d;-moz-perspective:500px}
+#wrapper #worksSlide .projectBanner .project{width:100%;position:absolute;top:0;left:0;height:100%;z-index:-1}
+#wrapper #worksSlide .projectBanner:hover{border:6px solid #41836a}
+#wrapper #worksSlide .projectBanner .com{position:absolute;top:0;left:0;z-index:1}
+#wrapper #worksSlide .projectBanner .com h3{color:#fff;margin:1rem;padding:.5rem}
+#wrapper #worksSlide .projectBanner .com p{font-size:3.22rem;color:#a2a4a5;margin:1rem;padding:.5rem}
+#wrapper #worksSlide .projectBanner .bannerDetail{display:none}
+#wrapper #worksSlide .projectBanner[id=GoL]{background:url(../../images/GoL.jpg)50% 0 fixed}
+#wrapper #worksSlide .projectBanner[id=webGame]{background:url(../../images/bg.jpg)fixed}
+#wrapper #worksSlide .projectBanner[id=webGame] .slide{width:100%;position:absolute;top:0;left:0;height:100%;background:url(../../images/webGameUp.png)50% 0 fixed}
+#wrapper #worksSlide .projectBanner[id=europunk]{background:url(../../images/europunk.jpg)50% 0 fixed}
+#wrapper #worksSlide .projectBanner[id=WP]{background:url(../../images/WPproject.jpg)300px 0 fixed}
+@media (max-width:600px){#wrapper #worksSlide .projectBanner{width:100%;margin:1rem 0;border:6px solid #0d1218;height:18rem;position:relative;overflow:hidden}
+#wrapper #worksSlide .projectBanner .com{position:absolute;top:0;left:0;z-index:1}
+#wrapper #worksSlide .projectBanner .com h3{font-size:3rem;line-height:3.3rem;color:#fff;margin:.5rem;padding:.25rem}
+#wrapper #worksSlide .projectBanner .com p{font-size:2.8rem;color:#a2a4a5;margin:.5rem;padding:.25rem}}
+@media (max-width:460px){#wrapper #worksSlide .projectBanner{height:20rem}}
+@media (max-width:340px){#wrapper #worksSlide .projectBanner{width:95%}}
+#wrapper #about{width:100%;height:170rem;background:#070A0E;position:relative;z-index:0}
+#wrapper #about #fondAbout{height:0;background:url(../../images/backgroundAbout.png)fixed;max-height:100%}
+#wrapper #about #aboutPos{width:90%;margin:2rem auto}
+#wrapper #about #aboutPos #aboutWrap{position:absolute;height:100%;width:90%;margin:0;top:0}
+#wrapper #about #aboutPos #aboutWrap .aboutBox{margin:1rem 0;position:absolute;color:#9fa1a3;padding:2rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox h2{color:#edeeee;margin:1rem 0;padding:.5rem 0}
+#wrapper #about #aboutPos #aboutWrap .aboutBox h3{color:#c6c7c8;margin:.5rem 0;padding:.25rem 0}
+#wrapper #about #aboutPos #aboutWrap .aboutBox p{width:100%;font-size:2.66rem;line-height:2.94rem;margin:1rem 0;padding:.5rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox p[class=decal]{padding-left:1.4rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul{margin:2rem 0;font-size:3.22rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li{font-size:2.66rem;line-height:3.22rem;margin:1rem;padding:.25rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li>ul{margin-left:3rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li>ul>li{font-size:2.52rem;line-height:3.22rem;margin:.4rem;padding:.2rem}
+#wrapper #about #aboutPos #aboutWrap #pdf{top:2%;left:0;width:98%;padding-left:.5rem;position:relative}
+#wrapper #about #aboutPos #aboutWrap #pdf a{font-size:4.2rem;margin:0 .5rem;padding:1rem;background-color:#1f3f33}
+#wrapper #about #aboutPos #aboutWrap #pdf a img{margin-bottom:.6rem}
+#wrapper #about #aboutPos #aboutWrap #pdf a:hover{background-color:#71b99e;color:#0d1218}
+@media (max-width:580px){#wrapper #about #aboutPos #aboutWrap #pdf{padding:.25rem}
+#wrapper #about #aboutPos #aboutWrap #pdf a{font-size:3.5rem;padding:.75rem}}
+@media (max-width:480px){#wrapper #about #aboutPos #aboutWrap #pdf{padding:.25rem}
+#wrapper #about #aboutPos #aboutWrap #pdf a{font-size:3.08rem;padding:.75rem}
+#wrapper #about #aboutPos #aboutWrap #pdf a .lowRes{display:none}}
+#wrapper #about #aboutPos #aboutWrap #me{top:7%;left:0;padding-left:.5rem}
+#wrapper #about #aboutPos #aboutWrap #skills{top:7%;right:1%;padding-right:5.5rem}
+#wrapper #about #aboutPos #aboutWrap #skills ul{margin-left:1.3rem}
+#wrapper #about #aboutPos #aboutWrap #skills .data{display:inline-block;width:7rem;margin:0 .8rem;height:1.82rem;border:2px solid #0d1218;position:relative}
+#wrapper #about #aboutPos #aboutWrap #skills .data .remplData{position:absolute;width:0;height:100%;background-color:#71b99e;transition:all 2s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 2s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 2s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;transform-style:preserve-3d;-moz-perspective:500px}
+#wrapper #about #aboutPos #aboutWrap #exp{top:27%;left:0;padding-left:.5rem}
+#wrapper #about #aboutPos #aboutWrap #educ>ul>li,#wrapper #about #aboutPos #aboutWrap #exp>ul>li,#wrapper #about #aboutPos #aboutWrap #misc>ul>li{margin:1rem 0}
+#wrapper #about #aboutPos #aboutWrap #educ{top:55%;right:1%;padding-right:5.5rem}
+#wrapper #about #aboutPos #aboutWrap #misc{top:71%;left:0;padding-left:.5rem}
+.lightbox,.modal{position:fixed;top:0}
+#wrapper #about #aboutPos .boxLeft{width:35%}
+#wrapper #about #aboutPos .boxRight{width:34%}
+@media (max-width:1650px){#wrapper #about #aboutPos .boxLeft{width:45%}
+#wrapper #about #aboutPos .boxRight{width:39%}}
+@media (max-width:1400px){#wrapper #about #aboutPos .boxLeft{width:50%}
+#wrapper #about #aboutPos .boxRight{width:43%}}
+@media (max-width:1300px){#wrapper #about #aboutPos .boxLeft{width:49.5%}
+#wrapper #about #aboutPos .boxRight{width:43.5%}}
+footer{background-color:#0d1218;padding:.5rem;min-height:53rem;position:relative;z-index:1}
+footer #wrapperFooter{width:90%;margin:3rem auto;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;position:relative}
+footer #wrapperFooter #contact{width:38%;color:#9fa1a3}
+footer #wrapperFooter #contact h2{font-size:4.8rem;line-height:5.2rem}
+footer #wrapperFooter #contact p{max-width:90%;line-height:3.64rem;margin:.5rem 0}
+footer #wrapperFooter #contact ul li{font-size:2.94rem;line-height:3.36rem}
+footer #wrapperFooter #contact #soc{margin:1rem 0}
+footer #wrapperFooter #contact #soc li{margin-right:.5rem;display:inline-block;opacity:.7}
+footer #wrapperFooter #contact #soc li:hover{opacity:1}
+footer #wrapperFooter #contact a:hover{color:#bd788a}
+footer #wrapperFooter #contact a img{width:5rem;height:5rem}
+footer #wrapperFooter #contactForm{min-width:38%}
+footer #wrapperFooter #contactForm label{display:block;font-size:3.08rem;color:#9fa1a3;margin:.5rem 0;cursor:pointer}
+footer #wrapperFooter #contactForm input[type=text],footer #wrapperFooter #contactForm input[type=email]{width:55%;min-width:27rem;font-family:Quicksand,sans-serif;padding-left:.5rem;margin:0;font-size:2.24rem;color:#1f2a38;background-color:#9fa1a3;border:1px solid #0d1218}
+footer #wrapperFooter #contactForm ::-webkit-input-placeholder{color:#435c7a}
+footer #wrapperFooter #contactForm :-moz-placeholder{color:#435c7a;opacity:1}
+footer #wrapperFooter #contactForm ::-moz-placeholder{color:#435c7a;opacity:1}
+footer #wrapperFooter #contactForm :-ms-input-placeholder{color:#435c7a}
+footer #wrapperFooter #contactForm .form_mail:focus,footer #wrapperFooter #contactForm .form_name:focus,footer #wrapperFooter #contactForm textarea:focus{outline:#fafafa solid 3.5px}
+footer #wrapperFooter #contactForm .form_message{height:20rem;width:80%;min-width:38rem;min-height:20rem;font-size:2.8rem;padding-left:.5rem;margin:0;color:#1f2a38;background-color:#9fa1a3;border:1px solid #0d1218}
+.lightbox p,.lightbox ul{padding:.5rem;margin:1rem auto}
+footer #wrapperFooter #contactForm input[type=submit]{display:block;width:15%;min-width:10rem;font-size:2.94rem;border-radius:0;color:#9fa1a3;background-color:#1f3f33;border:none}
+.lightbox,.lightbox h3,.lightbox p,.lightbox ul{color:#0d1218}
+footer #wrapperFooter #contactForm input[type=submit]:hover{background-color:#71b99e;cursor:pointer;color:#0d1218}
+footer #wrapperFooter #contactForm .specError{padding:.25rem 1.5rem}
+footer #wrapperFooter #contactForm .errorInput{border:1px solid #dc143c}
+@media (max-width:1650px){footer #wrapperFooter #contactForm{width:43.5%}}
+@media (max-width:1400px){footer #wrapperFooter #contactForm{width:47.5%}}
+@media (max-width:1300px){footer #wrapperFooter #contactForm{width:48.5%}}
+.modal{width:100%;height:100%;z-index:2000;background-color:#0d1218;opacity:.7;left:0}
+.lightbox{max-width:60%;background-color:#d3d4d5;z-index:4000;left:0;padding:4rem}
+.lightbox .cross{position:absolute;width:2rem;height:2rem;top:2%;right:1%;background:url(../../images/cross.png)no-repeat;opacity:.65;cursor:pointer}
+.lightbox .cross:hover{opacity:1}
+.lightbox p{width:95%;font-size:2.66rem}
+.lightbox ul{list-style:disc;max-width:95%}
+.lightbox ul li{font-size:2.66rem;line-height:2.94rem;margin:.5rem;padding:.25rem}
+.lightbox .thumbnail{width:100%;max-height:18rem;overflow:hidden}
+.lightbox .linkProject{width:90%;margin:1rem auto;padding:.5rem}
+.lightbox .linkProject a{font-size:2.52rem;padding:.5rem .65rem;color:#d3d4d5;background-color:#1f3f33;display:inline-block;margin-top:.5rem}
+.lightbox .linkProject a:hover{background-color:#71b99e}
+@media (max-width:1200px){.lightbox{padding:2rem}
+.lightbox p{font-size:2.38rem;margin:.5rem auto;padding:.25rem}}
+@media (max-width:800px){.lightbox{padding:1.5rem 1.5rem 1rem}
+.lightbox p{font-size:2.1rem;line-height:2.38rem;margin:.5rem auto;padding:.25rem 0}}
+@media (max-width:740px){.lightbox{padding:1rem}
+.lightbox .lowRes{display:none}
+.lightbox ul{list-style:none}}
+@media (max-width:480px){.lightbox{max-width:30rem}
+.lightbox ul{display:none}}
+@media (max-width:360px){.lightbox{max-width:28rem}
+.lightbox h3{font-size:3.1rem}}
+@media (max-width:1280px){#wrapper #about{min-height:290rem}
+#wrapper #about #aboutPos #aboutWrap #pdf{top:1%}
+#wrapper #about #aboutPos #aboutWrap #me{top:4%}
+#wrapper #about #aboutPos #aboutWrap #skills{top:15%;left:0;padding-left:.5rem;padding-right:0}
+#wrapper #about #aboutPos #aboutWrap #exp{top:43%}
+#wrapper #about #aboutPos #aboutWrap #educ{top:68%;left:0;padding-left:.5rem;padding-right:0}
+#wrapper #about #aboutPos #aboutWrap #misc{top:88%}
+#wrapper #about #aboutPos .boxLeft,#wrapper #about #aboutPos .boxRight{width:98%}}
+@media (max-width:870px){#wrapper #about{min-height:315rem}}
+@media (max-width:750px){#wrapper #about{min-height:330rem}
+#wrapper #about #aboutPos #aboutWrap #pdf{top:.7%}
+#wrapper #about #aboutPos #aboutWrap #me{top:3%}
+#wrapper #about #aboutPos #aboutWrap #skills{top:15%;left:0}
+#wrapper #about #aboutPos #aboutWrap #exp{top:40%}
+#wrapper #about #aboutPos #aboutWrap #educ{top:64%;left:0}
+#wrapper #about #aboutPos #aboutWrap #misc{top:85%}}
+@media (max-width:600px){#wrapper #about #aboutPos #aboutWrap .aboutBox p{font-size:2.38rem;line-height:2.8rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul{font-size:2.94rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li{font-size:2.38rem;line-height:2.8rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li>ul>li{font-size:2.24rem;line-height:2.66rem}
+#wrapper #about #aboutPos #aboutWrap #pdf{top:1%}}
+@media (max-width:500px){#wrapper #about{min-height:350rem}
+#wrapper #about #aboutPos #aboutWrap #misc{top:86%}}
+@media (max-width:460px){#wrapper #about{min-height:360rem}
+#wrapper #about #fondAbout{height:100%;background:url(../../images/backgroundAbout.png)fixed}}
+@media (max-width:400px){#wrapper #about #aboutPos #aboutWrap .aboutBox{padding:1rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox p{font-size:2.24rem;line-height:2.8rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox p[class=decal]{padding-left:.7rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul{font-size:2.8rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li{font-size:2.24rem;line-height:2.66rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li>ul{margin-left:.5rem}
+#wrapper #about #aboutPos #aboutWrap .aboutBox>ul>li>ul>li{font-size:2.1rem;line-height:2.52rem;margin:.4rem;padding:.2rem}
+#wrapper #about #aboutPos #aboutWrap #skills{top:14%}
+#wrapper #about #aboutPos #aboutWrap #skills ul{margin-left:.4rem}
+#wrapper #about #aboutPos #aboutWrap #educ{top:65%;left:0;padding-left:.5rem}
+#wrapper #about #aboutPos #aboutWrap #misc{top:87%}}
+@media (max-width:360px){#wrapper #about{min-height:370rem}
+#wrapper #about #aboutPos #aboutWrap #misc{top:88%}}
+@media (max-width:1280px){footer{height:90rem}
+footer #wrapperFooter #contact{width:90%}
+footer #wrapperFooter #contactForm{width:90%;min-width:50rem;position:absolute;top:36rem;left:0}}
+@media (max-width:560px){footer #wrapperFooter #contact{width:90%}
+footer #wrapperFooter #contactForm{width:90%;min-width:45rem;position:absolute;top:36rem;left:0}}
+@media (max-width:500px){footer{min-height:15rem;height:inherit}
+footer #wrapperFooter #contact{width:90%}
+footer #wrapperFooter #contactForm{display:none}}
+@media (max-width:450px){footer #wrapperFooter #contact{width:95%}
+footer #wrapperFooter #contact #contactData a{font-size:2.66rem}
+footer #wrapperFooter #contact a img{width:7rem;height:7rem}}
+@media (max-width:420px){footer #wrapperFooter{margin:3rem 0;padding:0}
+footer #wrapperFooter #contact h2{font-size:4.2rem}
+footer #wrapperFooter #contact #contactData a{font-size:2.24rem}}

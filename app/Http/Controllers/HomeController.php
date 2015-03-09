@@ -22,7 +22,11 @@ class HomeController extends Controller {
      * @return Response
      */
     public function index(){
-        return view('welcome');
+        $tags=[];
+        foreach(Tag::all() as $tag){
+            $tags[$tag->id]=$tag->name;
+        }
+        return view('welcome', compact('tags'));
     }
     
     public function staticIndex(){

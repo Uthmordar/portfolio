@@ -22,10 +22,7 @@ class ProjectController extends Controller{
 	 *
 	 * @return Response
 	 */
-	public function index(){
-            /*$page=new \Page('', 'static.home');
-            \Staticify::generateStatic($page);*/
-            
+	public function index(){            
             $projects=Project::orderBy('created_at', 'desc')->get();
             return view('project.all', ['projects'=>$projects]);
 	}

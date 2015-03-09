@@ -1,0 +1,1746 @@
+@import 'mixin.less';
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+//
+// CONST
+//
+//---------------------------------------------------------------------------------------------------------------------------------------------
+
+@keyframes blink{
+	from{
+		color : lighten(@color-green, 10%);
+		opacity : 0.6;
+	}to{
+		opacity : 1;
+		color : lighten(@color-green, 40%);
+	}
+}
+
+@-webkit-keyframes blink{
+	from{
+		color : lighten(@color-green, 10%);
+		opacity : 0.6;
+	}to{
+		opacity : 1;
+		color : lighten(@color-green, 40%);
+	}
+}
+
+@font-size : 1.4rem;
+
+@font-family-default : 'Quicksand', sans-serif;
+@font-size-default : 1.5rem;
+@bg-body-color : lighten(#9FA1A3, 20%);
+
+@color-black : darken(#161E28, 5%);
+@color-red : #351A21;
+@color-green : #1F3F33;
+@color-purple : #2E1F3F;
+
+@color-grey : #9FA1A3;
+
+@margin : 1rem;
+@padding : 0.5rem;
+
+@width-wrapper	: 90%;
+
+
+//--------------------------------------------------------------------------------------------------------
+//
+//                         HEADER
+//
+//--------------------------------------------------------------------------------------------------------
+
+
+header{
+	width : 100%;
+	background-color : @color-black;
+	color : @color-grey;
+	height : 8.5rem;
+	position : fixed;
+	z-index : 50;
+	top : 0;
+	left : 0;
+	
+	#wrapperHeader{
+		width : @width-wrapper;
+		max-width : 1900px;
+		margin : 0 auto;
+		padding : @padding;
+		
+		
+		//--------------------------------------------------------------------
+		//                                 LOGO
+		//--------------------------------------------------------------------
+		
+		
+		#logo{
+			width : 27rem;
+			height : 6rem;
+			margin : 0.5*@margin;
+			padding : @padding;
+			cursor : pointer;
+			float : left;
+			position : relative;
+			z-index : 100;
+			line-height : 3.6rem;
+			
+			h1{
+				font-size : 3rem;
+				color : @color-grey;
+				cursor : pointer;
+				font-weight : 700;	
+			}
+			
+			p{
+				font-size : 2.2rem;
+			}
+		}
+		
+		
+		//-----------------------------------------------------------------------
+		//                           NAV PRINC
+		//-----------------------------------------------------------------------
+		
+		
+		#menuHeader{
+			width : 70rem;
+			position : fixed;
+			left : 35rem;
+			top : 2.6rem;
+			.transition(all; 1.5s; linear; 0.3s);
+		
+			li{
+				min-width : 10.5rem;
+				font-size : 2.4*@font-size;
+				display : inline-block;
+				border-bottom : 2px solid @color-grey;
+				margin : 0.4*@margin;
+				padding : 0.4*@padding;
+				cursor : pointer;
+				font-weight : 700;
+				-webkit-box-reflect : below -3px 
+				-webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+				
+				&.active{
+					color : lighten(@color-green, 20%);
+					border-bottom : 3px solid lighten(@color-green, 25%);
+				}
+				
+				&:hover{
+					color : lighten(@color-green, 40%);
+					border-bottom : 4px solid lighten(@color-green, 45%);
+				}
+			}
+		}
+		
+		
+		//----------------------------------------------------------------------------
+		// RESPONSIVE POSITION MENU PRINCIPAL
+		//----------------------------------------------------------------------------
+		
+		
+		@media(max-width : 1279px){
+			#menuHeader{
+				left : 33rem;
+				.transition(all; 0s; ease-out; 0s);
+			}
+		}
+		
+		@media (max-width : 930px){
+			#menuHeader{
+				margin-left : 5%;
+				top : 9rem;
+				left : 0rem;
+				position : fixed;
+				.transition(all; 0s; ease-out; 0s);
+			}	
+		}
+		
+		@media (max-width : 600px){
+			#menuHeader{
+				top : 10rem;
+				width : 35rem;
+			}
+		}
+	}
+}
+
+
+//----------------------------------------------------------------------------
+// RESPONSIVE HEADER GENERAL
+//----------------------------------------------------------------------------
+
+
+@media (max-width : 930px){
+	header{
+		height : 15rem;
+	}
+}
+
+@media (max-width : 600px){
+	header{
+		height : 20rem;
+	}
+}
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------
+//
+//                                                    WRAPPER
+//
+//-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#wrapper{
+	width  : 100%;
+	position : relative;
+	margin : 0;
+	
+	#fondBase{
+		height : 95rem;
+		background : url(../../images/backgroundHome.png) 0% 0% repeat fixed;
+	}
+	
+	
+	//------------------------------------------------------
+	//                          INTRO
+	//------------------------------------------------------
+	
+	
+	#introSlide{
+		background-color : transparent;
+		margin : @margin;
+		position : absolute;
+		top : 20rem;
+		left : 3%;
+		max-width : 90%;
+		
+		#intro{
+			color : @color-grey;
+			margin : @margin;
+			padding : 4*@padding;
+			max-width : 100%;
+			
+			h1{
+				margin : @margin;
+				padding : @padding;
+			}
+			
+			p{
+				font-size : 2.9*@font-size;
+				line-height : 3.3*@font-size;
+				margin : 2*@margin auto;
+				padding : 2*@padding;
+			}
+		}
+	}
+		
+	#learn{
+		max-width : 30%;
+		display : block;
+		margin : @margin auto;
+		position : absolute;
+		top : 80rem;
+		left : 40%;
+		
+		p{
+			margin : 0.5*@margin 0;
+			padding : 0.5*@padding;
+			width : 100%;
+			font-size : 2.2*@font-size;
+			color : lighten(@color-green, 30%);
+			cursor : pointer;
+			.animation(blink, 2s, infinite, ease-out, alternate);
+			
+			&:hover{
+				color : lighten(@color-green, 50%);
+			}
+		}
+		
+		.fleche{
+			background : url(../../images/fleche.png) no-repeat;
+			width : 2.8rem;
+			height : 2.8rem;
+			display : block;
+			margin : 0 auto;
+			cursor : pointer;
+			
+			&:hover{
+				background : url(../../images/flecheHover.png) no-repeat;
+			}
+		}
+	}
+	
+	//--------------------------------------------------------------------
+	// RESPONSIVE LEARN
+	//--------------------------------------------------------------------
+	
+	@media (max-width : 1300px){
+		#learn{
+			max-width : 40%;
+		}
+	}
+	
+	@media (max-width : 1200px){
+		#learn{
+			max-width : 45%;
+		}
+	}
+	
+	@media (max-width : 1100px){
+		#learn{
+			max-width : 50%;
+			left : 35%;
+		}
+	}
+	
+	@media (max-width : 750px){
+		#learn{
+			max-width : 60%;
+			left : 30%;
+			top : 82rem;
+		}
+	}
+	
+	@media (max-width : 650px){
+		#learn{
+			left : 25%;
+		}
+	}
+	
+	@media (max-width : 580px){
+		#learn{
+			max-width : 70%;
+			left : 22%;
+		}
+	}
+	
+	@media (max-width : 520px){
+		#learn{
+			max-width : 90%;
+			left : 15%;
+		}
+	}
+	
+	@media (max-width : 450px){
+		#learn{
+			max-width : 90%;
+			left : 10%;
+			top : 84rem;
+			
+			p{
+				font-size : 2*@font-size;
+			}
+		}
+	}
+	
+	@media (max-width : 380px){
+		#learn{
+			left : 5%;
+		}
+	}
+	
+	@media (max-width : 360px){
+		#learn{
+			left : 3%;
+			
+			p{
+				font-size : 1.8*@font-size;
+				margin : 0.5*@margin;
+			}
+		}
+	}
+			
+		
+	//-----------------------------------------------------------------
+	// RESPONSIVE INTRO
+	//-----------------------------------------------------------------
+	
+	
+	// 850 PX
+	
+	@media (max-width : 850px){
+		#introSlide{
+			
+			#intro{
+				
+				h1{
+					font-size : 4rem;
+				}
+				
+				p{
+					font-size : 2.6*@font-size;
+					line-height : 3.9*@font-size;
+				}
+				
+				#learn{
+					width : 60%;
+				}
+			}
+		}
+	}
+	
+	// 800 PX
+	
+	@media (max-width : 800px){
+		#introSlide{
+			top : 15rem;
+		}
+	}
+	
+	// 750 PX
+	
+	@media (max-width : 750px){
+		#introSlide{
+			top : 10rem;
+			max-width : 90%;
+				
+			#intro{
+				#learn{
+					width : 70%;
+				}
+			}
+		}
+	}
+	
+	// 620 PX
+	
+	@media (max-width : 620px){
+		#introSlide{
+			top : 10rem;
+			left : 2%;
+			
+			#intro{
+				h1{
+					font-size : 3.8rem;
+				}
+				
+				p{
+					font-size : 2.4*@font-size;
+					line-height : 3.5*@font-size;
+				}
+			}
+		}
+	}
+	
+	// 600 PX
+	
+	@media (max-width : 600px){
+		#introSlide{
+			top : 16.5rem;
+			left : 1%;
+			
+			#intro{
+				padding : 2*@padding;
+				max-width : 100%;
+				
+				p{
+					margin : 2*@margin auto;
+					padding : 2*@padding;
+				}
+			}
+		}
+	}
+	
+	// 560 PX
+	
+	@media (max-width : 560px){
+		#introSlide{
+			top : 18rem;
+			left : 0%;
+			max-width : 95%;
+			
+			#intro{
+				h1{
+					margin : 0.6*@margin;
+					padding : 0.6*@padding;
+				}
+				
+				p{
+					font-size : 2.2*@font-size;
+					line-height : 3*@font-size;
+				}
+			}
+		}
+	}
+	
+	// 490 PX
+	
+	@media (max-width : 490px){
+		#introSlide{
+			#intro{
+				h1{
+					margin : 0.5*@margin;
+					padding : 0.5*@padding;
+				}
+				
+				p{
+					line-height : 2.8*@font-size;
+					margin : 1.5*@margin auto;
+					padding : 1.5*@padding;
+				}
+			}
+		}
+	}
+	
+	// 440 PX
+	
+	@media (max-width : 440px){
+		#introSlide{	
+			#intro{
+				margin : 0.8*@margin;
+				padding : 1.5*@padding;
+				
+				h1{
+					font-size : 3.6rem;
+				}
+				
+				p{
+					font-size : 2.2*@font-size;
+					line-height : 2.6*@font-size;
+				}
+			}
+		}
+	}
+	
+	// 390 PX
+	
+	@media (max-width : 390px){
+		#introSlide{
+			top : 20rem;
+			
+			#intro{
+				margin : 0.9*@margin 0;
+				padding : @padding;
+				
+				h1{
+					margin : 0.4*@margin;
+					padding : 0.4*@padding;
+				}
+				
+				p{
+					font-size : 2.1*@font-size;
+					line-height : 2.5*@font-size;
+					margin : 1.2*@margin auto;
+					padding : 1.2*@padding;
+				}
+			}
+		}
+	}
+	
+	// 360 PX
+	
+	@media (max-width : 360px){
+		#introSlide{
+			#intro{
+				margin : 0.8*@margin 0;
+				padding : 0.8*@padding 0;
+				
+				h1{
+					font-size : 3.5rem;
+				}
+				
+				p{
+					font-size : 1.9*@font-size;
+					line-height : 2.4*@font-size;
+					margin : 1.2*@margin 0;
+					padding : 1.2*@padding 0;
+				}
+			}
+		}
+	}
+	
+	
+	//------------------------------------------------------------------------------------------------
+	//
+	// 											WORKS
+	//
+	//------------------------------------------------------------------------------------------------
+		
+		
+	#worksSlide{
+		width : @width-wrapper;
+		margin : 5*@margin auto;
+		
+		h2{
+			font-size : 3.2*@font-size;
+			color : @color-black;
+			margin : @margin 0;
+		}
+		
+		//-------------------------------------------------------------------
+		// 							FILTER
+		//-------------------------------------------------------------------
+	
+		#menuFilter{
+			li{
+				display : inline-block;
+				font-size : 2*@font-size;
+				color : @color-grey;
+				background-color : @color-black;
+				margin : 0.2*@margin 0.4*@margin;
+				padding : 1.2*@padding;
+				cursor : pointer;
+				font-weight : 700;
+				
+				&.active{
+					color : lighten(@color-green, 20%);
+					border-bottom : 4px solid lighten(@color-green, 25%);
+				}
+				
+				&:hover{
+					color : lighten(@color-green, 40%);
+				}
+			}	
+		}
+		
+		@media (max-width : 460px){
+			#menuFilter{
+				li{
+					width : 50%;
+					min-width : 22rem;
+				}
+			}
+		}
+		
+		//---------------------------------------------------------------------------
+		// 								PROJECT BANNER
+		//---------------------------------------------------------------------------
+		
+		.projectBanner{
+			width : 100%;
+			margin : @margin 0;
+			border : 6px solid @color-black;
+			height : 18rem;
+			position : relative;
+			cursor : pointer;
+			z-index : 0;
+			overflow : hidden;
+			
+			//-------------------------------------------------------------------
+			// 							EFFET VOILE
+			//-------------------------------------------------------------------
+			
+			.veil{
+				width : 100%;
+				position : absolute;
+				top : 0;
+				left : 0;
+				height : 100%;
+				z-index : 0;
+				background-color : @color-black;
+				opacity : 0.9;
+				.transition(all; 1s; ease-out; 0s);
+			}
+			
+			.project{
+				width : 100%;
+				position : absolute;
+				top : 0;
+				left : 0;
+				height : 100%;
+				z-index : -1;
+			}
+			
+			&:hover{
+				border : 6px solid lighten(@color-green, 20%);
+			}
+			
+			//----------------------------------------------------------------------
+			// 							CONTENT LIGHTBOX
+			//----------------------------------------------------------------------
+			
+			.com{
+				position : absolute;
+				top : 0;
+				left : 0;
+				z-index : 1;
+				
+				h3{
+					color : lighten(@color-grey, 40%);
+					margin : @margin;
+					padding : @padding;
+				}
+				
+				p{
+					font-size : 2.3*@font-size;
+					color : lighten(@color-grey, 1%);
+					margin : @margin;
+					padding : @padding;
+				}
+			}
+			
+			.bannerDetail{
+				display : none;
+			}
+			
+			
+			//------------------------------------------------------------
+			// 					BACKGROUND PROJECT
+			//------------------------------------------------------------
+						
+						
+			&[id='GoL']{
+				background : url(../../images/GoL.jpg) 50% 0% repeat fixed;
+			}
+			
+			&[id='webGame']{
+				background : url(../../images/bg.jpg) 0% 0% repeat fixed;
+				
+				.slide{
+					width : 100%;
+					position : absolute;
+					top : 0;
+					left : 0;
+					height : 100%;
+					background :  url(../../images/webGameUp.png) 50% 0% repeat fixed;
+				}
+			}
+			
+			&[id='europunk']{
+				background : url(../../images/europunk.jpg) 50% 0% repeat fixed;
+			}
+			
+			&[id='WP']{
+				background : url(../../images/WPproject.jpg) 300px 0% repeat fixed;
+			}
+		}
+		
+		
+		//-------------------------------------------------------
+		// 					RESPONSIVE PROJECT
+		//-------------------------------------------------------
+		
+		
+		@media (max-width : 600px){
+			.projectBanner{
+				width : 100%;
+				margin : @margin 0;
+				border : 6px solid @color-black;
+				height : 18rem;
+				position : relative;
+				overflow : hidden;
+				
+				.com{
+					position : absolute;
+					top : 0;
+					left : 0;
+					z-index : 1;
+					
+					h3{
+						font-size : 3rem;
+						line-height : 3.3rem;
+						color : lighten(@color-grey, 40%);
+						margin : 0.5*@margin;
+						padding : 0.5*@padding;
+					}
+					
+					p{
+						font-size : 2*@font-size;
+						color : lighten(@color-grey, 1%);
+						margin : 0.5*@margin;
+						padding : 0.5*@padding;
+					}
+				}
+			}
+		}
+		
+		@media (max-width : 460px){
+			.projectBanner{
+				height : 20rem;
+			}
+		}
+		
+		@media (max-width : 340px){
+			.projectBanner{
+				width : 95%;
+			}
+		}
+	}
+	
+	
+	//--------------------------------------------------------------------------------------------------
+	//
+	// 												ABOUT
+	//
+	//--------------------------------------------------------------------------------------------------
+	
+	
+	#about{
+		width : 100%;
+		height : 170rem;
+		background : transparent;
+		position : relative;
+		z-index : 0;
+		background-color : #070A0E;
+		
+		#fondAbout{
+			height : 0%;
+			background : url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
+			max-height : 100%;
+		}
+		
+		#aboutPos{
+			width : @width-wrapper;
+			margin : 2*@margin auto;
+		
+			#aboutWrap{
+				position : absolute;
+				height : 100%;
+				width : @width-wrapper;
+				margin : 0;
+				top : 0;
+				
+				
+				//--------------------------------------------------------------------
+				// 							BOX ABOUT
+				//--------------------------------------------------------------------
+			
+			
+				.aboutBox{
+					margin : @margin 0;
+					position : absolute;
+					color : @color-grey;
+					padding : 4*@padding;
+					
+					h2{
+						color : lighten(@color-grey, 30%);
+						margin : @margin 0;
+						padding : @padding 0;
+					}
+					
+					h3{
+						color : lighten(@color-grey, 15%);
+						margin : 0.5*@margin 0;
+						padding : 0.5*@padding 0;
+					}
+					
+					p{
+						width : 100%;
+						font-size : 1.9*@font-size;
+						line-height : 2.1*@font-size;
+						margin : @margin 0;
+						padding : @padding;
+						
+						&[class='decal']{
+							padding-left : 1.4*@margin;
+						}
+					}
+					
+					>ul{
+						margin : 2*@margin 0;
+						font-size : 2.3*@font-size;
+					
+					
+						>li{
+							font-size : 1.9*@font-size;
+							line-height : 2.3*@font-size;
+							margin : @margin;
+							padding : 0.5*@padding;
+					
+							>ul{
+								margin-left : 3*@margin;
+							
+							
+								>li{
+									font-size : 1.8*@font-size;
+									line-height : 2.3*@font-size;
+									margin : 0.4*@margin;
+									padding : 0.4*@padding;							
+								}
+							}
+						}
+					}
+				}
+				
+				#pdf{
+					top : 2%;
+					left : 0;
+					width : 98%;
+					padding-left : @padding;
+					position : relative;
+					
+					a{
+						font-size : 3*@font-size;
+						margin : 0 0.5*@margin;
+						padding : 2*@padding;
+						background-color : @color-green;
+						
+						img{
+							margin-bottom : 0.6*@margin;
+						}
+					
+						&:hover{
+							background-color : lighten(@color-green, 40%);
+							color : @color-black;
+						}
+					}
+				}
+				
+				
+				//------------------------------------------------------------
+				// RESPONSIVE PDF LINK
+				//------------------------------------------------------------
+				
+				
+				@media (max-width : 580px){
+					#pdf{
+						padding : 0.5*@padding;
+					
+						a{
+							font-size : 2.5*@font-size;
+							padding : 1.5*@padding;
+						}
+					}	
+				}
+				
+				@media (max-width : 480px){
+					#pdf{
+						padding : 0.5*@padding;
+					
+						a{
+							font-size : 2.2*@font-size;
+							padding : 1.5*@padding;
+						}
+					}	
+				}
+				
+				@media (max-width : 480px){
+					#pdf{
+						a{
+							.lowRes{
+								display : none;
+							}
+						}
+					}	
+				}
+				
+				//--------------------------------------------------------------------
+				// 							BOX SETTINGS
+				//--------------------------------------------------------------------
+				
+				#me{
+					top : 7%;
+					left : 0;
+					padding-left : @padding;
+				}
+				
+				#skills{
+					top : 7%;
+					right : 1%;
+					padding-right : 11*@padding;
+					
+					ul{
+						margin-left : 1.3*@margin;
+					}
+					
+					.data{
+						display : inline-block;
+						width : 7rem;
+						margin : 0 0.8*@margin;
+						height : 1.3*@font-size;
+						border : 2px solid @color-black;
+						position : relative;
+						
+						.remplData{
+							position : absolute;
+							width : 0%;
+							height : 100%;
+							background-color : lighten(@color-green, 40%);
+							.transition(all, 2s, ease-out, 0s);
+						}
+					}
+				}
+				
+				#exp{
+					top : 27%;
+					left : 0;
+					padding-left : @padding;
+					
+					>ul>li{
+						margin : @margin 0;
+					}
+				}
+				
+				#educ{
+					top : 55%;
+					right : 1%;
+					padding-right : 11*@padding;
+					
+					>ul>li{
+						margin : @margin 0;
+					}
+				}
+				
+				#misc{
+					top : 71%;
+					left : 0;
+					padding-left : @padding;
+					
+					>ul>li{
+						margin : @margin 0;
+					}
+				}
+			}
+			
+			.boxLeft{
+				width : 35%;
+			}
+			
+			.boxRight{
+				width : 34%;
+			}
+			
+			//-----------------------------------------------------------------
+			// RESPONSIVE BOX HIGH RESOLUTION
+			//-----------------------------------------------------------------
+			
+			@media (max-width : 1650px){
+				.boxLeft{
+					width : 45%;
+				}
+				
+				.boxRight{
+					width : 39%;
+				}
+			}
+			
+			@media (max-width : 1400px){
+				.boxLeft{
+					width : 50%;
+				}
+				
+				.boxRight{
+					width : 43%;
+				}
+			}
+			
+			@media (max-width : 1300px){
+				.boxLeft{
+					width : 49.5%;
+				}
+				
+				.boxRight{
+					width : 43.5%;
+				}
+			}
+		}
+	}
+}
+
+
+//----------------------------------------------------------------------------------------------------------------
+//
+// 													FOOTER
+//
+//----------------------------------------------------------------------------------------------------------------
+
+
+footer{
+	background-color : @color-black;
+	padding : @padding;
+	min-height : 53rem;
+	position : relative;
+	z-index : 1;
+	
+	#wrapperFooter{
+            width : @width-wrapper;
+            margin : 3*@margin auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position : relative;		
+		
+            //--------------------------------------------------------------------------
+            //                                  CONTACT
+            //--------------------------------------------------------------------------
+
+
+            #contact{
+                width: 38%;
+                color : @color-grey;
+
+                h2{
+                    font-size : 4.8rem;
+                    line-height : 5.2rem;
+                }
+
+                p{
+                    max-width : 90%;
+                    line-height : 2.6*@font-size;
+                    margin : 0.5*@margin 0;
+                }
+
+                ul{
+                    li{
+                        font-size : 2.1*@font-size;
+                        line-height : 2.4*@font-size;
+                    }
+                }
+
+                #soc{
+                    margin : @margin 0;
+
+                    li{
+                        margin-right : 0.5*@margin;
+                        display : inline-block;
+                        opacity : 0.7;
+
+                        &:hover{
+                                opacity : 1;
+                        }
+                    }
+                }
+
+                a{
+                    &:hover{
+                        color : lighten(@color-red, 45%);
+                    }
+
+                    img{
+                        width : 5rem;
+                        height : 5rem;
+                    }
+                }
+            }
+
+            //--------------------------------------------------------------------------
+            // 									FORM
+            //--------------------------------------------------------------------------
+
+            #contactForm{
+                min-width : 38%;
+
+                label{
+                    display: block;
+                    font-size : 2.2*@font-size;
+                    color : @color-grey;
+                    margin : 0.5*@margin 0;
+                    cursor : pointer;
+                }
+
+                input[type="text"], input[type="email"]{
+                    width : 55%;
+                    min-width : 27rem;
+                    font-family	: @font-family-default;
+                    padding-left : 0.5*@margin;
+                    margin : 0;
+                    font-size : 1.6*@font-size;
+                    color : lighten(@color-black, 10%);
+                    background-color : @color-grey;
+                    border : 1px solid @color-black;
+                }
+
+                ::-webkit-input-placeholder { /* WebKit browsers */
+                    color : lighten(@color-black, 30%);
+                }
+                :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                   color : lighten(@color-black, 30%);
+                   opacity:  1;
+                }
+                ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                   color : lighten(@color-black, 30%);
+                   opacity:  1;
+                }
+                :-ms-input-placeholder { /* Internet Explorer 10+ */
+                   color : lighten(@color-black, 30%);
+                }
+
+                .form_name:focus, .form_mail:focus, textarea:focus{
+                    outline : 3.5px solid lighten(@color-grey, 35%);
+                }
+
+                .form_message{
+                    height: 20rem;
+                    width: 80%;
+                    min-width: 38rem;
+                    min-height: 20rem;
+                    font-size: 2*@font-size;
+                    font-family: @font-family-default;
+                    padding-left: 0.5*@margin;
+                    margin: 0;
+                    color: lighten(@color-black, 10%);
+                    background-color: @color-grey;
+                    border: 1px solid @color-black;
+                }
+
+                input[type='submit']{
+                    display: block;
+                    width: 15%;
+                    min-width: 10rem;
+                    font-size: 2.1*@font-size;
+                    border-radius: 0;
+                    color: @color-grey;
+                    background-color: @color-green;
+                    border: none;
+
+                    &:hover{
+                        background-color: lighten(@color-green, 40%);
+                        cursor: pointer;
+                        color: @color-black;
+                    }
+                }
+
+                .specError{
+                        padding : 0.5*@padding 3*@padding;
+                }
+
+                .errorInput{
+                        border : 1px solid crimson;
+                }
+            }
+		
+		
+		//-----------------------------------------------------------------------------
+		// RESPONSIVE FORM HIGH RESOLUTION
+		//-----------------------------------------------------------------------------
+		
+		
+		@media (max-width : 1650px){
+			#contactForm{
+				width : 43.5%;
+			}
+		}
+		
+		@media (max-width : 1400px){
+			#contactForm{
+				width : 47.5%;
+			}
+		}
+		
+		@media (max-width : 1300px){
+			#contactForm{
+				width : 48.5%;
+			}
+		}
+	}
+}
+
+
+//--------------------------------------------------------------------
+// 					LIGHTBOX & MODAL PROPERTIES
+//--------------------------------------------------------------------
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    background-color: @color-black;
+    opacity: 0.7;
+    top:0;
+    left: 0;
+}
+
+.lightbox{
+	max-width : 60%;
+    background-color: lighten(@color-grey, 20%);
+	color : @color-black;
+    position: fixed;
+    z-index : 4000;
+    top: 0;
+    left: 0;
+	padding : 8*@padding;
+	
+	.cross{
+		position : absolute;
+		width : 2rem;
+		height : 2rem;
+		top : 2%;
+		right : 1%;
+		background : url(../../images/cross.png) no-repeat;
+		opacity : 0.65;
+		cursor : pointer;
+		
+		&:hover{
+			opacity : 1;
+		}
+	}
+		
+	
+	h3{
+		color : @color-black;
+	}
+
+	p{
+		width : 95%;
+		font-size : 1.9*@font-size;
+		color : @color-black;
+		margin : @margin auto;
+		padding : @padding;
+	}
+	
+	ul{
+		list-style : disc;
+		max-width : 95%;
+		color : @color-black;
+		margin : @margin auto;
+		padding : @padding;
+		
+		li{
+			font-size : 1.9*@font-size;
+			line-height : 2.1*@font-size;
+			margin : 0.5*@margin;
+			padding : 0.5*@padding;
+		}
+	}
+	
+	// IMAGE LIGHTBOX
+	
+	.thumbnail{
+		width : 100%;
+		max-height : 18rem;
+		overflow : hidden;
+	}
+
+	// LINK LIGHTBOX
+	
+	.linkProject{
+		width : 90%;
+		margin : @margin auto;
+		padding : @padding;
+		
+		a{
+			font-size : 1.8*@font-size;
+			padding : @padding 1.3*@padding;
+			color : lighten(@color-grey, 20%);
+			background-color : @color-green;
+			display : inline-block;
+			margin-top : 0.5*@margin;
+			
+			&:hover{
+				background-color : lighten(@color-green, 40%);
+			}
+		}
+	}
+}
+
+//-------------------------------------------------------------
+// RESPONSIVE LIGHTBOX
+//-------------------------------------------------------------
+
+@media (max-width : 1200px){
+	.lightbox{
+		padding : 4*@padding;
+		
+		p{
+			font-size : 1.7*@font-size;
+			margin : 0.5*@margin auto;
+			padding : 0.5*@padding;
+		}
+	}
+}
+
+@media (max-width : 800px){
+	.lightbox{
+	
+		padding : 3*@padding;
+		padding-bottom : 2*@padding;
+		
+		p{
+			font-size : 1.5*@font-size;
+			line-height : 1.7*@font-size;
+			margin : 0.5*@margin auto;
+			padding : 0.5*@padding 0;
+		}
+	}
+}
+
+@media (max-width : 740px){
+	
+	.lightbox{
+		padding : 2*@padding;
+	
+		.lowRes{
+			display : none;
+		}
+		
+		ul{
+			list-style : none;
+		}
+	}
+}
+
+@media (max-width : 480px){
+	.lightbox{
+		max-width : 30rem;
+				
+		ul{
+			display : none;
+		}
+	}
+}
+
+@media (max-width : 360px){
+	.lightbox{
+		max-width : 28rem;
+		
+		h3{
+			font-size : 3.1rem;
+		}
+	}
+}
+
+
+//------------------------------------------------------------
+// RESPONSIVE ABOUT
+//------------------------------------------------------------
+
+
+@media (max-width : 1280px){
+	#wrapper{
+		#about{
+			min-height : 290rem;
+			
+			#aboutPos{
+				#aboutWrap{		
+					
+					#pdf{
+						top : 1%;
+					}
+					
+					#me{
+						top : 4%;
+					}
+					
+					#skills{
+						top : 15%;
+						left : 0;
+						padding-left : @padding;
+						padding-right : 0;
+					}
+					
+					#exp{
+						top : 43%;
+					}
+					
+					#educ{
+						top : 68%;
+						left : 0;
+						padding-left: @padding;
+						padding-right : 0;
+					}
+					
+					#misc{
+						top : 88%;						
+					}
+				}
+				
+				.boxLeft, .boxRight{
+					width : 98%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 870px){
+	#wrapper{
+		#about{
+			min-height : 315rem;
+		}
+	}
+}
+
+@media (max-width : 750px){
+	#wrapper{
+		#about{
+			min-height : 330rem;
+			
+			#aboutPos{		
+				#aboutWrap{		
+					#pdf{
+						top : 0.7%;
+					}
+					
+					#me{
+						top : 3%;
+					}
+					
+					#skills{
+						top : 15%;
+						left : 0;
+					}
+					
+					#exp{
+						top : 40%;
+					}
+					
+					#educ{
+						top : 64%;
+						left : 0;
+					}
+					
+					#misc{
+						top : 85%;						
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 600px){
+	#wrapper{
+		#about{	
+			#aboutPos{			
+				#aboutWrap{			
+					.aboutBox{
+						
+						p{
+							font-size : 1.7*@font-size;
+							line-height : 2*@font-size;
+						}
+						
+						>ul{
+							font-size : 2.1*@font-size;
+												
+							>li{
+								font-size : 1.7*@font-size;
+								line-height : 2*@font-size;
+						
+								>ul{						
+									>li{
+										font-size : 1.6*@font-size;
+										line-height : 1.9*@font-size;						
+									}
+								}
+							}
+						}
+					}
+					
+					#pdf{
+						top : 1%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 500px){
+	#wrapper{
+		#about{
+			min-height : 350rem;
+			
+			#aboutPos{			
+				#aboutWrap{			
+					
+					#misc{
+						top : 86%;						
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 460px){
+	#wrapper{
+		#about{
+			min-height : 360rem;	
+			
+			#fondAbout{
+				height : 100%;
+				background : url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
+			}
+		}
+	}
+}
+
+@media (max-width : 400px){
+	#wrapper{
+		#about{			
+			#aboutPos{			
+				#aboutWrap{
+			
+					.aboutBox{
+						padding : 2*@padding;
+						
+						p{
+							font-size : 1.6*@font-size;
+							line-height : 2*@font-size;
+							
+							&[class='decal']{
+								padding-left : 0.7*@margin;
+							}
+						}
+						
+						>ul{
+							font-size : 2*@font-size;
+											
+							>li{
+								font-size : 1.6*@font-size;
+								line-height : 1.9*@font-size;
+						
+								>ul{
+									margin-left : 0.5*@margin;
+																
+									>li{
+										font-size : 1.5*@font-size;
+										line-height : 1.8*@font-size;
+										margin : 0.4*@margin;
+										padding : 0.4*@padding;							
+									}
+								}
+							}
+						}
+					}
+					
+					#skills{
+						top : 14%;
+						
+						ul{
+							margin-left : 0.4*@margin;
+						}
+					}
+					
+					#educ{
+						top : 65%;
+						left : 0;
+						padding-left: @padding;
+					}
+					
+					#misc{
+						top : 87%;						
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 360px){
+	#wrapper{
+		#about{
+			min-height : 370rem;
+			
+			#aboutPos{
+				#aboutWrap{										
+					
+					#misc{
+						top : 88%;						
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//-----------------------------------------------------------
+// RESPONSIVE CONTACT
+//-----------------------------------------------------------
+
+
+@media (max-width : 1280px){
+	footer{
+		height : 90rem;
+		
+		#wrapperFooter{
+			
+			#contact{
+				width : 90%;
+			}
+			
+			#contactForm{
+				width : 90%;
+				min-width : 50rem;
+				position : absolute;
+				top : 36rem;
+				left : 0;
+			}
+		}
+	}
+}
+
+@media (max-width : 560px){
+	footer{	
+		#wrapperFooter{
+			
+			#contact{
+				width : 90%;
+			}
+			
+			#contactForm{
+				width : 90%;
+				min-width : 45rem;
+				position : absolute;
+				top : 36rem;
+				left : 0;
+			}
+		}
+	}
+}
+
+@media (max-width : 500px){
+	footer{
+		min-height : 15rem;
+		height : inherit;
+		
+		#wrapperFooter{
+			
+			#contact{
+				width : 90%;
+			}
+			
+			#contactForm{
+				display : none;
+			}
+		}
+	}
+}
+
+@media (max-width : 450px){
+
+	footer{
+		#wrapperFooter{			
+			
+			#contact{
+				width : 95%;
+				
+				#contactData{
+					a{
+						font-size : 1.9*@font-size;
+					}
+				}
+				
+				a{					
+					img{
+						width : 7rem;
+						height : 7rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 420px){
+    footer{
+        #wrapperFooter{	
+            margin : 3*@margin 0;
+            padding : 0;
+
+            #contact{
+
+                h2{
+                    font-size : 4.2rem;
+                }		
+
+                #contactData{
+                    a{
+                        font-size : 1.6*@font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
