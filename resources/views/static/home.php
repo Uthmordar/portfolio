@@ -43,7 +43,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>
-				<div class="quote">Simplicity is an acquired taste. - Katharine Gerould</div>
+				<div class="quote">Simplicity is the ultimate sophistication. - Leonardo da Vinci</div>
 			</div>
 		</div>
 	</body>
