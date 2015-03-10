@@ -37,14 +37,14 @@
         <div id='wrapperHeader'>
             <div id='logo'>
                 <h1><span class='bold colorWhite'>Tanguy</span> GODIN</h1> 
-                <p>junior web developer</p>
+                <p>back-end web developer</p>
             </div>
             <nav id='menuHeader'>
                 <ul>
                     <li id='menuHeadHome' class='active' >Hello</li>
                     <li id='menuHeadWork'>Works</li>
-                    <li id='menuHeadAbout'>About</li>
-                    <li id='menuHeadContact'>Contact</li>
+                    <li id='menuHeadAbout'>More about me</li>
+                    <li id='menuHeadContact'>Contact me</li>
                 </ul>
             </nav>
         </div>
@@ -59,13 +59,13 @@
                 <!-- HOME/HELLO -->
                 <div id='introSlide'>
                     <div id='intro'>
-                        <h1 class='bold'>WELCOME ON MY WEBSITE</h1>
-                        <p class='bold'>I have studied multiple computer languages, especially for front-end : <strong class='colorRed'>HTML5</strong>, <strong class='colorRed'>CSS3</strong> & <strong class='colorRed'>JQUERY-JAVASCRIPT</strong>. However I prefer <strong class='colorRed'>BACK-END DEVELOPMENT</strong> with <strong class='colorRed'>PHP/MySQL</strong>. I also mastered WORDPRESS and DRUPAL as CMS.</p>
+                        <h1 class='bold'>WELCOME ON MY PORTFOLIO</h1>
+                        <p class='bold'>I have studied multiple computer languages, especially for back-end development : <strong class='colorRed'>PHP object</strong>, <strong class='colorRed'>NodeJS</strong> & <strong class='colorRed'>unit testing</strong>. Moreover I have mastered some frameworks such as <strong class='colorRed'>Laravel 5</strong> and <strong class='colorRed'>Symphony</strong>. I also spent my time in some personnal project, such as developing my own php framework.</p>
                     </div>
                 </div>
                 <div id='learn'>
                     <p>Learn more about me</p>
-                    <div class='fleche'></div>
+                    <!--<div class='fleche'></div>-->
                 </div>
 
                 <!-- WORKS -->
@@ -74,9 +74,9 @@
                     <nav id='menuFilter'>
                         <ul>
                             <li class='active' data-filter='All'>All</li>
-                            <li data-filter='JS'>Jquery/Js</li>
-                            <li data-filter='Algorythm'>Algorythm</li>
-                            <li data-filter='Back'>Back-end management</li>
+                            @foreach($tags as $id=>$name)
+                            <li data-filter="tag-{{$id}}">{{$name}}</li>
+                            @endforeach
                         </ul>
                     </nav>
                     <div class='projectBanner Algorythm JS inactive' id='GoL'>

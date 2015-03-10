@@ -55,7 +55,6 @@ header #wrapperHeader #logo p {
   font-size: 2.2rem;
 }
 header #wrapperHeader #menuHeader {
-  width: 70rem;
   position: fixed;
   left: 35rem;
   top: 2.6rem;
@@ -74,10 +73,22 @@ header #wrapperHeader #menuHeader {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-header #wrapperHeader #menuHeader li {
+header #wrapperHeader #menuHeader ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+header #wrapperHeader #menuHeader ul li {
   min-width: 10.5rem;
   font-size: 3.36rem;
-  display: inline-block;
   border-bottom: 2px solid #9fa1a3;
   margin: 0.4rem;
   padding: 0.2rem;
@@ -85,11 +96,11 @@ header #wrapperHeader #menuHeader li {
   font-weight: 700;
   -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
 }
-header #wrapperHeader #menuHeader li.active {
+header #wrapperHeader #menuHeader ul li.active {
   color: #41836a;
   border-bottom: 3px solid #499478;
 }
-header #wrapperHeader #menuHeader li:hover {
+header #wrapperHeader #menuHeader ul li:hover {
   color: #71b99e;
   border-bottom: 4px solid #82c1aa;
 }
@@ -190,6 +201,18 @@ header #wrapperHeader #menuHeader li:hover {
   position: absolute;
   top: 80rem;
   left: 40%;
+  /*.fleche{
+            background: url(../../images/fleche.png) no-repeat;
+            width: 2.8rem;
+            height: 2.8rem;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover{
+                background: url(../../images/flecheHover.png) no-repeat;
+            }
+        }*/
 }
 #wrapper #learn p {
   margin: 0.5rem 0;
@@ -217,16 +240,14 @@ header #wrapperHeader #menuHeader li:hover {
 #wrapper #learn p:hover {
   color: #93cab5;
 }
-#wrapper #learn .fleche {
+#wrapper #learn p:after {
+  content: '';
   background: url(../../images/fleche.png) no-repeat;
   width: 2.8rem;
   height: 2.8rem;
   display: block;
   margin: 0 auto;
   cursor: pointer;
-}
-#wrapper #learn .fleche:hover {
-  background: url(../../images/flecheHover.png) no-repeat;
 }
 @media (max-width: 1300px) {
   #wrapper #learn {

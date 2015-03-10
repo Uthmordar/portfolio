@@ -53,306 +53,312 @@
 
 
 header{
-	width : 100%;
-	background-color : @color-black;
-	color : @color-grey;
-	height : 8.5rem;
-	position : fixed;
-	z-index : 50;
-	top : 0;
-	left : 0;
-	
-	#wrapperHeader{
-		width : @width-wrapper;
-		max-width : 1900px;
-		margin : 0 auto;
-		padding : @padding;
+    width: 100%;
+    background-color: @color-black;
+    color: @color-grey;
+    height: 8.5rem;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+
+    #wrapperHeader{
+        width: @width-wrapper;
+        max-width: 1900px;
+        margin: 0 auto;
+        padding: @padding;
+
+        //--------------------------------------------------------------------
+        //                                 LOGO
+        //--------------------------------------------------------------------
+
+        #logo{
+            width: 27rem;
+            height: 6rem;
+            margin: 0.5*@margin;
+            padding: @padding;
+            cursor: pointer;
+            float: left;
+            position: relative;
+            z-index: 100;
+            line-height: 3.6rem;
+
+            h1{
+                font-size: 3rem;
+                color: @color-grey;
+                cursor: pointer;
+                font-weight: 700;	
+            }
+
+            p{
+                font-size: 2.2rem;
+            }
+        }
+
+
+        //-----------------------------------------------------------------------
+        //                           NAV PRINC
+        //-----------------------------------------------------------------------
 		
 		
-		//--------------------------------------------------------------------
-		//                                 LOGO
-		//--------------------------------------------------------------------
-		
-		
-		#logo{
-			width : 27rem;
-			height : 6rem;
-			margin : 0.5*@margin;
-			padding : @padding;
-			cursor : pointer;
-			float : left;
-			position : relative;
-			z-index : 100;
-			line-height : 3.6rem;
-			
-			h1{
-				font-size : 3rem;
-				color : @color-grey;
-				cursor : pointer;
-				font-weight : 700;	
-			}
-			
-			p{
-				font-size : 2.2rem;
-			}
-		}
-		
-		
-		//-----------------------------------------------------------------------
-		//                           NAV PRINC
-		//-----------------------------------------------------------------------
-		
-		
-		#menuHeader{
-			width : 70rem;
-			position : fixed;
-			left : 35rem;
-			top : 2.6rem;
-			.transition(all; 1.5s; linear; 0.3s);
-		
-			li{
-				min-width : 10.5rem;
-				font-size : 2.4*@font-size;
-				display : inline-block;
-				border-bottom : 2px solid @color-grey;
-				margin : 0.4*@margin;
-				padding : 0.4*@padding;
-				cursor : pointer;
-				font-weight : 700;
-				-webkit-box-reflect : below -3px 
-				-webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+        #menuHeader{
+            position: fixed;
+            left: 35rem;
+            top: 2.6rem;
+            .transition(all; 1.5s; linear; 0.3s);
+                        
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+
+                li{
+                    min-width: 10.5rem;
+                    font-size: 2.4*@font-size;
+                    border-bottom: 2px solid @color-grey;
+                    margin: 0.4*@margin;
+                    padding: 0.4*@padding;
+                    cursor: pointer;
+                    font-weight: 700;
+                    -webkit-box-reflect: below -3px 
+                    -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+
+                    &.active{
+                        color: lighten(@color-green, 20%);
+                        border-bottom: 3px solid lighten(@color-green, 25%);
+                    }
+
+                    &:hover{
+                        color: lighten(@color-green, 40%);
+                        border-bottom: 4px solid lighten(@color-green, 45%);
+                    }
+                }
+            }
+        }
 				
-				&.active{
-					color : lighten(@color-green, 20%);
-					border-bottom : 3px solid lighten(@color-green, 25%);
-				}
-				
-				&:hover{
-					color : lighten(@color-green, 40%);
-					border-bottom : 4px solid lighten(@color-green, 45%);
-				}
-			}
-		}
-		
-		
-		//----------------------------------------------------------------------------
-		// RESPONSIVE POSITION MENU PRINCIPAL
-		//----------------------------------------------------------------------------
-		
-		
-		@media(max-width : 1279px){
-			#menuHeader{
-				left : 33rem;
-				.transition(all; 0s; ease-out; 0s);
-			}
-		}
-		
-		@media (max-width : 930px){
-			#menuHeader{
-				margin-left : 5%;
-				top : 9rem;
-				left : 0rem;
-				position : fixed;
-				.transition(all; 0s; ease-out; 0s);
-			}	
-		}
-		
-		@media (max-width : 600px){
-			#menuHeader{
-				top : 10rem;
-				width : 35rem;
-			}
-		}
-	}
+        //----------------------------------------------------------------------------
+        // RESPONSIVE POSITION MENU PRINCIPAL
+        //----------------------------------------------------------------------------
+
+        @media(max-width: 1279px){
+            #menuHeader{
+                left: 33rem;
+                .transition(all; 0s; ease-out; 0s);
+            }
+        }
+
+        @media (max-width: 930px){
+            #menuHeader{
+                margin-left: 5%;
+                top: 9rem;
+                left: 0rem;
+                position: fixed;
+                .transition(all; 0s; ease-out; 0s);
+            }	
+        }
+
+        @media (max-width: 600px){
+            #menuHeader{
+                top: 10rem;
+                width: 35rem;
+            }
+        }
+    }
 }
 
 
 //----------------------------------------------------------------------------
-// RESPONSIVE HEADER GENERAL
+//                          RESPONSIVE HEADER GENERAL
 //----------------------------------------------------------------------------
 
-
-@media (max-width : 930px){
-	header{
-		height : 15rem;
-	}
+@media (max-width: 930px){
+    header{
+        height: 15rem;
+    }
 }
 
-@media (max-width : 600px){
-	header{
-		height : 20rem;
-	}
+@media (max-width: 600px){
+    header{
+        height: 20rem;
+    }
 }
-
-
 
 //-------------------------------------------------------------------------------------------------------------------------------
 //
-//                                                    WRAPPER
+//                                      WRAPPER
 //
 //-------------------------------------------------------------------------------------------------------------------------------
-
-
 
 #wrapper{
-	width  : 100%;
-	position : relative;
-	margin : 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+    #fondBase{
+        height: 95rem;
+        background: url(../../images/backgroundHome.png) 0% 0% repeat fixed;
+    }
 	
-	#fondBase{
-		height : 95rem;
-		background : url(../../images/backgroundHome.png) 0% 0% repeat fixed;
-	}
+    //------------------------------------------------------
+    //                          INTRO
+    //------------------------------------------------------
 	
 	
-	//------------------------------------------------------
-	//                          INTRO
-	//------------------------------------------------------
+    #introSlide{
+        background-color: transparent;
+        margin: @margin;
+        position: absolute;
+        top: 20rem;
+        left: 3%;
+        max-width: 90%;
+
+        #intro{
+            color: @color-grey;
+            margin: @margin;
+            padding: 4*@padding;
+            max-width: 100%;
+
+            h1{
+                margin: @margin;
+                padding: @padding;
+            }
+
+            p{
+                font-size: 2.9*@font-size;
+                line-height: 3.3*@font-size;
+                margin: 2*@margin auto;
+                padding: 2*@padding;
+            }
+        }
+    }
+
+    #learn{
+        max-width: 30%;
+        display: block;
+        margin: @margin auto;
+        position: absolute;
+        top: 80rem;
+        left: 40%;
+
+        p{
+            margin: 0.5*@margin 0;
+            padding: 0.5*@padding;
+            width: 100%;
+            font-size: 2.2*@font-size;
+            color: lighten(@color-green, 30%);
+            cursor: pointer;
+            .animation(blink, 2s, infinite, ease-out, alternate);
+
+            &:hover{
+                color: lighten(@color-green, 50%);
+            }
+            
+            &:after{
+                content: '';
+                background: url(../../images/fleche.png) no-repeat;
+                width: 2.8rem;
+                height: 2.8rem;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+
+        /*.fleche{
+            background: url(../../images/fleche.png) no-repeat;
+            width: 2.8rem;
+            height: 2.8rem;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover{
+                background: url(../../images/flecheHover.png) no-repeat;
+            }
+        }*/
+    }
 	
-	
-	#introSlide{
-		background-color : transparent;
-		margin : @margin;
-		position : absolute;
-		top : 20rem;
-		left : 3%;
-		max-width : 90%;
-		
-		#intro{
-			color : @color-grey;
-			margin : @margin;
-			padding : 4*@padding;
-			max-width : 100%;
-			
-			h1{
-				margin : @margin;
-				padding : @padding;
-			}
-			
-			p{
-				font-size : 2.9*@font-size;
-				line-height : 3.3*@font-size;
-				margin : 2*@margin auto;
-				padding : 2*@padding;
-			}
-		}
-	}
-		
-	#learn{
-		max-width : 30%;
-		display : block;
-		margin : @margin auto;
-		position : absolute;
-		top : 80rem;
-		left : 40%;
-		
-		p{
-			margin : 0.5*@margin 0;
-			padding : 0.5*@padding;
-			width : 100%;
-			font-size : 2.2*@font-size;
-			color : lighten(@color-green, 30%);
-			cursor : pointer;
-			.animation(blink, 2s, infinite, ease-out, alternate);
-			
-			&:hover{
-				color : lighten(@color-green, 50%);
-			}
-		}
-		
-		.fleche{
-			background : url(../../images/fleche.png) no-repeat;
-			width : 2.8rem;
-			height : 2.8rem;
-			display : block;
-			margin : 0 auto;
-			cursor : pointer;
-			
-			&:hover{
-				background : url(../../images/flecheHover.png) no-repeat;
-			}
-		}
-	}
-	
-	//--------------------------------------------------------------------
-	// RESPONSIVE LEARN
-	//--------------------------------------------------------------------
-	
-	@media (max-width : 1300px){
-		#learn{
-			max-width : 40%;
-		}
-	}
-	
-	@media (max-width : 1200px){
-		#learn{
-			max-width : 45%;
-		}
-	}
-	
-	@media (max-width : 1100px){
-		#learn{
-			max-width : 50%;
-			left : 35%;
-		}
-	}
-	
-	@media (max-width : 750px){
-		#learn{
-			max-width : 60%;
-			left : 30%;
-			top : 82rem;
-		}
-	}
-	
-	@media (max-width : 650px){
-		#learn{
-			left : 25%;
-		}
-	}
-	
-	@media (max-width : 580px){
-		#learn{
-			max-width : 70%;
-			left : 22%;
-		}
-	}
-	
-	@media (max-width : 520px){
-		#learn{
-			max-width : 90%;
-			left : 15%;
-		}
-	}
-	
-	@media (max-width : 450px){
-		#learn{
-			max-width : 90%;
-			left : 10%;
-			top : 84rem;
-			
-			p{
-				font-size : 2*@font-size;
-			}
-		}
-	}
-	
-	@media (max-width : 380px){
-		#learn{
-			left : 5%;
-		}
-	}
-	
-	@media (max-width : 360px){
-		#learn{
-			left : 3%;
-			
-			p{
-				font-size : 1.8*@font-size;
-				margin : 0.5*@margin;
-			}
-		}
-	}
+    //--------------------------------------------------------------------
+    // RESPONSIVE LEARN
+    //--------------------------------------------------------------------
+
+    @media (max-width: 1300px){
+        #learn{
+            max-width: 40%;
+        }
+    }
+
+    @media (max-width: 1200px){
+        #learn{
+            max-width: 45%;
+        }
+    }
+
+    @media (max-width: 1100px){
+        #learn{
+            max-width: 50%;
+            left: 35%;
+        }
+    }
+
+    @media (max-width: 750px){
+        #learn{
+            max-width: 60%;
+            left: 30%;
+            top: 82rem;
+        }
+    }
+
+    @media (max-width: 650px){
+        #learn{
+            left: 25%;
+        }
+    }
+
+    @media (max-width : 580px){
+        #learn{
+            max-width: 70%;
+            left: 22%;
+        }
+    }
+
+    @media (max-width: 520px){
+        #learn{
+            max-width: 90%;
+            left: 15%;
+        }
+    }
+
+    @media (max-width: 450px){
+        #learn{
+            max-width: 90%;
+            left: 10%;
+            top: 84rem;
+
+            p{
+                font-size: 2*@font-size;
+            }
+        }
+    }
+
+    @media (max-width: 380px){
+        #learn{
+            left: 5%;
+        }
+    }
+
+    @media (max-width: 360px){
+        #learn{
+            left: 3%;
+
+            p{
+                font-size: 1.8*@font-size;
+                margin: 0.5*@margin;
+            }
+        }
+    }
 			
 		
 	//-----------------------------------------------------------------

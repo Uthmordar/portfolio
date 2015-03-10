@@ -1,5 +1,7 @@
 <?php namespace portfolio\Http\Controllers;
 
+use portfolio\Tag;
+
 class HomeController extends Controller {
 
     /*
