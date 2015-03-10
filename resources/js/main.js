@@ -26,48 +26,47 @@
 }());
 //objet de gestion des fonctions liées au scroll pour le parallaxe
 
-var Parallax = Parallax || {
+var Parallax=Parallax || {
 
-	windowScroll : 0,
-	
-	//défilement du background en fonction du scroll
-	parallaxBG : function(elem, yPos, YSpeed){
-		window.requestAnimationFrame(Parallax.parallaxBG);
-		$(elem).css({'background-position' : 0+'px '+(yPos-(Parallax.windowScroll/YSpeed))+'px'});
-	},
+    windowScroll: 0,
 
-	//modification de la hauteur d'un élément selon le scroll
-	parallaxHeight : function(elem, iniHeight, divHeight, soustractHeight, speed){
-		window.requestAnimationFrame(Parallax.parallaxHeight);
-		$(elem).css({'height' : iniHeight+((Parallax.windowScroll/divHeight)-soustractHeight)*speed+'%'});
-	}
-}
+    //défilement du background en fonction du scroll
+    parallaxBG: function(elem, yPos, YSpeed){
+        //window.requestAnimationFrame(Parallax.parallaxBG);
+        $(elem).css({'background-position' : 0+'px '+(yPos-(Parallax.windowScroll/YSpeed))+'px'});
+    },
+
+    //modification de la hauteur d'un élément selon le scroll
+    parallaxHeight : function(elem, iniHeight, divHeight, soustractHeight, speed){
+        //window.requestAnimationFrame(Parallax.parallaxHeight);
+        $(elem).css({'height' : iniHeight+((Parallax.windowScroll/divHeight)-soustractHeight)*speed+'%'});
+    }
+};
 //------------------------------------------------------
 // FUNCTIONS
 //-------------------------------------------------------
 		
 //Scroll vers un élément donné
 function scroll($scrollTo, $ajust){
-	$('html, body').animate({
-		scrollTop:($($scrollTo).offset().top)-($('header').height()+$ajust)
-	}, 2000);
+    $('html, body').animate({
+        scrollTop:($($scrollTo).offset().top)-($('header').height()+$ajust)
+    }, 2000);
 };
 
 //remplissage des champs data de #about
 function dataFill($dataField){
-	var fill=$($dataField).attr('data-percent');
-	$($dataField).children('.remplData').css('width', fill+'%');
+    var fill=$($dataField).attr('data-percent');
+    $($dataField).children('.remplData').css('width', fill+'%');
 }
 
 //remise à 0 des champs data
 function dataUnfill($dataField){
-	$($dataField).children('.remplData').css('width', 0+'%');
+    $($dataField).children('.remplData').css('width', 0+'%');
 }
 
 //contrôle du déplacement du menuHeader
 function transitionMenuHeader(elem, prop, mvt){
-	window.requestAnimationFrame(transitionMenuHeader);
-	$(elem).css(prop, mvt+'px');
+    $(elem).css(prop, mvt+'px');
 }
 
 //Positionnement des lightbox
@@ -126,7 +125,7 @@ function create_lightbox($this){
 $(function(){
 
 	//Prétraitement du formulaire lors de l'arrivée sur la page/envoi du mail, mise en mémoire des éléments en cas de problème PHP
-	if(localStorage['mail']!=null){
+	/*if(localStorage['mail']!=null){
 		scroll('#wrapperFooter', 0);
 		localStorage.removeItem('mail');
 	}
@@ -160,16 +159,11 @@ $(function(){
 			$('#flashMessage').html('email incorrect').slideDown().delay(5000).slideUp();
 			return false;
 		}
-	});
+	});*/
 });
 $(function(){
     //définition des variables pour le parallaxe.
-    var $this, filter, projet;
-    $window=$(window);
-    $about=$('#about');
-    $worksSlide=$('#worksSlide');
-    $footer=$('footer');
-    worksBaseHeight=$worksSlide.height();
+    var $this, filter, projet, $window=$(window), $about=$('#about'), $worksSlide=$('#worksSlide'), $footer=$('footer'), worksBaseHeight=$worksSlide.height();
 
 //--------------------------------------------------------------------------
 //                              LIGHTBOX
@@ -187,7 +181,7 @@ $(function(){
 //------------------------------------------------------------------------------
 	
     //--------------------------------
-    // 	HEADER
+    //          HEADER
     //--------------------------------
 
 
@@ -204,6 +198,7 @@ $(function(){
     var $skillsTitle=$('#skills h2');
     if( !window.matchMedia("(max-width: 1280px)").matches){
         var X=($skillsTitle.offset().left);
+        X=(X>1100)? 1100 : X;
         transitionMenuHeader('#menuHeader', 'left', X);
     }
 
@@ -259,7 +254,7 @@ $(function(){
     $('#menuFilter li').on('click', function(e){
         e.preventDefault();
         $this=$(this);
-        if($this.hasClass('active')==false){
+        if($this.hasClass('active')===false){
             $('#menuFilter li').removeClass('active');
             $this.addClass('active');
 
@@ -279,22 +274,12 @@ $(function(){
         }
     });
 
-    // EFFET DE VOILE SUR LES PROJETS
-    $('.projectBanner').on('mouseover', function(e){
-        e.preventDefault;
-        $this=$(this);
-        $this.children('.veil').css('opacity', 0.25);
-        $this.on('mouseleave', function(){
-            $(this).children('.veil').css('opacity', 0.9);
-        });
-    });
-
 //--------------------------------------------------------
 // GESTION DU PARALLAXE
 //--------------------------------------------------------
 	
 	//�couteur d'�v�nement li� au scroll pour d�finir l'application ou non des parallaxes
-	/*$window.on('scroll', function(e){
+	$window.on('scroll', function(e){
 		e.preventDefault();
 		//rafraichissement de la position du scroll
 		//Floor pour limiter les probl�mes de lag sur chrome
@@ -303,14 +288,14 @@ $(function(){
 		//PARALLAXE MOBILE RES<460PX
 		if(window.matchMedia("(max-width: 460px)").matches){
 			if(Parallax.windowScroll>$about.offset().top-100 && Parallax.windowScroll<2800){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1500 || Parallax.windowScroll>3900){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -332,14 +317,14 @@ $(function(){
 			}
 			
 			if(Parallax.windowScroll>$about.offset().top-100 && Parallax.windowScroll<2700){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1500 || Parallax.windowScroll>3600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -353,7 +338,7 @@ $(function(){
 			if(Parallax.windowScroll>500 && Parallax.windowScroll<3300){
 				Parallax.parallaxBG('#fondAbout', 75, 0.1);
 				var vitesse=(worksBaseHeight/($worksSlide.height()));
-				Parallax.parallaxHeight('#fondAbout', 0, 20, 59, vitesse);
+				Parallax.parallaxHeight('#fondAbout', 0, 20, 65, vitesse);
 			}
 			
 			if(Parallax.windowScroll>500 && Parallax.windowScroll<1800){
@@ -361,14 +346,14 @@ $(function(){
 			}
 			
 			if(Parallax.windowScroll>$about.offset().top-200 && Parallax.windowScroll<2600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1300 || Parallax.windowScroll>2600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -389,6 +374,6 @@ $(function(){
 			$menuHeaderLi.removeClass('active');
 			$('#menuHeadHome').addClass('active');
 		}
-	});*/
+	});
 });
 //# sourceMappingURL=main.js.map

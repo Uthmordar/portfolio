@@ -65,9 +65,15 @@ li {
   -o-hyphens: auto;
   hyphens: auto;
 }
-a {
+a:not(.show) {
   text-decoration: none;
   color: inherit;
+}
+a.show {
+  color: inherit;
+}
+a.show:hover {
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -90,7 +96,8 @@ ul {
   color: #41836a;
   font-size: 1.82rem;
 }
-.colorRed {
+.colorRed,
+a.colorRed {
   color: #9c4c61;
 }
 .colorWhite {

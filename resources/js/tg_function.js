@@ -4,26 +4,25 @@
 		
 //Scroll vers un élément donné
 function scroll($scrollTo, $ajust){
-	$('html, body').animate({
-		scrollTop:($($scrollTo).offset().top)-($('header').height()+$ajust)
-	}, 2000);
+    $('html, body').animate({
+        scrollTop:($($scrollTo).offset().top)-($('header').height()+$ajust)
+    }, 2000);
 };
 
 //remplissage des champs data de #about
 function dataFill($dataField){
-	var fill=$($dataField).attr('data-percent');
-	$($dataField).children('.remplData').css('width', fill+'%');
+    var fill=$($dataField).attr('data-percent');
+    $($dataField).children('.remplData').css('width', fill+'%');
 }
 
 //remise à 0 des champs data
 function dataUnfill($dataField){
-	$($dataField).children('.remplData').css('width', 0+'%');
+    $($dataField).children('.remplData').css('width', 0+'%');
 }
 
 //contrôle du déplacement du menuHeader
 function transitionMenuHeader(elem, prop, mvt){
-	window.requestAnimationFrame(transitionMenuHeader);
-	$(elem).css(prop, mvt+'px');
+    $(elem).css(prop, mvt+'px');
 }
 
 //Positionnement des lightbox

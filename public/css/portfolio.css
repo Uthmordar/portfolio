@@ -225,9 +225,15 @@ li {
   -o-hyphens: auto;
   hyphens: auto;
 }
-a {
+a:not(.show) {
   text-decoration: none;
   color: inherit;
+}
+a.show {
+  color: inherit;
+}
+a.show:hover {
+  text-decoration: none;
 }
 ul {
   list-style: none;
@@ -250,7 +256,8 @@ ul {
   color: #41836a;
   font-size: 1.82rem;
 }
-.colorRed {
+.colorRed,
+a.colorRed {
   color: #9c4c61;
 }
 .colorWhite {
@@ -300,23 +307,22 @@ header #wrapperHeader #logo {
   margin: 0.5rem;
   padding: 0.5rem;
   cursor: pointer;
-  float: left;
-  position: relative;
-  z-index: 100;
   line-height: 3.6rem;
 }
 header #wrapperHeader #logo h1 {
   font-size: 3rem;
   color: #9fa1a3;
-  cursor: pointer;
   font-weight: 700;
+  margin: 0;
 }
 header #wrapperHeader #logo p {
   font-size: 2.2rem;
+  margin: 0;
+  max-width: none;
 }
 header #wrapperHeader #menuHeader {
   position: fixed;
-  left: 35rem;
+  left: 39rem;
   top: 2.6rem;
   transition: all 1.5s;
   transition-timing-function: linear;
@@ -358,7 +364,7 @@ header #wrapperHeader #menuHeader ul li {
 }
 header #wrapperHeader #menuHeader ul li.active {
   color: #41836a;
-  border-bottom: 3px solid #499478;
+  border-bottom: 2px solid #499478;
 }
 header #wrapperHeader #menuHeader ul li:hover {
   color: #71b99e;
@@ -461,18 +467,6 @@ header #wrapperHeader #menuHeader ul li:hover {
   position: absolute;
   top: 80rem;
   left: 40%;
-  /*.fleche{
-            background: url(../../images/fleche.png) no-repeat;
-            width: 2.8rem;
-            height: 2.8rem;
-            display: block;
-            margin: 0 auto;
-            cursor: pointer;
-
-            &:hover{
-                background: url(../../images/flecheHover.png) no-repeat;
-            }
-        }*/
 }
 #wrapper #learn p {
   margin: 0.5rem 0;
@@ -500,13 +494,16 @@ header #wrapperHeader #menuHeader ul li:hover {
 #wrapper #learn p:hover {
   color: #93cab5;
 }
+#wrapper #learn p:hover:after {
+  background: url(../../images/flecheHover.png) no-repeat;
+}
 #wrapper #learn p:after {
   content: '';
   background: url(../../images/fleche.png) no-repeat;
   width: 2.8rem;
   height: 2.8rem;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   cursor: pointer;
 }
 @media (max-width: 1300px) {
@@ -776,6 +773,9 @@ header #wrapperHeader #menuHeader ul li:hover {
 #wrapper #worksSlide .projectBanner:hover {
   border: 6px solid #41836a;
 }
+#wrapper #worksSlide .projectBanner:hover .veil {
+  opacity: 0.25;
+}
 #wrapper #worksSlide .projectBanner .com {
   position: absolute;
   top: 0;
@@ -857,130 +857,130 @@ header #wrapperHeader #menuHeader ul li:hover {
 }
 #wrapper #about {
   width: 100%;
-  height: 170rem;
   background: transparent;
   position: relative;
   z-index: 0;
   background-color: #070A0E;
 }
 #wrapper #about #fondAbout {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 0%;
+  width: 100%;
   background: url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
   max-height: 100%;
 }
 #wrapper #about #aboutPos {
   width: 90%;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
+  padding: 0.5rem;
 }
-#wrapper #about #aboutPos #aboutWrap {
-  position: absolute;
-  height: 100%;
-  width: 90%;
-  margin: 0;
-  top: 0;
+#wrapper #about #aboutPos .flex_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox {
-  margin: 1rem 0;
-  position: absolute;
+#wrapper #about #aboutPos .aboutBox {
+  margin: 1rem 0 0;
   color: #9fa1a3;
   padding: 2rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox h2 {
+#wrapper #about #aboutPos .aboutBox h2 {
   color: #edeeee;
   margin: 1rem 0;
   padding: 0.5rem 0;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox h3 {
+#wrapper #about #aboutPos .aboutBox h3 {
   color: #c6c7c8;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox p {
+#wrapper #about #aboutPos .aboutBox p {
   width: 100%;
   font-size: 2.66rem;
   line-height: 2.94rem;
   margin: 1rem 0;
   padding: 0.5rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox p[class='decal'] {
+#wrapper #about #aboutPos .aboutBox p[class='decal'] {
   padding-left: 1.4rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox > ul {
+#wrapper #about #aboutPos .aboutBox > ul {
   margin: 2rem 0;
   font-size: 3.22rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li {
+#wrapper #about #aboutPos .aboutBox > ul > li {
   font-size: 2.66rem;
   line-height: 3.22rem;
   margin: 1rem;
   padding: 0.25rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li > ul {
-  margin-left: 3rem;
+#wrapper #about #aboutPos .aboutBox > ul > li > ul {
+  margin-left: 1rem;
 }
-#wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li > ul > li {
+#wrapper #about #aboutPos .aboutBox > ul > li > ul > li {
   font-size: 2.52rem;
   line-height: 3.22rem;
   margin: 0.4rem;
   padding: 0.2rem;
 }
-#wrapper #about #aboutPos #aboutWrap #pdf {
-  top: 2%;
-  left: 0;
+#wrapper #about #aboutPos #pdf {
   width: 98%;
   padding-left: 0.5rem;
   position: relative;
 }
-#wrapper #about #aboutPos #aboutWrap #pdf a {
+#wrapper #about #aboutPos #pdf a {
   font-size: 4.2rem;
   margin: 0 0.5rem;
   padding: 1rem;
   background-color: #1f3f33;
 }
-#wrapper #about #aboutPos #aboutWrap #pdf a img {
+#wrapper #about #aboutPos #pdf a img {
   margin-bottom: 0.6rem;
 }
-#wrapper #about #aboutPos #aboutWrap #pdf a:hover {
+#wrapper #about #aboutPos #pdf a:hover {
   background-color: #71b99e;
   color: #0d1218;
 }
 @media (max-width: 580px) {
-  #wrapper #about #aboutPos #aboutWrap #pdf {
+  #wrapper #about #aboutPos #pdf {
     padding: 0.25rem;
   }
-  #wrapper #about #aboutPos #aboutWrap #pdf a {
+  #wrapper #about #aboutPos #pdf a {
     font-size: 3.5rem;
     padding: 0.75rem;
   }
 }
 @media (max-width: 480px) {
-  #wrapper #about #aboutPos #aboutWrap #pdf {
+  #wrapper #about #aboutPos #pdf {
     padding: 0.25rem;
   }
-  #wrapper #about #aboutPos #aboutWrap #pdf a {
+  #wrapper #about #aboutPos #pdf a {
     font-size: 3.08rem;
     padding: 0.75rem;
   }
 }
 @media (max-width: 480px) {
-  #wrapper #about #aboutPos #aboutWrap #pdf a .lowRes {
+  #wrapper #about #aboutPos #pdf a .lowRes {
     display: none;
   }
 }
-#wrapper #about #aboutPos #aboutWrap #me {
-  top: 7%;
-  left: 0;
-  padding-left: 0.5rem;
+#wrapper #about #aboutPos #skills {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
-#wrapper #about #aboutPos #aboutWrap #skills {
-  top: 7%;
-  right: 1%;
-  padding-right: 5.5rem;
-}
-#wrapper #about #aboutPos #aboutWrap #skills ul {
+#wrapper #about #aboutPos #skills ul {
   margin-left: 1.3rem;
 }
-#wrapper #about #aboutPos #aboutWrap #skills .data {
+#wrapper #about #aboutPos #skills .data {
   display: inline-block;
   width: 7rem;
   margin: 0 0.8rem;
@@ -988,7 +988,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   border: 2px solid #0d1218;
   position: relative;
 }
-#wrapper #about #aboutPos #aboutWrap #skills .data .remplData {
+#wrapper #about #aboutPos #skills .data .remplData {
   position: absolute;
   width: 0%;
   height: 100%;
@@ -1008,59 +1008,19 @@ header #wrapperHeader #menuHeader ul li:hover {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-#wrapper #about #aboutPos #aboutWrap #exp {
-  top: 27%;
-  left: 0;
-  padding-left: 0.5rem;
-}
-#wrapper #about #aboutPos #aboutWrap #exp > ul > li {
+#wrapper #about #aboutPos #exp > ul > li {
   margin: 1rem 0;
 }
-#wrapper #about #aboutPos #aboutWrap #educ {
-  top: 55%;
-  right: 1%;
-  padding-right: 5.5rem;
-}
-#wrapper #about #aboutPos #aboutWrap #educ > ul > li {
+#wrapper #about #aboutPos #educ > ul > li {
   margin: 1rem 0;
 }
-#wrapper #about #aboutPos #aboutWrap #misc {
-  top: 71%;
-  left: 0;
-  padding-left: 0.5rem;
+#wrapper #about #aboutPos #misc {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
-#wrapper #about #aboutPos #aboutWrap #misc > ul > li {
+#wrapper #about #aboutPos #misc > ul > li {
   margin: 1rem 0;
-}
-#wrapper #about #aboutPos .boxLeft {
-  width: 35%;
-}
-#wrapper #about #aboutPos .boxRight {
-  width: 34%;
-}
-@media (max-width: 1650px) {
-  #wrapper #about #aboutPos .boxLeft {
-    width: 45%;
-  }
-  #wrapper #about #aboutPos .boxRight {
-    width: 39%;
-  }
-}
-@media (max-width: 1400px) {
-  #wrapper #about #aboutPos .boxLeft {
-    width: 50%;
-  }
-  #wrapper #about #aboutPos .boxRight {
-    width: 43%;
-  }
-}
-@media (max-width: 1300px) {
-  #wrapper #about #aboutPos .boxLeft {
-    width: 49.5%;
-  }
-  #wrapper #about #aboutPos .boxRight {
-    width: 43.5%;
-  }
 }
 footer {
   background-color: #0d1218;
@@ -1132,7 +1092,7 @@ footer #wrapperFooter #contactForm input[type="text"],
 footer #wrapperFooter #contactForm input[type="email"] {
   width: 55%;
   min-width: 27rem;
-  font-family: 'Quicksand', sans-serif;
+  font-famil: 'Quicksand', sans-serif;
   padding-left: 0.5rem;
   margin: 0;
   font-size: 2.24rem;
@@ -1141,21 +1101,17 @@ footer #wrapperFooter #contactForm input[type="email"] {
   border: 1px solid #0d1218;
 }
 footer #wrapperFooter #contactForm ::-webkit-input-placeholder {
-  /* WebKit browsers */
   color: #435c7a;
 }
 footer #wrapperFooter #contactForm :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #435c7a;
   opacity: 1;
 }
 footer #wrapperFooter #contactForm ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #435c7a;
   opacity: 1;
 }
 footer #wrapperFooter #contactForm :-ms-input-placeholder {
-  /* Internet Explorer 10+ */
   color: #435c7a;
 }
 footer #wrapperFooter #contactForm .form_name:focus,

@@ -1,11 +1,6 @@
 $(function(){
     //définition des variables pour le parallaxe.
-    var $this, filter, projet;
-    $window=$(window);
-    $about=$('#about');
-    $worksSlide=$('#worksSlide');
-    $footer=$('footer');
-    worksBaseHeight=$worksSlide.height();
+    var $this, filter, projet, $window=$(window), $about=$('#about'), $worksSlide=$('#worksSlide'), $footer=$('footer'), worksBaseHeight=$worksSlide.height();
 
 //--------------------------------------------------------------------------
 //                              LIGHTBOX
@@ -23,7 +18,7 @@ $(function(){
 //------------------------------------------------------------------------------
 	
     //--------------------------------
-    // 	HEADER
+    //          HEADER
     //--------------------------------
 
 
@@ -40,6 +35,7 @@ $(function(){
     var $skillsTitle=$('#skills h2');
     if( !window.matchMedia("(max-width: 1280px)").matches){
         var X=($skillsTitle.offset().left);
+        X=(X>1100)? 1100 : X;
         transitionMenuHeader('#menuHeader', 'left', X);
     }
 
@@ -95,7 +91,7 @@ $(function(){
     $('#menuFilter li').on('click', function(e){
         e.preventDefault();
         $this=$(this);
-        if($this.hasClass('active')==false){
+        if($this.hasClass('active')===false){
             $('#menuFilter li').removeClass('active');
             $this.addClass('active');
 
@@ -115,22 +111,12 @@ $(function(){
         }
     });
 
-    // EFFET DE VOILE SUR LES PROJETS
-    $('.projectBanner').on('mouseover', function(e){
-        e.preventDefault;
-        $this=$(this);
-        $this.children('.veil').css('opacity', 0.25);
-        $this.on('mouseleave', function(){
-            $(this).children('.veil').css('opacity', 0.9);
-        });
-    });
-
 //--------------------------------------------------------
 // GESTION DU PARALLAXE
 //--------------------------------------------------------
 	
 	//�couteur d'�v�nement li� au scroll pour d�finir l'application ou non des parallaxes
-	/*$window.on('scroll', function(e){
+	$window.on('scroll', function(e){
 		e.preventDefault();
 		//rafraichissement de la position du scroll
 		//Floor pour limiter les probl�mes de lag sur chrome
@@ -139,14 +125,14 @@ $(function(){
 		//PARALLAXE MOBILE RES<460PX
 		if(window.matchMedia("(max-width: 460px)").matches){
 			if(Parallax.windowScroll>$about.offset().top-100 && Parallax.windowScroll<2800){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1500 || Parallax.windowScroll>3900){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -168,14 +154,14 @@ $(function(){
 			}
 			
 			if(Parallax.windowScroll>$about.offset().top-100 && Parallax.windowScroll<2700){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1500 || Parallax.windowScroll>3600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -189,7 +175,7 @@ $(function(){
 			if(Parallax.windowScroll>500 && Parallax.windowScroll<3300){
 				Parallax.parallaxBG('#fondAbout', 75, 0.1);
 				var vitesse=(worksBaseHeight/($worksSlide.height()));
-				Parallax.parallaxHeight('#fondAbout', 0, 20, 59, vitesse);
+				Parallax.parallaxHeight('#fondAbout', 0, 20, 65, vitesse);
 			}
 			
 			if(Parallax.windowScroll>500 && Parallax.windowScroll<1800){
@@ -197,14 +183,14 @@ $(function(){
 			}
 			
 			if(Parallax.windowScroll>$about.offset().top-200 && Parallax.windowScroll<2600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataFill(tabData[i]);
 				}
 			}
 			
 			if(Parallax.windowScroll<1300 || Parallax.windowScroll>2600){
-				var tabData=$('#skills #web .data');
+				var tabData=$('#skills .web .data');
 				for(var i=0; i<tabData.length; i++){
 					dataUnfill(tabData[i]);
 				}
@@ -225,5 +211,5 @@ $(function(){
 			$menuHeaderLi.removeClass('active');
 			$('#menuHeadHome').addClass('active');
 		}
-	});*/
+	});
 });

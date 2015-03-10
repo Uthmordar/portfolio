@@ -104,9 +104,16 @@ li{
 }
 
 
-a{
-	text-decoration : none;
-	color : inherit;
+a:not(.show){
+    text-decoration : none;
+    color : inherit;
+}
+a.show{
+    color: inherit;
+    
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 ul{
@@ -135,7 +142,7 @@ ul{
 	font-size : 1.3*@font-size;
 }
 
-.colorRed{
+.colorRed, a.colorRed{
 	color : lighten(@color-red, 30%);
 }
 
