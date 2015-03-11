@@ -285,7 +285,7 @@ a.color_red {
     color: #71b99e;
   }
 }
-header {
+#header {
   width: 100%;
   background-color: #0d1218;
   color: #9fa1a3;
@@ -295,13 +295,13 @@ header {
   top: 0;
   left: 0;
 }
-header #wrapper_header {
+#header #wrapper_header {
   width: 90%;
   max-width: 1900px;
   margin: 0 auto;
   padding: 0.5rem;
 }
-header #wrapper_header #logo {
+#header #wrapper_header #logo {
   width: 27rem;
   height: 6rem;
   margin: 0.5rem;
@@ -309,18 +309,18 @@ header #wrapper_header #logo {
   cursor: pointer;
   line-height: 3.6rem;
 }
-header #wrapper_header #logo h1 {
+#header #wrapper_header #logo h1 {
   font-size: 3rem;
   color: #9fa1a3;
   font-weight: 700;
   margin: 0;
 }
-header #wrapper_header #logo p {
+#header #wrapper_header #logo p {
   font-size: 2.2rem;
   margin: 0;
   max-width: none;
 }
-header #wrapper_header #menu_header {
+#header #wrapper_header #menu_header {
   position: fixed;
   left: 39rem;
   top: 2.6rem;
@@ -339,7 +339,7 @@ header #wrapper_header #menu_header {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-header #wrapper_header #menu_header ul {
+#header #wrapper_header #menu_header ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +352,7 @@ header #wrapper_header #menu_header ul {
   margin: 0;
   padding: 0;
 }
-header #wrapper_header #menu_header ul li {
+#header #wrapper_header #menu_header ul li {
   min-width: 10.5rem;
   font-size: 3.36rem;
   border-bottom: 2px solid #9fa1a3;
@@ -362,16 +362,16 @@ header #wrapper_header #menu_header ul li {
   font-weight: 700;
   -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
 }
-header #wrapper_header #menu_header ul li.active {
+#header #wrapper_header #menu_header ul li.active {
   color: #41836a;
   border-bottom: 2px solid #499478;
 }
-header #wrapper_header #menu_header ul li:hover {
+#header #wrapper_header #menu_header ul li:hover {
   color: #71b99e;
   border-bottom: 4px solid #82c1aa;
 }
 @media (max-width: 1279px) {
-  header #wrapper_header #menu_header {
+  #header #wrapper_header #menu_header {
     left: 33rem;
     transition: all 0s;
     transition-timing-function: ease-out;
@@ -390,7 +390,7 @@ header #wrapper_header #menu_header ul li:hover {
   }
 }
 @media (max-width: 930px) {
-  header #wrapper_header #menu_header {
+  #header #wrapper_header #menu_header {
     margin-left: 5%;
     top: 9rem;
     left: 0rem;
@@ -412,7 +412,7 @@ header #wrapper_header #menu_header ul li:hover {
   }
 }
 @media (max-width: 600px) {
-  header #wrapper_header #menu_header {
+  #header #wrapper_header #menu_header {
     top: 10rem;
     width: 35rem;
   }
@@ -1034,14 +1034,14 @@ header #wrapper_header #menu_header ul li:hover {
 #wrapper #about #about_pos #misc > ul > li {
   margin: 1rem 0;
 }
-footer {
+#footer {
   background-color: #0d1218;
   padding: 0.5rem;
   min-height: 53rem;
   position: relative;
   z-index: 1;
 }
-footer #wrapper_footer {
+#footer #wrapper_footer {
   width: 90%;
   margin: 3rem auto;
   display: -webkit-flex;
@@ -1055,27 +1055,27 @@ footer #wrapper_footer {
           justify-content: space-around;
   position: relative;
 }
-footer #wrapper_footer #contact {
+#footer #wrapper_footer #contact {
   width: 38%;
   color: #9fa1a3;
 }
-footer #wrapper_footer #contact h2 {
+#footer #wrapper_footer #contact h2 {
   font-size: 4.8rem;
   line-height: 5.2rem;
 }
-footer #wrapper_footer #contact p {
+#footer #wrapper_footer #contact p {
   max-width: 90%;
   line-height: 3.64rem;
   margin: 0.5rem 0;
 }
-footer #wrapper_footer #contact ul li {
+#footer #wrapper_footer #contact ul li {
   font-size: 2.94rem;
   line-height: 3.36rem;
 }
-footer #wrapper_footer #contact #soc {
+#footer #wrapper_footer #contact #soc {
   margin: 1rem 0;
 }
-footer #wrapper_footer #contact #soc li {
+#footer #wrapper_footer #contact #soc li {
   margin-right: 0.5rem;
   display: inline-block;
   opacity: 0.5;
@@ -1094,28 +1094,28 @@ footer #wrapper_footer #contact #soc li {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-footer #wrapper_footer #contact #soc li:hover {
+#footer #wrapper_footer #contact #soc li:hover {
   opacity: 1;
 }
-footer #wrapper_footer #contact a:hover {
+#footer #wrapper_footer #contact a:hover {
   color: #bd788a;
 }
-footer #wrapper_footer #contact a img {
+#footer #wrapper_footer #contact a img {
   width: 5rem;
   height: 5rem;
 }
-footer #wrapper_footer #contact_form {
+#footer #wrapper_footer #contact_form {
   min-width: 38%;
 }
-footer #wrapper_footer #contact_form label {
+#footer #wrapper_footer #contact_form label {
   display: block;
   font-size: 3.08rem;
   color: #9fa1a3;
   margin: 0.5rem 0;
   cursor: pointer;
 }
-footer #wrapper_footer #contact_form input[type="text"],
-footer #wrapper_footer #contact_form input[type="email"] {
+#footer #wrapper_footer #contact_form input[type="text"],
+#footer #wrapper_footer #contact_form input[type="email"] {
   width: 55%;
   min-width: 27rem;
   font-famil: 'Quicksand', sans-serif;
@@ -1126,26 +1126,26 @@ footer #wrapper_footer #contact_form input[type="email"] {
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-footer #wrapper_footer #contact_form ::-webkit-input-placeholder {
+#footer #wrapper_footer #contact_form ::-webkit-input-placeholder {
   color: #435c7a;
 }
-footer #wrapper_footer #contact_form :-moz-placeholder {
-  color: #435c7a;
-  opacity: 1;
-}
-footer #wrapper_footer #contact_form ::-moz-placeholder {
+#footer #wrapper_footer #contact_form :-moz-placeholder {
   color: #435c7a;
   opacity: 1;
 }
-footer #wrapper_footer #contact_form :-ms-input-placeholder {
+#footer #wrapper_footer #contact_form ::-moz-placeholder {
+  color: #435c7a;
+  opacity: 1;
+}
+#footer #wrapper_footer #contact_form :-ms-input-placeholder {
   color: #435c7a;
 }
-footer #wrapper_footer #contact_form .form_name:focus,
-footer #wrapper_footer #contact_form .form_mail:focus,
-footer #wrapper_footer #contact_form textarea:focus {
+#footer #wrapper_footer #contact_form .form_name:focus,
+#footer #wrapper_footer #contact_form .form_mail:focus,
+#footer #wrapper_footer #contact_form textarea:focus {
   outline: 3.5px solid #fafafa;
 }
-footer #wrapper_footer #contact_form .form_message {
+#footer #wrapper_footer #contact_form .form_message {
   height: 20rem;
   width: 80%;
   min-width: 38rem;
@@ -1158,7 +1158,7 @@ footer #wrapper_footer #contact_form .form_message {
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-footer #wrapper_footer #contact_form input[type='submit'] {
+#footer #wrapper_footer #contact_form input[type='submit'] {
   display: block;
   width: 15%;
   min-width: 10rem;
@@ -1168,30 +1168,30 @@ footer #wrapper_footer #contact_form input[type='submit'] {
   background-color: #1f3f33;
   border: none;
 }
-footer #wrapper_footer #contact_form input[type='submit']:hover {
+#footer #wrapper_footer #contact_form input[type='submit']:hover {
   background-color: #71b99e;
   cursor: pointer;
   color: #0d1218;
 }
 @media (max-width: 1650px) {
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     width: 43.5%;
   }
 }
 @media (max-width: 1400px) {
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     width: 47.5%;
   }
 }
 @media (max-width: 1300px) {
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     width: 48.5%;
   }
 }
-footer .legal {
+#footer .legal {
   width: 100%;
 }
-footer .legal p {
+#footer .legal p {
   margin: 0 auto;
   text-align: center;
   font-size: 1.2rem;
@@ -1324,22 +1324,19 @@ footer .legal p {
   }
 }
 @media (max-width: 1280px) {
-  footer {
-    height: 90rem;
-  }
-  footer #wrapper_footer #contact {
+  #footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     width: 90%;
     min-width: 50rem;
   }
 }
 @media (max-width: 560px) {
-  footer #wrapper_footer #contact {
+  #footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     width: 90%;
     min-width: 45rem;
     position: absolute;
@@ -1348,25 +1345,21 @@ footer .legal p {
   }
 }
 @media (max-width: 500px) {
-  footer {
-    min-height: 15rem;
-    height: inherit;
-  }
-  footer #wrapper_footer #contact {
+  #footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  footer #wrapper_footer #contact {
+  #footer #wrapper_footer #contact {
     width: 95%;
   }
-  footer #wrapper_footer #contact #contact_data a {
+  #footer #wrapper_footer #contact #contact_data a {
     font-size: 2.66rem;
   }
-  footer #wrapper_footer #contact a img {
+  #footer #wrapper_footer #contact a img {
     width: 7rem;
     height: 7rem;
   }
