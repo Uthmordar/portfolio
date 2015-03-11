@@ -143,13 +143,11 @@
         },
         bindEventsModal: function(){
             $cross.on('click', function(){
-                $lightbox.remove();
-                $modal.remove();
+                self.destroyLightbox();
             });
 
             $modal.on('click', function(){
-                $lightbox.remove();
-                $modal.remove();
+                self.destroyLightbox();
             });
         },
         dataFill: function($field){
@@ -170,8 +168,14 @@
             $lightbox=$('<div class="lightbox">'+intro+text+'</div>').appendTo('body');
             $cross=$('<div class="cross"></div>').appendTo($lightbox);
 
+            $wrapper.addClass('blur');
             self.positionLightbox();
             self.bindEventsModal();
+        },
+        destroyLightbox: function(){
+            $wrapper.removeClass('blur');
+            $lightbox.remove();
+            $modal.remove();
         },
         positionLightbox: function(){
             top=($window.innerHeight()-$lightbox.height())*0.5;

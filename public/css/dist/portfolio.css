@@ -155,6 +155,7 @@ p{font-size:2.38rem;width:60ex;line-height:2.8rem}
 .success_form{color:#41836a;font-size:1.82rem}
 .color_red,a.color_red{color:#9c4c61}
 .color_white{color:#FFF}
+.blur{-webkit-filter:blur(5px);-ms-filter:blur(5px);-moz-filter:blur(5px);filter:blur(5px)}
 @keyframes blink{from{color:#30614f;opacity:.6}
 to{opacity:1;color:#71b99e}}
 @-webkit-keyframes blink{from{color:#30614f;opacity:.6}
