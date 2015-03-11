@@ -88,19 +88,19 @@ ul {
   font-style: italic;
 }
 .error,
-.errorForm {
+.error_form {
   color: crimson;
   font-size: 1.82rem;
 }
-.successForm {
+.success_form {
   color: #41836a;
   font-size: 1.82rem;
 }
-.colorRed,
-a.colorRed {
+.color_red,
+a.color_red {
   color: #9c4c61;
 }
-.colorWhite {
+.color_white {
   color: #FFF;
 }
 

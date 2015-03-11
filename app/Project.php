@@ -44,6 +44,15 @@ class Project extends Model{
     }
     
     /**
+     * return project with status publish
+     * @param type $query
+     * @return type
+     */
+    public function scopeIsPublish($query){
+        return $query->where('status', '=', 'publish');
+    }
+    
+    /**
      * insert project
      * @param type $project
      * @param type $input

@@ -1,6 +1,7 @@
 <?php namespace portfolio\Http\Controllers;
 
 use portfolio\Tag;
+use portfolio\Project;
 
 class HomeController extends Controller {
 
@@ -24,11 +25,9 @@ class HomeController extends Controller {
      * @return Response
      */
     public function index(){
-        $tags=[];
-        foreach(Tag::all() as $tag){
-            $tags[$tag->id]=$tag->name;
-        }
-        return view('welcome', compact('tags'));
+        $tags=Tag::all();
+        $projects=Project::isPublish()->get();
+        return view('welcome', compact('tags', 'projects'));
     }
     
     public function staticIndex(){

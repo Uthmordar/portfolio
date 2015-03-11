@@ -28,13 +28,13 @@ header {
   top: 0;
   left: 0;
 }
-header #wrapperHeader {
+header #wrapper_header {
   width: 90%;
   max-width: 1900px;
   margin: 0 auto;
   padding: 0.5rem;
 }
-header #wrapperHeader #logo {
+header #wrapper_header #logo {
   width: 27rem;
   height: 6rem;
   margin: 0.5rem;
@@ -42,18 +42,18 @@ header #wrapperHeader #logo {
   cursor: pointer;
   line-height: 3.6rem;
 }
-header #wrapperHeader #logo h1 {
+header #wrapper_header #logo h1 {
   font-size: 3rem;
   color: #9fa1a3;
   font-weight: 700;
   margin: 0;
 }
-header #wrapperHeader #logo p {
+header #wrapper_header #logo p {
   font-size: 2.2rem;
   margin: 0;
   max-width: none;
 }
-header #wrapperHeader #menuHeader {
+header #wrapper_header #menu_header {
   position: fixed;
   left: 39rem;
   top: 2.6rem;
@@ -72,7 +72,7 @@ header #wrapperHeader #menuHeader {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-header #wrapperHeader #menuHeader ul {
+header #wrapper_header #menu_header ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@ header #wrapperHeader #menuHeader ul {
   margin: 0;
   padding: 0;
 }
-header #wrapperHeader #menuHeader ul li {
+header #wrapper_header #menu_header ul li {
   min-width: 10.5rem;
   font-size: 3.36rem;
   border-bottom: 2px solid #9fa1a3;
@@ -95,16 +95,16 @@ header #wrapperHeader #menuHeader ul li {
   font-weight: 700;
   -webkit-box-reflect: below -3px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
 }
-header #wrapperHeader #menuHeader ul li.active {
+header #wrapper_header #menu_header ul li.active {
   color: #41836a;
   border-bottom: 2px solid #499478;
 }
-header #wrapperHeader #menuHeader ul li:hover {
+header #wrapper_header #menu_header ul li:hover {
   color: #71b99e;
   border-bottom: 4px solid #82c1aa;
 }
 @media (max-width: 1279px) {
-  header #wrapperHeader #menuHeader {
+  header #wrapper_header #menu_header {
     left: 33rem;
     transition: all 0s;
     transition-timing-function: ease-out;
@@ -123,7 +123,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   }
 }
 @media (max-width: 930px) {
-  header #wrapperHeader #menuHeader {
+  header #wrapper_header #menu_header {
     margin-left: 5%;
     top: 9rem;
     left: 0rem;
@@ -145,7 +145,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   }
 }
 @media (max-width: 600px) {
-  header #wrapperHeader #menuHeader {
+  header #wrapper_header #menu_header {
     top: 10rem;
     width: 35rem;
   }
@@ -165,11 +165,11 @@ header #wrapperHeader #menuHeader ul li:hover {
   position: relative;
   margin: 0;
 }
-#wrapper #fondBase {
+#wrapper #fond_base {
   height: 95rem;
   background: url(../../images/backgroundHome.png) 0% 0% repeat fixed;
 }
-#wrapper #introSlide {
+#wrapper #intro_slide {
   background-color: transparent;
   margin: 1rem;
   position: absolute;
@@ -177,17 +177,17 @@ header #wrapperHeader #menuHeader ul li:hover {
   left: 3%;
   max-width: 90%;
 }
-#wrapper #introSlide #intro {
+#wrapper #intro_slide #intro {
   color: #9fa1a3;
   margin: 1rem;
   padding: 2rem;
   max-width: 100%;
 }
-#wrapper #introSlide #intro h1 {
+#wrapper #intro_slide #intro h1 {
   margin: 1rem;
   padding: 0.5rem;
 }
-#wrapper #introSlide #intro p {
+#wrapper #intro_slide #intro p {
   font-size: 4.06rem;
   line-height: 4.62rem;
   margin: 2rem auto;
@@ -304,110 +304,110 @@ header #wrapperHeader #menuHeader ul li:hover {
   }
 }
 @media (max-width: 850px) {
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     font-size: 4rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 3.64rem;
     line-height: 5.46rem;
   }
-  #wrapper #introSlide #intro #learn {
+  #wrapper #intro_slide #intro #learn {
     width: 60%;
   }
 }
 @media (max-width: 800px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 15rem;
   }
 }
 @media (max-width: 750px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 10rem;
     max-width: 90%;
   }
-  #wrapper #introSlide #intro #learn {
+  #wrapper #intro_slide #intro #learn {
     width: 70%;
   }
 }
 @media (max-width: 620px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 10rem;
     left: 2%;
   }
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     font-size: 3.8rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 3.36rem;
     line-height: 4.9rem;
   }
 }
 @media (max-width: 600px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 16.5rem;
     left: 1%;
   }
-  #wrapper #introSlide #intro {
+  #wrapper #intro_slide #intro {
     padding: 1rem;
     max-width: 100%;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     margin: 2rem auto;
     padding: 1rem;
   }
 }
 @media (max-width: 560px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 18rem;
     left: 0%;
     max-width: 95%;
   }
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     margin: 0.6rem;
     padding: 0.3rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 3.08rem;
     line-height: 4.2rem;
   }
 }
 @media (max-width: 490px) {
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     margin: 0.5rem;
     padding: 0.25rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     line-height: 3.92rem;
     margin: 1.5rem auto;
     padding: 0.75rem;
   }
 }
 @media (max-width: 440px) {
-  #wrapper #introSlide #intro {
+  #wrapper #intro_slide #intro {
     margin: 0.8rem;
     padding: 0.75rem;
   }
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     font-size: 3.6rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 3.08rem;
     line-height: 3.64rem;
   }
 }
 @media (max-width: 390px) {
-  #wrapper #introSlide {
+  #wrapper #intro_slide {
     top: 20rem;
   }
-  #wrapper #introSlide #intro {
+  #wrapper #intro_slide #intro {
     margin: 0.9rem 0;
     padding: 0.5rem;
   }
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     margin: 0.4rem;
     padding: 0.2rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 2.94rem;
     line-height: 3.5rem;
     margin: 1.2rem auto;
@@ -415,30 +415,30 @@ header #wrapperHeader #menuHeader ul li:hover {
   }
 }
 @media (max-width: 360px) {
-  #wrapper #introSlide #intro {
+  #wrapper #intro_slide #intro {
     margin: 0.8rem 0;
     padding: 0.4rem 0;
   }
-  #wrapper #introSlide #intro h1 {
+  #wrapper #intro_slide #intro h1 {
     font-size: 3.5rem;
   }
-  #wrapper #introSlide #intro p {
+  #wrapper #intro_slide #intro p {
     font-size: 2.66rem;
     line-height: 3.36rem;
     margin: 1.2rem 0;
     padding: 0.6rem 0;
   }
 }
-#wrapper #worksSlide {
+#wrapper #works_slide {
   width: 90%;
   margin: 5rem auto;
 }
-#wrapper #worksSlide h2 {
+#wrapper #works_slide h2 {
   font-size: 4.48rem;
   color: #0d1218;
   margin: 1rem 0;
 }
-#wrapper #worksSlide #menuFilter li {
+#wrapper #works_slide #menu_filter li {
   display: inline-block;
   font-size: 2.8rem;
   color: #9fa1a3;
@@ -448,30 +448,51 @@ header #wrapperHeader #menuHeader ul li:hover {
   cursor: pointer;
   font-weight: 700;
 }
-#wrapper #worksSlide #menuFilter li.active {
+#wrapper #works_slide #menu_filter li.active {
   color: #41836a;
   border-bottom: 4px solid #499478;
 }
-#wrapper #worksSlide #menuFilter li:hover {
+#wrapper #works_slide #menu_filter li:hover {
   color: #71b99e;
 }
 @media (max-width: 460px) {
-  #wrapper #worksSlide #menuFilter li {
+  #wrapper #works_slide #menu_filter li {
     width: 50%;
     min-width: 22rem;
   }
 }
-#wrapper #worksSlide .projectBanner {
-  width: 100%;
-  margin: 1rem 0;
-  border: 6px solid #0d1218;
-  height: 18rem;
+#wrapper #works_slide .project_banner {
+  width: 0;
+  margin: 1rem auto;
+  border: 0px solid transparent;
+  height: 0;
   position: relative;
   cursor: pointer;
   z-index: 0;
   overflow: hidden;
+  opacity: 1;
+  transition: all 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  -moz-transition: all 1s;
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-delay: 0s;
+  -webkit-transition: all 1s;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-perspective: 500px;
 }
-#wrapper #worksSlide .projectBanner .veil {
+#wrapper #works_slide .project_banner.project_filter {
+  width: 100%;
+  height: 18rem;
+  opacity: 1;
+  border: 6px solid #0d1218;
+}
+#wrapper #works_slide .project_banner .veil {
   width: 100%;
   position: absolute;
   top: 0;
@@ -495,7 +516,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-#wrapper #worksSlide .projectBanner .project {
+#wrapper #works_slide .project_banner .project {
   width: 100%;
   position: absolute;
   top: 0;
@@ -503,39 +524,36 @@ header #wrapperHeader #menuHeader ul li:hover {
   height: 100%;
   z-index: -1;
 }
-#wrapper #worksSlide .projectBanner:hover {
+#wrapper #works_slide .project_banner:hover {
   border: 6px solid #41836a;
 }
-#wrapper #worksSlide .projectBanner:hover .veil {
+#wrapper #works_slide .project_banner:hover .veil {
   opacity: 0.25;
 }
-#wrapper #worksSlide .projectBanner .com {
+#wrapper #works_slide .project_banner .com {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-#wrapper #worksSlide .projectBanner .com h3 {
+#wrapper #works_slide .project_banner .com h3 {
   color: #ffffff;
   margin: 1rem;
   padding: 0.5rem;
 }
-#wrapper #worksSlide .projectBanner .com p {
+#wrapper #works_slide .project_banner .com p {
   font-size: 3.22rem;
   color: #a2a4a5;
   margin: 1rem;
   padding: 0.5rem;
 }
-#wrapper #worksSlide .projectBanner .bannerDetail {
+#wrapper #works_slide .project_banner .banner_detail {
   display: none;
 }
-#wrapper #worksSlide .projectBanner[id='GoL'] {
-  background: url(../../images/GoL.jpg) 50% 0% repeat fixed;
-}
-#wrapper #worksSlide .projectBanner[id='webGame'] {
+#wrapper #works_slide .project_banner[id='web_game'] {
   background: url(../../images/bg.jpg) 0% 0% repeat fixed;
 }
-#wrapper #worksSlide .projectBanner[id='webGame'] .slide {
+#wrapper #works_slide .project_banner[id='web_game'] .slide {
   width: 100%;
   position: absolute;
   top: 0;
@@ -543,14 +561,8 @@ header #wrapperHeader #menuHeader ul li:hover {
   height: 100%;
   background: url(../../images/webGameUp.png) 50% 0% repeat fixed;
 }
-#wrapper #worksSlide .projectBanner[id='europunk'] {
-  background: url(../../images/europunk.jpg) 50% 0% repeat fixed;
-}
-#wrapper #worksSlide .projectBanner[id='WP'] {
-  background: url(../../images/WPproject.jpg) 300px 0% repeat fixed;
-}
 @media (max-width: 600px) {
-  #wrapper #worksSlide .projectBanner {
+  #wrapper #works_slide .project_banner {
     width: 100%;
     margin: 1rem 0;
     border: 6px solid #0d1218;
@@ -558,20 +570,20 @@ header #wrapperHeader #menuHeader ul li:hover {
     position: relative;
     overflow: hidden;
   }
-  #wrapper #worksSlide .projectBanner .com {
+  #wrapper #works_slide .project_banner .com {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
   }
-  #wrapper #worksSlide .projectBanner .com h3 {
+  #wrapper #works_slide .project_banner .com h3 {
     font-size: 3rem;
     line-height: 3.3rem;
     color: #ffffff;
     margin: 0.5rem;
     padding: 0.25rem;
   }
-  #wrapper #worksSlide .projectBanner .com p {
+  #wrapper #works_slide .project_banner .com p {
     font-size: 2.8rem;
     color: #a2a4a5;
     margin: 0.5rem;
@@ -579,12 +591,12 @@ header #wrapperHeader #menuHeader ul li:hover {
   }
 }
 @media (max-width: 460px) {
-  #wrapper #worksSlide .projectBanner {
+  #wrapper #works_slide .project_banner {
     height: 20rem;
   }
 }
 @media (max-width: 340px) {
-  #wrapper #worksSlide .projectBanner {
+  #wrapper #works_slide .project_banner {
     width: 95%;
   }
 }
@@ -595,7 +607,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   z-index: 0;
   background-color: #070A0E;
 }
-#wrapper #about #fondAbout {
+#wrapper #about #fond_about {
   position: absolute;
   top: 0;
   left: 0;
@@ -604,12 +616,12 @@ header #wrapperHeader #menuHeader ul li:hover {
   background: url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
   max-height: 100%;
 }
-#wrapper #about #aboutPos {
+#wrapper #about #about_pos {
   width: 90%;
   margin: 2rem auto 0;
   padding: 0.5rem;
 }
-#wrapper #about #aboutPos .flex_container {
+#wrapper #about #about_pos .flex_container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -620,100 +632,100 @@ header #wrapperHeader #menuHeader ul li:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-#wrapper #about #aboutPos .aboutBox {
+#wrapper #about #about_pos .about_box {
   margin: 1rem 0 0;
   color: #9fa1a3;
   padding: 2rem;
 }
-#wrapper #about #aboutPos .aboutBox h2 {
+#wrapper #about #about_pos .about_box h2 {
   color: #edeeee;
   margin: 1rem 0;
   padding: 0.5rem 0;
 }
-#wrapper #about #aboutPos .aboutBox h3 {
+#wrapper #about #about_pos .about_box h3 {
   color: #c6c7c8;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
 }
-#wrapper #about #aboutPos .aboutBox p {
+#wrapper #about #about_pos .about_box p {
   width: 100%;
   font-size: 2.66rem;
   line-height: 2.94rem;
   margin: 1rem 0;
   padding: 0.5rem;
 }
-#wrapper #about #aboutPos .aboutBox p[class='decal'] {
+#wrapper #about #about_pos .about_box p[class='decal'] {
   padding-left: 1.4rem;
 }
-#wrapper #about #aboutPos .aboutBox > ul {
+#wrapper #about #about_pos .about_box > ul {
   margin: 2rem 0;
   font-size: 3.22rem;
 }
-#wrapper #about #aboutPos .aboutBox > ul > li {
+#wrapper #about #about_pos .about_box > ul > li {
   font-size: 2.66rem;
   line-height: 3.22rem;
   margin: 1rem;
   padding: 0.25rem;
 }
-#wrapper #about #aboutPos .aboutBox > ul > li > ul {
+#wrapper #about #about_pos .about_box > ul > li > ul {
   margin-left: 1rem;
 }
-#wrapper #about #aboutPos .aboutBox > ul > li > ul > li {
+#wrapper #about #about_pos .about_box > ul > li > ul > li {
   font-size: 2.52rem;
   line-height: 3.22rem;
   margin: 0.4rem;
   padding: 0.2rem;
 }
-#wrapper #about #aboutPos #pdf {
+#wrapper #about #about_pos #pdf {
   width: 98%;
   padding-left: 0.5rem;
   position: relative;
 }
-#wrapper #about #aboutPos #pdf a {
+#wrapper #about #about_pos #pdf a {
   font-size: 4.2rem;
   margin: 0 0.5rem;
   padding: 1rem;
   background-color: #1f3f33;
 }
-#wrapper #about #aboutPos #pdf a img {
+#wrapper #about #about_pos #pdf a img {
   margin-bottom: 0.6rem;
 }
-#wrapper #about #aboutPos #pdf a:hover {
+#wrapper #about #about_pos #pdf a:hover {
   background-color: #71b99e;
   color: #0d1218;
 }
 @media (max-width: 580px) {
-  #wrapper #about #aboutPos #pdf {
+  #wrapper #about #about_pos #pdf {
     padding: 0.25rem;
   }
-  #wrapper #about #aboutPos #pdf a {
+  #wrapper #about #about_pos #pdf a {
     font-size: 3.5rem;
     padding: 0.75rem;
   }
 }
 @media (max-width: 480px) {
-  #wrapper #about #aboutPos #pdf {
+  #wrapper #about #about_pos #pdf {
     padding: 0.25rem;
   }
-  #wrapper #about #aboutPos #pdf a {
+  #wrapper #about #about_pos #pdf a {
     font-size: 3.08rem;
     padding: 0.75rem;
   }
 }
 @media (max-width: 480px) {
-  #wrapper #about #aboutPos #pdf a .lowRes {
+  #wrapper #about #about_pos #pdf a .lowRes {
     display: none;
   }
 }
-#wrapper #about #aboutPos #skills {
+#wrapper #about #about_pos #skills {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
 }
-#wrapper #about #aboutPos #skills ul {
+#wrapper #about #about_pos #skills ul {
   margin-left: 1.3rem;
 }
-#wrapper #about #aboutPos #skills .data {
+#wrapper #about #about_pos #skills .data {
   display: inline-block;
   width: 7rem;
   margin: 0 0.8rem;
@@ -721,7 +733,7 @@ header #wrapperHeader #menuHeader ul li:hover {
   border: 2px solid #0d1218;
   position: relative;
 }
-#wrapper #about #aboutPos #skills .data .remplData {
+#wrapper #about #about_pos #skills .data .rempl_data {
   position: absolute;
   width: 0%;
   height: 100%;
@@ -741,18 +753,18 @@ header #wrapperHeader #menuHeader ul li:hover {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-#wrapper #about #aboutPos #exp > ul > li {
+#wrapper #about #about_pos #exp > ul > li {
   margin: 1rem 0;
 }
-#wrapper #about #aboutPos #educ > ul > li {
+#wrapper #about #about_pos #educ > ul > li {
   margin: 1rem 0;
 }
-#wrapper #about #aboutPos #misc {
+#wrapper #about #about_pos #misc {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
 }
-#wrapper #about #aboutPos #misc > ul > li {
+#wrapper #about #about_pos #misc > ul > li {
   margin: 1rem 0;
 }
 footer {
@@ -762,7 +774,7 @@ footer {
   position: relative;
   z-index: 1;
 }
-footer #wrapperFooter {
+footer #wrapper_footer {
   width: 90%;
   margin: 3rem auto;
   display: -webkit-flex;
@@ -776,30 +788,30 @@ footer #wrapperFooter {
           justify-content: space-around;
   position: relative;
 }
-footer #wrapperFooter #contact {
+footer #wrapper_footer #contact {
   width: 38%;
   color: #9fa1a3;
 }
-footer #wrapperFooter #contact h2 {
+footer #wrapper_footer #contact h2 {
   font-size: 4.8rem;
   line-height: 5.2rem;
 }
-footer #wrapperFooter #contact p {
+footer #wrapper_footer #contact p {
   max-width: 90%;
   line-height: 3.64rem;
   margin: 0.5rem 0;
 }
-footer #wrapperFooter #contact ul li {
+footer #wrapper_footer #contact ul li {
   font-size: 2.94rem;
   line-height: 3.36rem;
 }
-footer #wrapperFooter #contact #soc {
+footer #wrapper_footer #contact #soc {
   margin: 1rem 0;
 }
-footer #wrapperFooter #contact #soc li {
+footer #wrapper_footer #contact #soc li {
   margin-right: 0.5rem;
   display: inline-block;
-  opacity: 0.7;
+  opacity: 0.5;
   transition: opacity 1s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
@@ -815,28 +827,28 @@ footer #wrapperFooter #contact #soc li {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-footer #wrapperFooter #contact #soc li:hover {
+footer #wrapper_footer #contact #soc li:hover {
   opacity: 1;
 }
-footer #wrapperFooter #contact a:hover {
+footer #wrapper_footer #contact a:hover {
   color: #bd788a;
 }
-footer #wrapperFooter #contact a img {
+footer #wrapper_footer #contact a img {
   width: 5rem;
   height: 5rem;
 }
-footer #wrapperFooter #contactForm {
+footer #wrapper_footer #contact_form {
   min-width: 38%;
 }
-footer #wrapperFooter #contactForm label {
+footer #wrapper_footer #contact_form label {
   display: block;
   font-size: 3.08rem;
   color: #9fa1a3;
   margin: 0.5rem 0;
   cursor: pointer;
 }
-footer #wrapperFooter #contactForm input[type="text"],
-footer #wrapperFooter #contactForm input[type="email"] {
+footer #wrapper_footer #contact_form input[type="text"],
+footer #wrapper_footer #contact_form input[type="email"] {
   width: 55%;
   min-width: 27rem;
   font-famil: 'Quicksand', sans-serif;
@@ -847,26 +859,26 @@ footer #wrapperFooter #contactForm input[type="email"] {
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-footer #wrapperFooter #contactForm ::-webkit-input-placeholder {
+footer #wrapper_footer #contact_form ::-webkit-input-placeholder {
   color: #435c7a;
 }
-footer #wrapperFooter #contactForm :-moz-placeholder {
-  color: #435c7a;
-  opacity: 1;
-}
-footer #wrapperFooter #contactForm ::-moz-placeholder {
+footer #wrapper_footer #contact_form :-moz-placeholder {
   color: #435c7a;
   opacity: 1;
 }
-footer #wrapperFooter #contactForm :-ms-input-placeholder {
+footer #wrapper_footer #contact_form ::-moz-placeholder {
+  color: #435c7a;
+  opacity: 1;
+}
+footer #wrapper_footer #contact_form :-ms-input-placeholder {
   color: #435c7a;
 }
-footer #wrapperFooter #contactForm .form_name:focus,
-footer #wrapperFooter #contactForm .form_mail:focus,
-footer #wrapperFooter #contactForm textarea:focus {
+footer #wrapper_footer #contact_form .form_name:focus,
+footer #wrapper_footer #contact_form .form_mail:focus,
+footer #wrapper_footer #contact_form textarea:focus {
   outline: 3.5px solid #fafafa;
 }
-footer #wrapperFooter #contactForm .form_message {
+footer #wrapper_footer #contact_form .form_message {
   height: 20rem;
   width: 80%;
   min-width: 38rem;
@@ -879,7 +891,7 @@ footer #wrapperFooter #contactForm .form_message {
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-footer #wrapperFooter #contactForm input[type='submit'] {
+footer #wrapper_footer #contact_form input[type='submit'] {
   display: block;
   width: 15%;
   min-width: 10rem;
@@ -889,29 +901,23 @@ footer #wrapperFooter #contactForm input[type='submit'] {
   background-color: #1f3f33;
   border: none;
 }
-footer #wrapperFooter #contactForm input[type='submit']:hover {
+footer #wrapper_footer #contact_form input[type='submit']:hover {
   background-color: #71b99e;
   cursor: pointer;
   color: #0d1218;
 }
-footer #wrapperFooter #contactForm .specError {
-  padding: 0.25rem 1.5rem;
-}
-footer #wrapperFooter #contactForm .errorInput {
-  border: 1px solid crimson;
-}
 @media (max-width: 1650px) {
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     width: 43.5%;
   }
 }
 @media (max-width: 1400px) {
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     width: 47.5%;
   }
 }
 @media (max-width: 1300px) {
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     width: 48.5%;
   }
 }
@@ -985,12 +991,12 @@ footer .legal p {
   max-height: 18rem;
   overflow: hidden;
 }
-.lightbox .linkProject {
+.lightbox .link_project {
   width: 90%;
   margin: 1rem auto;
   padding: 0.5rem;
 }
-.lightbox .linkProject a {
+.lightbox .link_project a {
   font-size: 2.52rem;
   padding: 0.5rem 0.65rem;
   color: #d3d4d5;
@@ -998,7 +1004,7 @@ footer .legal p {
   display: inline-block;
   margin-top: 0.5rem;
 }
-.lightbox .linkProject a:hover {
+.lightbox .link_project a:hover {
   background-color: #71b99e;
 }
 @media (max-width: 1200px) {
@@ -1027,7 +1033,7 @@ footer .legal p {
   .lightbox {
     padding: 1rem;
   }
-  .lightbox .lowRes {
+  .lightbox .low_res {
     display: none;
   }
   .lightbox ul {
@@ -1051,175 +1057,22 @@ footer .legal p {
   }
 }
 @media (max-width: 1280px) {
-  #wrapper #about {
-    min-height: 290rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #pdf {
-    top: 1%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #me {
-    top: 4%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #skills {
-    top: 15%;
-    left: 0;
-    padding-left: 0.5rem;
-    padding-right: 0;
-  }
-  #wrapper #about #aboutPos #aboutWrap #exp {
-    top: 43%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #educ {
-    top: 68%;
-    left: 0;
-    padding-left: 0.5rem;
-    padding-right: 0;
-  }
-  #wrapper #about #aboutPos #aboutWrap #misc {
-    top: 88%;
-  }
-  #wrapper #about #aboutPos .boxLeft,
-  #wrapper #about #aboutPos .boxRight {
-    width: 98%;
-  }
-}
-@media (max-width: 870px) {
-  #wrapper #about {
-    min-height: 315rem;
-  }
-}
-@media (max-width: 750px) {
-  #wrapper #about {
-    min-height: 330rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #pdf {
-    top: 0.7%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #me {
-    top: 3%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #skills {
-    top: 15%;
-    left: 0;
-  }
-  #wrapper #about #aboutPos #aboutWrap #exp {
-    top: 40%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #educ {
-    top: 64%;
-    left: 0;
-  }
-  #wrapper #about #aboutPos #aboutWrap #misc {
-    top: 85%;
-  }
-}
-@media (max-width: 600px) {
-  #wrapper #about #aboutPos #aboutWrap .aboutBox p {
-    font-size: 2.38rem;
-    line-height: 2.8rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul {
-    font-size: 2.94rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li {
-    font-size: 2.38rem;
-    line-height: 2.8rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li > ul > li {
-    font-size: 2.24rem;
-    line-height: 2.66rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #pdf {
-    top: 1%;
-  }
-}
-@media (max-width: 500px) {
-  #wrapper #about {
-    min-height: 350rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #misc {
-    top: 86%;
-  }
-}
-@media (max-width: 460px) {
-  #wrapper #about {
-    min-height: 360rem;
-  }
-  #wrapper #about #fondAbout {
-    height: 100%;
-    background: url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
-  }
-}
-@media (max-width: 400px) {
-  #wrapper #about #aboutPos #aboutWrap .aboutBox {
-    padding: 1rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox p {
-    font-size: 2.24rem;
-    line-height: 2.8rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox p[class='decal'] {
-    padding-left: 0.7rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul {
-    font-size: 2.8rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li {
-    font-size: 2.24rem;
-    line-height: 2.66rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li > ul {
-    margin-left: 0.5rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap .aboutBox > ul > li > ul > li {
-    font-size: 2.1rem;
-    line-height: 2.52rem;
-    margin: 0.4rem;
-    padding: 0.2rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #skills {
-    top: 14%;
-  }
-  #wrapper #about #aboutPos #aboutWrap #skills ul {
-    margin-left: 0.4rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #educ {
-    top: 65%;
-    left: 0;
-    padding-left: 0.5rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #misc {
-    top: 87%;
-  }
-}
-@media (max-width: 360px) {
-  #wrapper #about {
-    min-height: 370rem;
-  }
-  #wrapper #about #aboutPos #aboutWrap #misc {
-    top: 88%;
-  }
-}
-@media (max-width: 1280px) {
   footer {
     height: 90rem;
   }
-  footer #wrapperFooter #contact {
+  footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     width: 90%;
     min-width: 50rem;
-    position: absolute;
-    top: 36rem;
-    left: 0;
   }
 }
 @media (max-width: 560px) {
-  footer #wrapperFooter #contact {
+  footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     width: 90%;
     min-width: 45rem;
     position: absolute;
@@ -1232,34 +1085,34 @@ footer .legal p {
     min-height: 15rem;
     height: inherit;
   }
-  footer #wrapperFooter #contact {
+  footer #wrapper_footer #contact {
     width: 90%;
   }
-  footer #wrapperFooter #contactForm {
+  footer #wrapper_footer #contact_form {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  footer #wrapperFooter #contact {
+  footer #wrapper_footer #contact {
     width: 95%;
   }
-  footer #wrapperFooter #contact #contactData a {
+  footer #wrapper_footer #contact #contact_data a {
     font-size: 2.66rem;
   }
-  footer #wrapperFooter #contact a img {
+  footer #wrapper_footer #contact a img {
     width: 7rem;
     height: 7rem;
   }
 }
 @media (max-width: 420px) {
-  footer #wrapperFooter {
+  footer #wrapper_footer {
     margin: 3rem 0;
     padding: 0;
   }
-  footer #wrapperFooter #contact h2 {
+  footer #wrapper_footer #contact h2 {
     font-size: 4.2rem;
   }
-  footer #wrapperFooter #contact #contactData a {
+  footer #wrapper_footer #contact #contact_data a {
     font-size: 2.24rem;
   }
 }

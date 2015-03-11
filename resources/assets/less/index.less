@@ -7,23 +7,23 @@
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 @keyframes blink{
-	from{
-		color : lighten(@color-green, 10%);
-		opacity : 0.6;
-	}to{
-		opacity : 1;
-		color : lighten(@color-green, 40%);
-	}
+    from{
+        color : lighten(@color-green, 10%);
+        opacity : 0.6;
+    }to{
+        opacity : 1;
+        color : lighten(@color-green, 40%);
+    }
 }
 
 @-webkit-keyframes blink{
-	from{
-		color : lighten(@color-green, 10%);
-		opacity : 0.6;
-	}to{
-		opacity : 1;
-		color : lighten(@color-green, 40%);
-	}
+    from{
+        color : lighten(@color-green, 10%);
+        opacity : 0.6;
+    }to{
+        opacity : 1;
+        color : lighten(@color-green, 40%);
+    }
 }
 
 @font-size : 1.4rem;
@@ -62,7 +62,7 @@ header{
     top: 0;
     left: 0;
 
-    #wrapperHeader{
+    #wrapper_header{
         width: @width-wrapper;
         max-width: 1900px;
         margin: 0 auto;
@@ -100,7 +100,7 @@ header{
         //-----------------------------------------------------------------------
 		
 		
-        #menuHeader{
+        #menu_header{
             position: fixed;
             left: 39rem;
             top: 2.6rem;
@@ -142,14 +142,14 @@ header{
         //----------------------------------------------------------------------------
 
         @media(max-width: 1279px){
-            #menuHeader{
+            #menu_header{
                 left: 33rem;
                 .transition(all; 0s; ease-out; 0s);
             }
         }
 
         @media (max-width: 930px){
-            #menuHeader{
+            #menu_header{
                 margin-left: 5%;
                 top: 9rem;
                 left: 0rem;
@@ -159,7 +159,7 @@ header{
         }
 
         @media (max-width: 600px){
-            #menuHeader{
+            #menu_header{
                 top: 10rem;
                 width: 35rem;
             }
@@ -195,7 +195,7 @@ header{
     position: relative;
     margin: 0;
 
-    #fondBase{
+    #fond_base{
         height: 95rem;
         background: url(../../images/backgroundHome.png) 0% 0% repeat fixed;
     }
@@ -205,7 +205,7 @@ header{
     //------------------------------------------------------
 	
 	
-    #introSlide{
+    #intro_slide{
         background-color: transparent;
         margin: @margin;
         position: absolute;
@@ -357,7 +357,7 @@ header{
 
     // 850 PX
     @media (max-width: 850px){
-        #introSlide{
+        #intro_slide{
 
             #intro{
 
@@ -380,7 +380,7 @@ header{
     // 800 PX
 
     @media (max-width: 800px){
-        #introSlide{
+        #intro_slide{
             top: 15rem;
         }
     }
@@ -388,7 +388,7 @@ header{
     // 750 PX
 
     @media (max-width: 750px){
-        #introSlide{
+        #intro_slide{
             top: 10rem;
             max-width: 90%;
 
@@ -403,7 +403,7 @@ header{
     // 620 PX
 
     @media (max-width: 620px){
-        #introSlide{
+        #intro_slide{
             top: 10rem;
             left: 2%;
 
@@ -423,7 +423,7 @@ header{
     // 600 PX
 
     @media (max-width: 600px){
-        #introSlide{
+        #intro_slide{
             top: 16.5rem;
             left: 1%;
 
@@ -442,7 +442,7 @@ header{
     // 560 PX
 
     @media (max-width: 560px){
-        #introSlide{
+        #intro_slide{
             top: 18rem;
             left: 0%;
             max-width: 95%;
@@ -464,7 +464,7 @@ header{
     // 490 PX
 
     @media (max-width: 490px){
-        #introSlide{
+        #intro_slide{
             #intro{
                 h1{
                     margin: 0.5*@margin;
@@ -483,7 +483,7 @@ header{
     // 440 PX
 
     @media (max-width: 440px){
-        #introSlide{	
+        #intro_slide{	
             #intro{
                 margin: 0.8*@margin;
                 padding: 1.5*@padding;
@@ -503,7 +503,7 @@ header{
     // 390 PX
 
     @media (max-width: 390px){
-        #introSlide{
+        #intro_slide{
             top: 20rem;
 
             #intro{
@@ -528,7 +528,7 @@ header{
     // 360 PX
 
     @media (max-width: 360px){
-        #introSlide{
+        #intro_slide{
             #intro{
                 margin: 0.8*@margin 0;
                 padding: 0.8*@padding 0;
@@ -554,7 +554,7 @@ header{
     //
     //------------------------------------------------------------------------------------------------
 			
-    #worksSlide{
+    #works_slide{
         width: @width-wrapper;
         margin: 5*@margin auto;
 
@@ -568,7 +568,7 @@ header{
         // 			FILTER
         //-------------------------------------------------------------------
 
-        #menuFilter{
+        #menu_filter{
             li{
                 display: inline-block;
                 font-size: 2*@font-size;
@@ -591,7 +591,7 @@ header{
         }
 
         @media (max-width: 460px){
-            #menuFilter{
+            #menu_filter{
                 li{
                     width: 50%;
                     min-width: 22rem;
@@ -603,15 +603,24 @@ header{
         // 			PROJECT BANNER
         //---------------------------------------------------------------------------
 
-        .projectBanner{
-            width: 100%;
-            margin: @margin 0;
-            border: 6px solid @color-black;
-            height: 18rem;
+        .project_banner{
+            width: 0;
+            margin: @margin auto;
+            border: 0px solid transparent;
+            height: 0;
             position: relative;
             cursor: pointer;
             z-index: 0;
             overflow: hidden;
+            opacity: 1;
+            .transition(all, 1s, ease-out, 0s);
+            
+            &.project_filter{
+                width: 100%;
+                height: 18rem;
+                opacity: 1;
+                border: 6px solid @color-black;
+            }
 
             //-------------------------------------------------------------------
             // 			EFFET VOILE
@@ -670,19 +679,14 @@ header{
                 }
             }
 
-            .bannerDetail{
+            .banner_detail{
                 display: none;
             }
 
             //------------------------------------------------------------
             // 			BACKGROUND PROJECT
             //------------------------------------------------------------
-
-            &[id='GoL']{
-                    background: url(../../images/GoL.jpg) 50% 0% repeat fixed;
-            }
-
-            &[id='webGame']{
+            &[id='web_game']{
                 background: url(../../images/bg.jpg) 0% 0% repeat fixed;
 
                 .slide{
@@ -694,14 +698,6 @@ header{
                     background:  url(../../images/webGameUp.png) 50% 0% repeat fixed;
                 }
             }
-
-            &[id='europunk']{
-                background: url(../../images/europunk.jpg) 50% 0% repeat fixed;
-            }
-
-            &[id='WP']{
-                background: url(../../images/WPproject.jpg) 300px 0% repeat fixed;
-            }
         }
 
 
@@ -711,7 +707,7 @@ header{
 
 
         @media (max-width: 600px){
-            .projectBanner{
+            .project_banner{
                 width: 100%;
                 margin: @margin 0;
                 border: 6px solid @color-black;
@@ -744,13 +740,13 @@ header{
         }
 
         @media (max-width: 460px){
-            .projectBanner{
+            .project_banner{
                 height: 20rem;
             }
         }
 
         @media (max-width: 340px){
-            .projectBanner{
+            .project_banner{
                 width: 95%;
             }
         }
@@ -770,7 +766,7 @@ header{
         z-index: 0;
         background-color: #070A0E;
 
-        #fondAbout{
+        #fond_about{
             position: absolute;
             top: 0;
             left: 0;
@@ -780,7 +776,7 @@ header{
             max-height: 100%;
         }
 
-        #aboutPos{
+        #about_pos{
             width: @width-wrapper;
             margin: 2*@margin auto 0;
             padding: @padding;
@@ -796,7 +792,7 @@ header{
                 justify-content: space-between;
             }
             
-            .aboutBox{
+            .about_box{
                 margin: @margin 0 0;
                 color: @color-grey;
                 padding: 4*@padding;
@@ -928,7 +924,7 @@ header{
                     border: 2px solid @color-black;
                     position: relative;
 
-                    .remplData{
+                    .rempl_data{
                         position: absolute;
                         width: 0%;
                         height: 100%;
@@ -939,14 +935,12 @@ header{
             }
 
             #exp{
-
                 >ul>li{
                     margin: @margin 0;
                 }
             }
 
             #educ{
-
                 >ul>li{
                     margin: @margin 0;
                 }
@@ -979,11 +973,11 @@ header{
 }
 
 
-//----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 //
-// 													FOOTER
+//                      FOOTER
 //
-//----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 
 
 footer{
@@ -993,7 +987,7 @@ footer{
     position: relative;
     z-index: 1;
 
-    #wrapperFooter{
+    #wrapper_footer{
         width: @width-wrapper;
         margin: 3*@margin auto;
         display: flex;
@@ -1034,7 +1028,7 @@ footer{
                 li{
                     margin-right: 0.5*@margin;
                     display: inline-block;
-                    opacity: 0.7;
+                    opacity: 0.5;
                     .transition(opacity, 1s, ease-out, 0s);
 
                     &:hover{
@@ -1059,7 +1053,7 @@ footer{
         //                              FORM
         //--------------------------------------------------------------------------
 
-        #contactForm{
+        #contact_form{
             min-width: 38%;
 
             label{
@@ -1131,14 +1125,6 @@ footer{
                     color: @color-black;
                 }
             }
-
-            .specError{
-                    padding: 0.5*@padding 3*@padding;
-            }
-
-            .errorInput{
-                    border: 1px solid crimson;
-            }
         }
 
 
@@ -1148,19 +1134,19 @@ footer{
 
 
         @media (max-width: 1650px){
-            #contactForm{
+            #contact_form{
                 width: 43.5%;
             }
         }
 
         @media (max-width: 1400px){
-            #contactForm{
+            #contact_form{
                 width: 47.5%;
             }
         }
 
         @media (max-width: 1300px){
-            #contactForm{
+            #contact_form{
                 width: 48.5%;
             }
         }
@@ -1257,7 +1243,7 @@ footer{
 
     // LINK LIGHTBOX
 
-    .linkProject{
+    .link_project{
         width: 90%;
         margin: @margin auto;
         padding: @padding;
@@ -1282,415 +1268,170 @@ footer{
 //-------------------------------------------------------------
 
 @media (max-width : 1200px){
-	.lightbox{
-		padding : 4*@padding;
-		
-		p{
-			font-size : 1.7*@font-size;
-			margin : 0.5*@margin auto;
-			padding : 0.5*@padding;
-		}
-	}
+    .lightbox{
+        padding : 4*@padding;
+
+        p{
+            font-size : 1.7*@font-size;
+            margin : 0.5*@margin auto;
+            padding : 0.5*@padding;
+        }
+    }
 }
 
 @media (max-width : 800px){
-	.lightbox{
-	
-		padding : 3*@padding;
-		padding-bottom : 2*@padding;
-		
-		p{
-			font-size : 1.5*@font-size;
-			line-height : 1.7*@font-size;
-			margin : 0.5*@margin auto;
-			padding : 0.5*@padding 0;
-		}
-	}
+    .lightbox{
+        padding : 3*@padding;
+        padding-bottom : 2*@padding;
+
+        p{
+            font-size : 1.5*@font-size;
+            line-height : 1.7*@font-size;
+            margin : 0.5*@margin auto;
+            padding : 0.5*@padding 0;
+        }
+    }
 }
 
 @media (max-width : 740px){
-	
-	.lightbox{
-		padding : 2*@padding;
-	
-		.lowRes{
-			display : none;
-		}
-		
-		ul{
-			list-style : none;
-		}
-	}
+    .lightbox{
+        padding : 2*@padding;
+
+        .low_res{
+                display : none;
+        }
+
+        ul{
+                list-style : none;
+        }
+    }
 }
 
 @media (max-width : 480px){
-	.lightbox{
-		max-width : 30rem;
-				
-		ul{
-			display : none;
-		}
-	}
+    .lightbox{
+        max-width : 30rem;
+
+        ul{
+                display : none;
+        }
+    }
 }
 
 @media (max-width : 360px){
-	.lightbox{
-		max-width : 28rem;
-		
-		h3{
-			font-size : 3.1rem;
-		}
-	}
-}
+    .lightbox{
+        max-width : 28rem;
 
+        h3{
+                font-size : 3.1rem;
+        }
+    }
+}
 
 //------------------------------------------------------------
 // RESPONSIVE ABOUT
 //------------------------------------------------------------
 
-
 @media (max-width : 1280px){
-	#wrapper{
-		#about{
-			min-height : 290rem;
-			
-			#aboutPos{
-				#aboutWrap{		
-					
-					#pdf{
-						top : 1%;
-					}
-					
-					#me{
-						top : 4%;
-					}
-					
-					#skills{
-						top : 15%;
-						left : 0;
-						padding-left : @padding;
-						padding-right : 0;
-					}
-					
-					#exp{
-						top : 43%;
-					}
-					
-					#educ{
-						top : 68%;
-						left : 0;
-						padding-left: @padding;
-						padding-right : 0;
-					}
-					
-					#misc{
-						top : 88%;						
-					}
-				}
-				
-				.boxLeft, .boxRight{
-					width : 98%;
-				}
-			}
-		}
-	}
-}
+    #wrapper{
+        #about{
+            #about_pos{		
 
-@media (max-width : 870px){
-	#wrapper{
-		#about{
-			min-height : 315rem;
-		}
-	}
+            }
+        }
+    }
 }
-
-@media (max-width : 750px){
-	#wrapper{
-		#about{
-			min-height : 330rem;
-			
-			#aboutPos{		
-				#aboutWrap{		
-					#pdf{
-						top : 0.7%;
-					}
-					
-					#me{
-						top : 3%;
-					}
-					
-					#skills{
-						top : 15%;
-						left : 0;
-					}
-					
-					#exp{
-						top : 40%;
-					}
-					
-					#educ{
-						top : 64%;
-						left : 0;
-					}
-					
-					#misc{
-						top : 85%;						
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : 600px){
-	#wrapper{
-		#about{	
-			#aboutPos{			
-				#aboutWrap{			
-					.aboutBox{
-						
-						p{
-							font-size : 1.7*@font-size;
-							line-height : 2*@font-size;
-						}
-						
-						>ul{
-							font-size : 2.1*@font-size;
-												
-							>li{
-								font-size : 1.7*@font-size;
-								line-height : 2*@font-size;
-						
-								>ul{						
-									>li{
-										font-size : 1.6*@font-size;
-										line-height : 1.9*@font-size;						
-									}
-								}
-							}
-						}
-					}
-					
-					#pdf{
-						top : 1%;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : 500px){
-	#wrapper{
-		#about{
-			min-height : 350rem;
-			
-			#aboutPos{			
-				#aboutWrap{			
-					
-					#misc{
-						top : 86%;						
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : 460px){
-	#wrapper{
-		#about{
-			min-height : 360rem;	
-			
-			#fondAbout{
-				height : 100%;
-				background : url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
-			}
-		}
-	}
-}
-
-@media (max-width : 400px){
-	#wrapper{
-		#about{			
-			#aboutPos{			
-				#aboutWrap{
-			
-					.aboutBox{
-						padding : 2*@padding;
-						
-						p{
-							font-size : 1.6*@font-size;
-							line-height : 2*@font-size;
-							
-							&[class='decal']{
-								padding-left : 0.7*@margin;
-							}
-						}
-						
-						>ul{
-							font-size : 2*@font-size;
-											
-							>li{
-								font-size : 1.6*@font-size;
-								line-height : 1.9*@font-size;
-						
-								>ul{
-									margin-left : 0.5*@margin;
-																
-									>li{
-										font-size : 1.5*@font-size;
-										line-height : 1.8*@font-size;
-										margin : 0.4*@margin;
-										padding : 0.4*@padding;							
-									}
-								}
-							}
-						}
-					}
-					
-					#skills{
-						top : 14%;
-						
-						ul{
-							margin-left : 0.4*@margin;
-						}
-					}
-					
-					#educ{
-						top : 65%;
-						left : 0;
-						padding-left: @padding;
-					}
-					
-					#misc{
-						top : 87%;						
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width : 360px){
-	#wrapper{
-		#about{
-			min-height : 370rem;
-			
-			#aboutPos{
-				#aboutWrap{										
-					
-					#misc{
-						top : 88%;						
-					}
-				}
-			}
-		}
-	}
-}
-
 
 //-----------------------------------------------------------
 // RESPONSIVE CONTACT
 //-----------------------------------------------------------
 
-
 @media (max-width : 1280px){
-	footer{
-		height : 90rem;
-		
-		#wrapperFooter{
-			
-			#contact{
-				width : 90%;
-			}
-			
-			#contactForm{
-				width : 90%;
-				min-width : 50rem;
-				position : absolute;
-				top : 36rem;
-				left : 0;
-			}
-		}
-	}
+    footer{
+        height : 90rem;
+
+        #wrapper_footer{
+            #contact{
+                width : 90%;
+            }
+
+            #contact_form{
+                width : 90%;
+                min-width : 50rem;
+            }
+        }
+    }
 }
 
 @media (max-width : 560px){
-	footer{	
-		#wrapperFooter{
-			
-			#contact{
-				width : 90%;
-			}
-			
-			#contactForm{
-				width : 90%;
-				min-width : 45rem;
-				position : absolute;
-				top : 36rem;
-				left : 0;
-			}
-		}
-	}
+    footer{	
+        #wrapper_footer{
+            #contact{
+                width : 90%;
+            }
+
+            #contact_form{
+                width : 90%;
+                min-width : 45rem;
+                position : absolute;
+                top : 36rem;
+                left : 0;
+            }
+        }
+    }
 }
 
 @media (max-width : 500px){
-	footer{
-		min-height : 15rem;
-		height : inherit;
-		
-		#wrapperFooter{
-			
-			#contact{
-				width : 90%;
-			}
-			
-			#contactForm{
-				display : none;
-			}
-		}
-	}
+    footer{
+        min-height : 15rem;
+        height : inherit;
+
+        #wrapper_footer{
+            #contact{
+                width : 90%;
+            }
+
+            #contact_form{
+                display : none;
+            }
+        }
+    }
 }
 
 @media (max-width : 450px){
+    footer{
+        #wrapper_footer{			
+            #contact{
+                width : 95%;
 
-	footer{
-		#wrapperFooter{			
-			
-			#contact{
-				width : 95%;
-				
-				#contactData{
-					a{
-						font-size : 1.9*@font-size;
-					}
-				}
-				
-				a{					
-					img{
-						width : 7rem;
-						height : 7rem;
-					}
-				}
-			}
-		}
-	}
+                #contact_data{
+                    a{
+                            font-size : 1.9*@font-size;
+                    }
+                }
+                
+                a{					
+                    img{
+                        width : 7rem;
+                        height : 7rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width : 420px){
     footer{
-        #wrapperFooter{	
+        #wrapper_footer{	
             margin : 3*@margin 0;
             padding : 0;
 
             #contact{
-
                 h2{
                     font-size : 4.2rem;
                 }		
 
-                #contactData{
+                #contact_data{
                     a{
                         font-size : 1.6*@font-size;
                     }
@@ -1699,7 +1440,3 @@ footer{
         }
     }
 }
-
-
-
-

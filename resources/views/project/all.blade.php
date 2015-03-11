@@ -63,7 +63,7 @@
                         id=$(this).attr('data-id');
                         $.ajax({
                             type: "POST",
-                            url: "/project/"+id,
+                            url: "{{config('app.url')}}/project/"+id,
                             data: {
                                 '_method': "delete",
                                 '_token': $token.attr('value')

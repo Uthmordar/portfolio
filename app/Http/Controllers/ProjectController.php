@@ -50,7 +50,7 @@ class ProjectController extends Controller{
 
             foreach($input as $k=>$v){
                 if(is_string($v)){
-                    $input[$k]=strip_tags($v);
+                    $input[$k]=strip_tags($v, '<br><br/><ul></ul><li></li><p></p><span></span>');
                 }
             }
 
@@ -109,7 +109,7 @@ class ProjectController extends Controller{
 
             foreach($input as $k=>$v){
                 if(is_string($v)){
-                    $input[$k]=strip_tags($v);
+                    $input[$k]=strip_tags($v, '<br><br/><ul></ul><li></li><p></p><span></span>');
                 }
             }
 
