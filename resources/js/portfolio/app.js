@@ -42,6 +42,7 @@
             self.form.initialize();
             self.parallax.initialize();
             self.portfolio.initialize();
+            self.works.initialize();
             self.bindEvents();
         },
         bindEvents: function(){

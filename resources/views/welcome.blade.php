@@ -30,7 +30,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <div id='wrapper_header'>
             <div id='logo'>
                 <h1><span class='bold color_white'>Tanguy</span> GODIN</h1> 
@@ -38,7 +38,7 @@
             </div>
             <nav id='menu_header'>
                 <ul>
-                    <li id='menu_head_home' class='active' >Hello</li>
+                    <li id='menu_head_home' class='active'>Hello</li>
                     <li id='menu_head_work'>Works</li>
                     <li id='menu_head_about'>More about me</li>
                     <li id='menu_head_contact'>Contact me</li>
@@ -101,29 +101,29 @@
                     </div>
                 </article>
                 @endforeach
-                <article class='project_banner tag-1 project_filter inactive' id='web_game'>
-                        <div class='veil'>
-                        </div> 
-                        <div class='project'>
-                            <div class='slide'>
-                            </div>
+                <article class='project_banner tag-2 project_filter inactive' id='web_game'>
+                    <div class='veil'>
+                    </div> 
+                    <div class='project'>
+                        <div class='slide'>
                         </div>
-                        <div class='com'>
-                            <h3>WEB GAME</h3>
-                            <p>game, JQuery/JS</p>
+                    </div>
+                    <div class='com'>
+                        <h3>WEB GAME</h3>
+                        <p>game, JQuery/JS</p>
+                    </div>
+                    <div class='banner_detail'>
+                        <div class='thumbnail'>
+                            <figure>
+                                <img src="{{asset('/images/webGame.png')}}" alt='thumbnail webgame play capture'/>
+                            </figure>
                         </div>
-                        <div class='banner_detail'>
-                            <div class='thumbnail'>
-                                <figure>
-                                    <img src="{{asset('/images/webGame.png')}}" alt='thumbnail webgame play capture'/>
-                                </figure>
-                            </div>
-                            <ul>
-                                <li class='low_res'>Developed during a JS workshop in preparatory year.</li>
-                                <li>Works : introduction to object, requestAnimationFrame & movement management.</li>
-                                <li>This game was never put online.</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li class='low_res'>Developed during a JS workshop in preparatory year.</li>
+                            <li>Works : introduction to object, requestAnimationFrame & movement management.</li>
+                            <li>This game was never put online.</li>
+                        </ul>
+                    </div>
                 </article>
             </section>
 

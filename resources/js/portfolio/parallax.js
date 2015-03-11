@@ -4,7 +4,6 @@
     $menuHeaderLi=$('#menu_header li'), $menuContact=$('#menu_head_contact'), $menuAbout=$('#menu_head_about'), $menuWork=$('#menu_head_work'), $menuHome=$('#menu_head_home');
     
     var parallax={
-        // Application Constructor
         initialize: function(){
             $data=$('#skills .web .data');
             self.bindEvents();
@@ -24,7 +23,7 @@
             elem.css({'height' : iniHeight+((windowScroll/divHeight)-soustractHeight)*speed+'%'});
         },
         renderParallax: function(){
-            if(windowScroll>-100 && windowScroll<$worksSlide.offset().top + 200){
+            if(windowScroll> -100 && windowScroll<$worksSlide.offset().top + 200){
                 self.parallaxBG($fondBase, 75, 0.5);
             }
 

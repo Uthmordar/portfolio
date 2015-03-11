@@ -23,7 +23,6 @@ function dataUnfill($dataField){
 //contrôle du déplacement du menuHeader
 function transitionMenuHeader(elem, prop, mvt){
     mvt=(mvt>window.innerWidth - $(elem).width() - 60)? window.innerWidth - $(elem).width() - 60 : mvt;
-    console.log(window.innerWidth - $(elem).width() - 60);
     $(elem).css(prop, mvt+'px');
 }
 
