@@ -333,17 +333,17 @@
                 <ul id='soc'>
                     <li id='twitter'>
                         <a href="https://twitter.com/TanguyGodin" rel='nofollow'>
-                            <img src="{{asset('/images/twitter.png')}}" alt='twitter icon' title='follow my twitter'/>
+                            <img src="{{asset('/images/logo-twitter.svg')}}" alt='twitter icon' title='follow my twitter'/>
                         </a>
                     </li>
                     <li id='linkedIn'>
                         <a href="https://lnkd.in/d6mE7_Z" rel='nofollow'>
-                            <img src="{{asset('/images/linkin.png')}}" alt='linkIn icon' title='check my linkin'/>
+                            <img src="{{asset('/images/logo-linkedin.svg')}}" alt='linkIn icon' title='check my linkin'/>
                         </a>
                     </li>
                     <li id='gith'>
                         <a href='https://github.com/Uthmordar' rel='nofollow'>
-                            <img src="{{asset('/images/github.png')}}" alt='github icon' title='find my works on github'/>
+                            <img src="{{asset('/images/logo-github.svg')}}" alt='github icon' title='find my works on github'/>
                         </a>
                     </li>
                 </ul>
@@ -370,6 +370,9 @@
                     {!!Form::submit('Submit', array('class'=>'form_submit'))!!}
                 {!!Form::close()!!}
             </div>
+        </div>
+        <div class="legal">
+            <p>Copyright©2015 Tanguy Godin</p>
         </div>
     </footer>
     <!-- script à action différée pour la bonne marche des animations -->

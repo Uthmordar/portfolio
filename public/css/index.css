@@ -800,6 +800,20 @@ footer #wrapperFooter #contact #soc li {
   margin-right: 0.5rem;
   display: inline-block;
   opacity: 0.7;
+  transition: opacity 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  -moz-transition: opacity 1s;
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-delay: 0s;
+  -webkit-transition: opacity 1s;
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-perspective: 500px;
 }
 footer #wrapperFooter #contact #soc li:hover {
   opacity: 1;
@@ -900,6 +914,15 @@ footer #wrapperFooter #contactForm .errorInput {
   footer #wrapperFooter #contactForm {
     width: 48.5%;
   }
+}
+footer .legal {
+  width: 100%;
+}
+footer .legal p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9fa1a3;
 }
 .modal {
   position: fixed;

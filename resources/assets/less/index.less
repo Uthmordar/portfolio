@@ -1035,6 +1035,7 @@ footer{
                     margin-right: 0.5*@margin;
                     display: inline-block;
                     opacity: 0.7;
+                    .transition(opacity, 1s, ease-out, 0s);
 
                     &:hover{
                         opacity : 1;
@@ -1162,6 +1163,17 @@ footer{
             #contactForm{
                 width: 48.5%;
             }
+        }
+    }
+    
+    .legal{
+        width: 100%;
+        
+        p{
+            margin: 0 auto;
+            text-align: center;
+            font-size: 0.8*@font-size-default;
+            color: @color-grey;
         }
     }
 }
