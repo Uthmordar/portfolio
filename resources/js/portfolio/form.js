@@ -3,7 +3,6 @@
     var token=0, date, $submit, token_ajax, match, error, $form, $input_name, $input_mail, $input_message, author, email, message, $error_name, $error_mail, $error_message;
     
     var form={
-        // Application Constructor
         initialize: function(){
             $form=$('#form_contact');
             $input_name=$('#name');
@@ -21,6 +20,7 @@
                 e.preventDefault();
                 error=0;
                 self.getFields();
+                self.resetFieldsStatus();
                 if(!self.checkFields()){
                     return false;
                 }
@@ -41,7 +41,7 @@
             });
         },
         checkFields: function(){
-           if(!author){
+            if(!author){
                self.setFieldError($input_name, $error_name, 'Could I know your name.');
                error++;
             }
@@ -57,6 +57,11 @@
                 error++;
             }
             return (error)? false : true;
+        },
+        resetFieldStatus: function(){
+            $input_name.removeClass('error_form');
+            $input_mail.removeClass('error_form');
+            $input_message.removeClass('error_form');
         },
         setFieldError: function($field, $error, error){
             $error.html(error);

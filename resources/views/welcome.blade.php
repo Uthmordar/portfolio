@@ -76,7 +76,7 @@
                     </ul>
                 </nav>
                 @foreach($projects as $project)
-                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' style="background: url({{asset('/uploads/'.$project->url_image)}}) 50% 0% repeat-y fixed;">
+                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' style="background: url({{asset('/uploads/'.$project->url_image)}}) center center;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -101,30 +101,6 @@
                     </div>
                 </article>
                 @endforeach
-                <article class='project_banner tag-2 project_filter inactive' id='web_game'>
-                    <div class='veil'>
-                    </div> 
-                    <div class='project'>
-                        <div class='slide'>
-                        </div>
-                    </div>
-                    <div class='com'>
-                        <h3>WEB GAME</h3>
-                        <p>game, JQuery/JS</p>
-                    </div>
-                    <div class='banner_detail'>
-                        <div class='thumbnail'>
-                            <figure>
-                                <img src="{{asset('/images/webGame.png')}}" alt='thumbnail webgame play capture'/>
-                            </figure>
-                        </div>
-                        <ul>
-                            <li class='low_res'>Developed during a JS workshop in preparatory year.</li>
-                            <li>Works : introduction to object, requestAnimationFrame & movement management.</li>
-                            <li>This game was never put online.</li>
-                        </ul>
-                    </div>
-                </article>
             </section>
 
             <!-- ABOUT -->
@@ -134,7 +110,7 @@
                 </div>
                 <div id='about_pos'>
                     <div class='about_box' id='pdf'>
-                        <a href='{{asset("/dl/cv.pdf")}}' class='pdf' title='Download résumé pdf' rel='nofollow'>
+                        <a href='{{asset("/dl/Godin_tanguy_cv_web_developer.pdf")}}' class='pdf' title='Download résumé pdf' rel='nofollow'>
                             <img src="{{asset('/images/pdfIcon.png')}}" alt='pdf picto'/>
                             <span class='low_res'>Download</span> my résumé
                         </a>
