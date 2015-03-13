@@ -837,18 +837,15 @@
   width: 5rem;
   height: 5rem;
 }
-#footer #wrapper_footer #contact_form {
-  min-width: 38%;
-}
-#footer #wrapper_footer #contact_form label {
+#footer #wrapper_footer #contact_form_bloc label {
   display: block;
   font-size: 3.08rem;
   color: #9fa1a3;
   margin: 0.5rem 0;
   cursor: pointer;
 }
-#footer #wrapper_footer #contact_form input[type="text"],
-#footer #wrapper_footer #contact_form input[type="email"] {
+#footer #wrapper_footer #contact_form_bloc input[type="text"],
+#footer #wrapper_footer #contact_form_bloc input[type="email"] {
   width: 55%;
   min-width: 27rem;
   font-famil: 'Quicksand', sans-serif;
@@ -859,26 +856,36 @@
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-#footer #wrapper_footer #contact_form ::-webkit-input-placeholder {
+#footer #wrapper_footer #contact_form_bloc ::-webkit-input-placeholder {
   color: #435c7a;
 }
-#footer #wrapper_footer #contact_form :-moz-placeholder {
-  color: #435c7a;
-  opacity: 1;
-}
-#footer #wrapper_footer #contact_form ::-moz-placeholder {
+#footer #wrapper_footer #contact_form_bloc :-moz-placeholder {
   color: #435c7a;
   opacity: 1;
 }
-#footer #wrapper_footer #contact_form :-ms-input-placeholder {
+#footer #wrapper_footer #contact_form_bloc ::-moz-placeholder {
+  color: #435c7a;
+  opacity: 1;
+}
+#footer #wrapper_footer #contact_form_bloc :-ms-input-placeholder {
   color: #435c7a;
 }
-#footer #wrapper_footer #contact_form .form_name:focus,
-#footer #wrapper_footer #contact_form .form_mail:focus,
-#footer #wrapper_footer #contact_form textarea:focus {
+#footer #wrapper_footer #contact_form_bloc .form_name:focus,
+#footer #wrapper_footer #contact_form_bloc .form_mail:focus,
+#footer #wrapper_footer #contact_form_bloc textarea:focus {
   outline: 3.5px solid #fafafa;
 }
-#footer #wrapper_footer #contact_form .form_message {
+#footer #wrapper_footer #contact_form_bloc .form_name.error_form,
+#footer #wrapper_footer #contact_form_bloc .form_mail.error_form,
+#footer #wrapper_footer #contact_form_bloc textarea.error_form {
+  background: #ac566c;
+}
+#footer #wrapper_footer #contact_form_bloc .form_name.error_form:focus,
+#footer #wrapper_footer #contact_form_bloc .form_mail.error_form:focus,
+#footer #wrapper_footer #contact_form_bloc textarea.error_form:focus {
+  outline: 3.5px solid #46222c;
+}
+#footer #wrapper_footer #contact_form_bloc .form_message {
   height: 20rem;
   width: 80%;
   min-width: 38rem;
@@ -891,7 +898,7 @@
   background-color: #9fa1a3;
   border: 1px solid #0d1218;
 }
-#footer #wrapper_footer #contact_form input[type='submit'] {
+#footer #wrapper_footer #contact_form_bloc input[type='submit'] {
   display: block;
   width: 15%;
   min-width: 10rem;
@@ -900,26 +907,21 @@
   color: #9fa1a3;
   background-color: #1f3f33;
   border: none;
+  float: right;
+  margin-right: 16.8rem;
 }
-#footer #wrapper_footer #contact_form input[type='submit']:hover {
-  background-color: #71b99e;
+#footer #wrapper_footer #contact_form_bloc input[type='submit']:hover {
+  background-color: #51a686;
   cursor: pointer;
-  color: #0d1218;
+  color: #1f2a38;
 }
-@media (max-width: 1650px) {
-  #footer #wrapper_footer #contact_form {
-    width: 43.5%;
-  }
+#footer #wrapper_footer #contact_form_bloc input[type='submit'].submit_error {
+  background-color: #683341;
 }
-@media (max-width: 1400px) {
-  #footer #wrapper_footer #contact_form {
-    width: 47.5%;
-  }
-}
-@media (max-width: 1300px) {
-  #footer #wrapper_footer #contact_form {
-    width: 48.5%;
-  }
+#footer #wrapper_footer #contact_form_bloc input[type='submit'].submit_error:hover {
+  background-color: #9c4c61;
+  cursor: pointer;
+  color: #1f2a38;
 }
 #footer .legal {
   width: 100%;
@@ -1069,7 +1071,7 @@
   #footer #wrapper_footer #contact {
     width: 90%;
   }
-  #footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form_bloc {
     width: 90%;
     min-width: 45rem;
     position: absolute;
@@ -1081,7 +1083,7 @@
   #footer #wrapper_footer #contact {
     width: 90%;
   }
-  #footer #wrapper_footer #contact_form {
+  #footer #wrapper_footer #contact_form_bloc {
     display: none;
   }
 }

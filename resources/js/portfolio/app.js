@@ -26,9 +26,10 @@
 }());
 (function(ctx){
     "use strict";
+    var base_url;
     var app={
         // Application Constructor
-        initialize: function(){
+        initialize: function(url){
             window.requestAnimFrame = (function(){
                 return  window.requestAnimationFrame       ||
                         window.webkitRequestAnimationFrame ||
@@ -39,6 +40,7 @@
                             window.setTimeout(callback, 1000 / 60);
                         };
             })();
+            base_url=url;
             self.form.initialize();
             self.menu.initialize();
             self.portfolio.initialize();
@@ -48,6 +50,9 @@
         },
         bindEvents: function(){
 
+        },
+        getBaseUrl: function(){
+            return base_url;
         }
     };
     ctx.app=app;

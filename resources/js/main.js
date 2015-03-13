@@ -127,7 +127,7 @@ function create_lightbox($this){
 $(function(){
 
 	//Prétraitement du formulaire lors de l'arrivée sur la page/envoi du mail, mise en mémoire des éléments en cas de problème PHP
-	/*if(localStorage['mail']!=null){
+	if(localStorage['mail']!=null){
 		scroll('#wrapperFooter', 0);
 		localStorage.removeItem('mail');
 	}
@@ -161,7 +161,7 @@ $(function(){
 			$('#flashMessage').html('email incorrect').slideDown().delay(5000).slideUp();
 			return false;
 		}
-	});*/
+	});
 });
 $(function(){
     //définition des variables pour le parallaxe.

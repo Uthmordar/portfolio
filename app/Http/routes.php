@@ -15,6 +15,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::post('/contact', 'HomeController@contact');
+
 Route::resource('project', 'ProjectController');
 
 Route::get('project/status/{id}', 'ProjectController@changeStatus')->where('id', '[0-9]+');

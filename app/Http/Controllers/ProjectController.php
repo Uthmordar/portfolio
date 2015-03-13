@@ -16,6 +16,7 @@ class ProjectController extends Controller{
             $this->upload=$uploadImage;
             $this->projects=$project;
             $this->middleware('auth');
+            $this->middleware('csrf');
         }
 	/**
 	 * Display a listing of the resource.

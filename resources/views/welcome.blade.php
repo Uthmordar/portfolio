@@ -55,7 +55,7 @@
             <div id='intro_slide'>
                 <article id='intro'>
                     <h1 class='bold'>WELCOME ON MY PORTFOLIO</h1>
-                    <p class='bold'>I have studied multiple computer languages, especially for back-end development : <strong class='color_red'>PHP object</strong>, <strong class='color_red'>NodeJS</strong> & <strong class='color_red'>unit testing</strong>. Moreover I have mastered some frameworks such as <strong class='color_red'>Laravel 5</strong> and <strong class='color_red'>Symphony</strong>. I also spent my time in some personnal project, such as developing my own php framework.</p>
+                    <p class='bold'>I have studied multiple computer languages, especially for back-end development : <strong class='color_red'>PHP object</strong>, <strong class='color_red'>NodeJS</strong> & <strong class='color_red'>unit testing</strong>. Moreover I have mastered some frameworks such as <strong class='color_red'>Laravel 5</strong> and <strong class='color_red'>Symfony</strong>. I also spent my time in some personnal project, such as developing my own php framework.</p>
                 </article>
             </div>
             <a id='learn' href="#">
@@ -299,22 +299,22 @@
                     </li>
                 </ul>
             </div>
-            <div id='contact_form'>
-                {!!Form::open(['url'=>'contact', 'files'=>false, 'method'=>'POST'])!!}
+            <div id='contact_form_bloc'>
+                {!!Form::open(['url'=>'/contact', 'files'=>false, 'method'=>'POST', 'id'=>'form_contact'])!!}
                     {!!Session::get('contactMessage')!!}
                     
                     {!!Form::label('name', 'Name *')!!}
-                    {!!Form::text('name', Input::old('name'), array('placeholder'=>'please enter your name', 'class'=>'form_name', 'required'))!!}
-                    {!!isset($errors)?'<span class="color_red">'.$errors->first('name').'</span>': ''!!}
+                    {!!Form::text('name', Input::old('name'), array('placeholder'=>'please enter your name', 'class'=>'form_name'))!!}
+                    {!!'<div class="error_name color_red">'.$errors->first('name').'</div>'!!}
 
-                        {!!Form::label('email', 'Email *')!!}
-                        {!!Form::email('email', Input::old('email'), array('placeholder'=>'name@domain.com', 'class'=>'form_mail', 'required'))!!}
-                        {!!isset($errors)?'<span class="color_red">'.$errors->first('email').'</span>': ''!!}
-                    
-                    
-                        {!!Form::label('message', 'Message *')!!}
-                        {!!Form::textarea('message', Input::old('message'), array('placeholder'=>'Your message...', 'class'=>'form_message', 'required'))!!}
-                        {!!isset($errors)?'<span class="color_red">'.$errors->first('message').'</span>': ''!!}
+                    {!!Form::label('email', 'Email *')!!}
+                    {!!Form::email('email', Input::old('email'), array('placeholder'=>'name@domain.com', 'class'=>'form_mail'))!!}
+                    {!!isset($errors)?'<div class="error_mail color_red">'.$errors->first('email').'</div>': ''!!}
+
+
+                    {!!Form::label('message', 'Message *')!!}
+                    {!!Form::textarea('message', Input::old('message'), array('placeholder'=>'Your message...', 'class'=>'form_message'))!!}
+                    {!!isset($errors)?'<div class="error_message color_red">'.$errors->first('message').'</div>': ''!!}
 
                     {!!Form::submit('Submit', array('class'=>'form_submit'))!!}
                 {!!Form::close()!!}
@@ -324,14 +324,11 @@
             <p>Copyright©2015 Tanguy Godin</p>
         </div>
     </footer>
-    <!-- script à action différée pour la bonne marche des animations -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//cdn.quilljs.com/0.19.8/quill.js"></script>
-    <!--<script type="text/javascript" src="{{asset('/js/portfolio/main.js')}}"></script>-->
     <script type="text/javascript" src="{{asset('/js/portfolio/portfolio.js')}}"></script>
     <script>
         $(function(){
-            window.app.initialize();
+            window.app.initialize("{{URL::to('/')}}");
         });
     </script>
 </body>
