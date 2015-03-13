@@ -1,7 +1,6 @@
 (function(ctx){
     "use strict";
-    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $footer=$('#footer'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about'),
-    $menuHeaderLi=$('#menu_header li'), $menuContact=$('#menu_head_contact'), $menuAbout=$('#menu_head_about'), $menuWork=$('#menu_head_work'), $menuHome=$('#menu_head_home');
+    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about');
     
     var parallax={
         initialize: function(){
@@ -13,7 +12,7 @@
                 e.preventDefault();
                 windowScroll=Math.floor($window.scrollTop());
                 self.renderParallax();
-                self.controlMenuActiveLink();
+                ctx.menu.controlMenuActiveLink();
             });
         },
         parallaxBG: function(elem, yPos, ySpeed){
@@ -42,18 +41,6 @@
                 for(var i=0; i<$data.length; i++){
                     ctx.portfolio.dataUnfill($data[i]);
                 }
-            }
-        },
-        controlMenuActiveLink: function(){
-            $menuHeaderLi.removeClass('active');
-            if(windowScroll> $footer.offset().top - 600){
-                $menuContact.addClass('active');
-            }else if(windowScroll> $about.offset().top -250){
-                $menuAbout.addClass('active');
-            }else if(windowScroll> $worksSlide.offset().top - 250){
-                $menuWork.addClass('active');
-            }else{
-                $menuHome.addClass('active');
             }
         }
     };

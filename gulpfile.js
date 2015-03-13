@@ -58,6 +58,6 @@ elixir(function(mix) {
 elixir(function(mix) {
     mix.scripts(['polyfill.js', 'Parallax.js', 'tg_function.js', 'tg_form.js', 'index.js'], 'resources/js/main.js');
     mix.compress('resources/js/main.js', 'public/js/portfolio');
-    mix.scripts(['portfolio/app.js', 'portfolio/form.js', 'portfolio/portfolio.js', 'portfolio/parallax.js', 'portfolio/works.js'], 'resources/js/portfolio.js');
+    mix.scripts(['portfolio/app.js', 'portfolio/form.js', 'portfolio/portfolio.js', 'portfolio/parallax.js', 'portfolio/works.js', 'portfolio/menu.js'], 'resources/js/portfolio.js');
     mix.compress('resources/js/portfolio.js', 'public/js/portfolio');
 });

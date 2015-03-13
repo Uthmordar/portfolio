@@ -1,6 +1,6 @@
 (function(ctx){
     "use strict";
-    var editor;
+    var editor, $form;
     
     var form={
         // Application Constructor

@@ -40,9 +40,10 @@
                         };
             })();
             self.form.initialize();
-            self.parallax.initialize();
+            self.menu.initialize();
             self.portfolio.initialize();
             self.works.initialize();
+            self.parallax.initialize();
             self.bindEvents();
         },
         bindEvents: function(){
