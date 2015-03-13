@@ -163,8 +163,8 @@ html {
 }
 body {
   width: 100%;
-  min-width: 320px;
-  max-width: 1900px;
+  min-width: 1080px;
+  max-width: 1980px;
   margin: 0 auto;
   font-size: 1.5rem;
   font-family: 'Quicksand', sans-serif;
@@ -328,7 +328,7 @@ a.color_red {
 }
 #header #wrapper_header #menu_header {
   position: fixed;
-  left: 39rem;
+  right: 30%;
   top: 2.6rem;
   transition: all 1.5s;
   transition-timing-function: linear;
@@ -905,6 +905,13 @@ a.color_red {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1450px) {
+  #wrapper #about #about_pos .flex_container {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 #wrapper #about #about_pos .about_box {
   margin: 1rem 0 0;
   color: #9fa1a3;
@@ -995,8 +1002,19 @@ a.color_red {
       -ms-flex-order: 2;
           order: 2;
 }
+#wrapper #about #about_pos #skills p {
+  font-size: 3.8rem;
+}
+#wrapper #about #about_pos #skills section {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
 #wrapper #about #about_pos #skills ul {
   margin-left: 1.3rem;
+}
+#wrapper #about #about_pos #skills ul li {
+  font-size: 3.5rem;
+  line-height: 5rem;
 }
 #wrapper #about #about_pos #skills .data {
   display: inline-block;
@@ -1026,8 +1044,28 @@ a.color_red {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
+@media (max-width: 1450px) {
+  #wrapper #about #about_pos #skills .skills_flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
 #wrapper #about #about_pos #exp > ul > li {
   margin: 1rem 0;
+}
+@media (max-width: 1450px) {
+  #wrapper #about #about_pos #educ {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 #wrapper #about #about_pos #educ > ul > li {
   margin: 1rem 0;
@@ -1110,6 +1148,9 @@ a.color_red {
   width: 5rem;
   height: 5rem;
 }
+#footer #wrapper_footer #contact_form_bloc {
+  max-width: 66rem;
+}
 #footer #wrapper_footer #contact_form_bloc label {
   display: block;
   font-size: 3.08rem;
@@ -1160,7 +1201,6 @@ a.color_red {
 }
 #footer #wrapper_footer #contact_form_bloc .form_message {
   height: 20rem;
-  width: 80%;
   min-width: 38rem;
   min-height: 20rem;
   font-size: 2.8rem;
@@ -1173,15 +1213,13 @@ a.color_red {
 }
 #footer #wrapper_footer #contact_form_bloc input[type='submit'] {
   display: block;
-  width: 15%;
-  min-width: 10rem;
+  min-width: 15%;
   font-size: 2.94rem;
   border-radius: 0;
   color: #9fa1a3;
   background-color: #1f3f33;
   border: none;
   float: right;
-  margin-right: 16.8rem;
 }
 #footer #wrapper_footer #contact_form_bloc input[type='submit']:hover {
   background-color: #51a686;
@@ -1195,6 +1233,13 @@ a.color_red {
   background-color: #9c4c61;
   cursor: pointer;
   color: #1f2a38;
+}
+@media (max-width: 1200px) {
+  #footer #wrapper_footer {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 #footer .legal {
   width: 100%;

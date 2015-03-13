@@ -386,8 +386,9 @@
     var menu={
         initialize: function(){
             if(!window.matchMedia("(max-width: 1280px)").matches){
-                X=($skillsTitle.offset().left);
-                self.transitionMenu($menuHeader, 'left', X);
+                //X=($skillsTitle.offset().left);
+                X=30;
+                self.transitionMenu($menuHeader, 'right', X);
             }
             self.bindEvents();
         },
@@ -429,8 +430,8 @@
         },
         onResize: function(){
             if(window.matchMedia("(min-width : 1281px)").matches){
-                X=($skillsTitle.offset().left);
-                self.transitionMenu($menuHeader, 'left', X);
+                //X=($skillsTitle.offset().left);
+                //self.transitionMenu($menuHeader, 'left', X);
             }
 
             if(window.matchMedia("(max-width: 1280px)").matches && window.matchMedia("(min-width:990px)").matches){

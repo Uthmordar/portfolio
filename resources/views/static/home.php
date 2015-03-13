@@ -55,7 +55,7 @@
             <div id='intro_slide'>
                 <article id='intro'>
                     <h1 class='bold'>WELCOME ON MY PORTFOLIO</h1>
-                    <p class='bold'>I have studied multiple computer languages, especially for back-end development : <strong class='color_red'>PHP object</strong>, <strong class='color_red'>NodeJS</strong> & <strong class='color_red'>unit testing</strong>. Moreover I have mastered some frameworks such as <strong class='color_red'>Laravel 5</strong> and <strong class='color_red'>Symphony</strong>. I also spent my time in some personnal project, such as developing my own php framework.</p>
+                    <p class='bold'>I have studied multiple computer languages, especially for back-end development : <strong class='color_red'>PHP object</strong>, <strong class='color_red'>NodeJS</strong> & <strong class='color_red'>unit testing</strong>. Moreover I have mastered some frameworks such as <strong class='color_red'>Laravel 5</strong> and <strong class='color_red'>Symfony</strong>. I also spent my time in some personnal project, such as developing my own php framework.</p>
                 </article>
             </div>
             <a id='learn' href="#">
@@ -71,7 +71,7 @@
                                                                                     <li data-filter="tag-1">javascript (1)</li>
                                                                                                                                                                                                                                     </ul>
                 </nav>
-                                <article class='project_banner tag-1 inactive project_filter' style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) 50% 0% repeat-y fixed;">
+                                <article class='project_banner tag-1 inactive project_filter' style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -95,31 +95,7 @@
 
                     </div>
                 </article>
-                                <article class='project_banner tag-2 project_filter inactive' id='web_game'>
-                    <div class='veil'>
-                    </div> 
-                    <div class='project'>
-                        <div class='slide'>
-                        </div>
-                    </div>
-                    <div class='com'>
-                        <h3>WEB GAME</h3>
-                        <p>game, JQuery/JS</p>
-                    </div>
-                    <div class='banner_detail'>
-                        <div class='thumbnail'>
-                            <figure>
-                                <img src="http://localhost/portfolio2/public/images/webGame.png" alt='thumbnail webgame play capture'/>
-                            </figure>
-                        </div>
-                        <ul>
-                            <li class='low_res'>Developed during a JS workshop in preparatory year.</li>
-                            <li>Works : introduction to object, requestAnimationFrame & movement management.</li>
-                            <li>This game was never put online.</li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
+                            </section>
 
             <!-- ABOUT -->
 
@@ -128,7 +104,7 @@
                 </div>
                 <div id='about_pos'>
                     <div class='about_box' id='pdf'>
-                        <a href='http://localhost/portfolio2/public/dl/cv.pdf' class='pdf' title='Download résumé pdf' rel='nofollow'>
+                        <a href='http://localhost/portfolio2/public/dl/Godin_tanguy_cv_web_developer.pdf' class='pdf' title='Download résumé pdf' rel='nofollow'>
                             <img src="http://localhost/portfolio2/public/images/pdfIcon.png" alt='pdf picto'/>
                             <span class='low_res'>Download</span> my résumé
                         </a>
@@ -143,71 +119,77 @@
                     <section class="flex_container">
                         <article class='about_box' id='skills'>
                             <h2>SKILLS</h2>
-                            <p>Back-end development :</p>
-                            <ul class='web'>
-                                <li><span class='color_red bold'>PHP OOP</span>
-                                    <div class='data' data-percent='80'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li><span class='color_red bold'>PHP UNIT, BEHAT</span>
-                                    <div class='data' data-percent='80'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li><span class='color_red'>NodeJS</span>
-                                    <div class='data' data-percent='60'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>60%</span>
-                                </li>
-                                <li>AJAX
-                                    <div class='data' data-percent='40'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>40%</span>
-                                </li>
-                                <li><span class='color_red bold'>Laravel 5</span>
-                                    <div class='data' data-percent='80'>
-                                            <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li>Symphony
-                                    <div class='data' data-percent='70'>
-                                            <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>70%</span>
-                                </li>
-                                <li>CMS : <span class='color_red'>Wordpress</span> & Drupal 
-                                </li>
-                            </ul>
-                            <p>Front-end development :</p>
-                            <ul class='web'>
-                                <li><span class='color_red'>HTML 5</span>
-                                    <div class='data' data-percent='90'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>90%</span>
-                                </li>
-                                <li><span class='color_red'>CSS3</span>
-                                    <div class='data' data-percent='90'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>90%</span>
-                                </li>
-                                <li>Preprocessor : LESS, COMPASS
-                                </li>
-                                <li><span class='color_red'>JAVASCRIPT</span>
-                                    <div class='data' data-percent='60'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>70%</span>
-                                </li>
-                                <li>GRUNT, GULP</li>
-                            </ul>
+                            <div class="skills_flex">
+                                <section class="back_column">
+                                    <p>Back-end development:</p>
+                                    <ul class='web'>
+                                        <li><span class='color_red bold'>PHP OOP</span>
+                                            <div class='data' data-percent='80'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li><span class='color_red bold'>PHP UNIT, BEHAT</span>
+                                            <div class='data' data-percent='80'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li><span class='color_red'>NodeJS</span>
+                                            <div class='data' data-percent='60'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>60%</span>
+                                        </li>
+                                        <li>AJAX
+                                            <div class='data' data-percent='40'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>40%</span>
+                                        </li>
+                                        <li><span class='color_red bold'>Laravel 5</span>
+                                            <div class='data' data-percent='80'>
+                                                    <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li>Symphony
+                                            <div class='data' data-percent='70'>
+                                                    <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>70%</span>
+                                        </li>
+                                        <li>CMS : <span class='color_red'>Wordpress</span> & Drupal 
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="front_column">
+                                    <p>Front-end development:</p>
+                                    <ul class='web'>
+                                        <li><span class='color_red'>HTML 5</span>
+                                            <div class='data' data-percent='90'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>90%</span>
+                                        </li>
+                                        <li><span class='color_red'>CSS3</span>
+                                            <div class='data' data-percent='90'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>90%</span>
+                                        </li>
+                                        <li>Preprocessor : LESS, COMPASS
+                                        </li>
+                                        <li><span class='color_red'>JAVASCRIPT</span>
+                                            <div class='data' data-percent='60'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>70%</span>
+                                        </li>
+                                        <li>GRUNT, GULP</li>
+                                    </ul>
+                                </section>
+                            </div>
                         </article>
                         <article  class='about_box' id='exp'>
                             <h2>INTERNSHIPS</h2>
@@ -293,22 +275,22 @@
                     </li>
                 </ul>
             </div>
-            <div id='contact_form'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8"><input name="_token" type="hidden" value="9LAxcD7wGyjFAEbDR4KtH5snI7Vd3RM0juPWrElc">
+            <div id='contact_form_bloc'>
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="9vxwaOFNg0PUOvsiZqnlQntB0ddCA3h4e6IVA39E">
                     
                     
                     <label for="name">Name *</label>
-                    <input placeholder="please enter your name" class="form_name" required="required" name="name" type="text" id="name">
-                    <span class="color_red"></span>
+                    <input placeholder="please enter your name" class="form_name" name="name" type="text" id="name">
+                    <div class="error_name color_red"></div>
 
-                        <label for="email">Email *</label>
-                        <input placeholder="name@domain.com" class="form_mail" required="required" name="email" type="email" id="email">
-                        <span class="color_red"></span>
-                    
-                    
-                        <label for="message">Message *</label>
-                        <textarea placeholder="Your message..." class="form_message" required="required" name="message" cols="50" rows="10" id="message"></textarea>
-                        <span class="color_red"></span>
+                    <label for="email">Email *</label>
+                    <input placeholder="name@domain.com" class="form_mail" name="email" type="email" id="email">
+                    <div class="error_mail color_red"></div>
+
+
+                    <label for="message">Message *</label>
+                    <textarea placeholder="Your message..." class="form_message" name="message" cols="50" rows="10" id="message"></textarea>
+                    <div class="error_message color_red"></div>
 
                     <input class="form_submit" type="submit" value="Submit">
                 </form>
@@ -318,14 +300,11 @@
             <p>Copyright©2015 Tanguy Godin</p>
         </div>
     </footer>
-    <!-- script à action différée pour la bonne marche des animations -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//cdn.quilljs.com/0.19.8/quill.js"></script>
-    <!--<script type="text/javascript" src="http://localhost/portfolio2/public/js/portfolio/main.js"></script>-->
     <script type="text/javascript" src="http://localhost/portfolio2/public/js/portfolio/portfolio.js"></script>
     <script>
         $(function(){
-            window.app.initialize();
+            window.app.initialize("http://localhost/portfolio2/public");
         });
     </script>
 </body>

@@ -3,8 +3,8 @@ html {
 }
 body {
   width: 100%;
-  min-width: 320px;
-  max-width: 1900px;
+  min-width: 1080px;
+  max-width: 1980px;
   margin: 0 auto;
   font-size: 1.5rem;
   font-family: 'Quicksand', sans-serif;

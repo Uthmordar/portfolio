@@ -102,7 +102,7 @@
 		
         #menu_header{
             position: fixed;
-            left: 39rem;
+            right: 30%;
             top: 2.6rem;
             .transition(all; 1.5s; linear; 0.3s);
                         
@@ -790,6 +790,10 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
+                
+                @media (max-width: 1450px){
+                    flex-direction: column-reverse;
+                }
             }
             
             .about_box{
@@ -912,10 +916,24 @@
             #skills{
                 order: 2;
                 
+                p{
+                    font-size: 3.8rem;
+                }
+                
+                section{
+                    margin-bottom: 2*@margin;
+                    margin-right: 2*@margin;
+                }
+                
                 ul{
                     margin-left: 1.3*@margin;
+                    
+                    li{
+                        font-size: 3.5rem;
+                        line-height: 5rem;
+                    }
                 }
-
+                
                 .data{
                     display: inline-block;
                     width: 7rem;
@@ -932,6 +950,14 @@
                         .transition(all, 2s, ease-out, 0s);
                     }
                 }
+                
+                @media (max-width: 1450px){
+                    .skills_flex{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-around;
+                    }
+                }
             }
 
             #exp{
@@ -941,6 +967,9 @@
             }
 
             #educ{
+                @media (max-width: 1450px){
+                    order: 2;
+                }
                 >ul>li{
                     margin: @margin 0;
                 }
@@ -951,22 +980,6 @@
                 >ul>li{
                     margin: @margin 0;
                 }
-            }
-
-            //-----------------------------------------------------------------
-            //                  RESPONSIVE BOX HIGH RESOLUTION
-            //-----------------------------------------------------------------
-
-            @media (max-width: 1650px){
-
-            }
-
-            @media (max-width: 1400px){
-
-            }
-
-            @media (max-width: 1300px){
-
             }
         }
     }
@@ -1052,7 +1065,8 @@
         //--------------------------------------------------------------------------
 
         #contact_form_bloc{
-
+            max-width: 66rem;
+            
             label{
                 display: block;
                 font-size: 2.2*@font-size;
@@ -1102,7 +1116,6 @@
 
             .form_message{
                 height: 20rem;
-                width: 80%;
                 min-width: 38rem;
                 min-height: 20rem;
                 font-size: 2*@font-size;
@@ -1116,15 +1129,13 @@
 
             input[type='submit']{
                 display: block;
-                width: 15%;
-                min-width: 10rem;
+                min-width: 15%;
                 font-size: 2.1*@font-size;
                 border-radius: 0;
                 color: @color-grey;
                 background-color: @color-green;
                 border: none;
                 float: right;
-                margin-right: 16.8rem;
 
                 &:hover{
                     background-color: lighten(@color-green, 30%);
@@ -1149,17 +1160,8 @@
         //                  RESPONSIVE FORM HIGH RESOLUTION
         //-----------------------------------------------------------------------------
 
-
-        @media (max-width: 1650px){
-
-        }
-
-        @media (max-width: 1400px){
-
-        }
-
-        @media (max-width: 1300px){
-
+        @media (max-width: 1200px){
+            flex-direction: column-reverse;
         }
     }
     

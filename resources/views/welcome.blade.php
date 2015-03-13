@@ -125,71 +125,77 @@
                     <section class="flex_container">
                         <article class='about_box' id='skills'>
                             <h2>SKILLS</h2>
-                            <p>Back-end development :</p>
-                            <ul class='web'>
-                                <li><span class='color_red bold'>PHP OOP</span>
-                                    <div class='data' data-percent='80'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li><span class='color_red bold'>PHP UNIT, BEHAT</span>
-                                    <div class='data' data-percent='80'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li><span class='color_red'>NodeJS</span>
-                                    <div class='data' data-percent='60'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>60%</span>
-                                </li>
-                                <li>AJAX
-                                    <div class='data' data-percent='40'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>40%</span>
-                                </li>
-                                <li><span class='color_red bold'>Laravel 5</span>
-                                    <div class='data' data-percent='80'>
-                                            <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>80%</span>
-                                </li>
-                                <li>Symphony
-                                    <div class='data' data-percent='70'>
-                                            <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>70%</span>
-                                </li>
-                                <li>CMS : <span class='color_red'>Wordpress</span> & Drupal 
-                                </li>
-                            </ul>
-                            <p>Front-end development :</p>
-                            <ul class='web'>
-                                <li><span class='color_red'>HTML 5</span>
-                                    <div class='data' data-percent='90'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>90%</span>
-                                </li>
-                                <li><span class='color_red'>CSS3</span>
-                                    <div class='data' data-percent='90'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>90%</span>
-                                </li>
-                                <li>Preprocessor : LESS, COMPASS
-                                </li>
-                                <li><span class='color_red'>JAVASCRIPT</span>
-                                    <div class='data' data-percent='60'>
-                                        <div class='rempl_data'></div>
-                                    </div>
-                                    <span class='percent'>70%</span>
-                                </li>
-                                <li>GRUNT, GULP</li>
-                            </ul>
+                            <div class="skills_flex">
+                                <section class="back_column">
+                                    <p>Back-end development:</p>
+                                    <ul class='web'>
+                                        <li><span class='color_red bold'>PHP OOP</span>
+                                            <div class='data' data-percent='80'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li><span class='color_red bold'>PHP UNIT, BEHAT</span>
+                                            <div class='data' data-percent='80'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li><span class='color_red'>NodeJS</span>
+                                            <div class='data' data-percent='60'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>60%</span>
+                                        </li>
+                                        <li>AJAX
+                                            <div class='data' data-percent='40'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>40%</span>
+                                        </li>
+                                        <li><span class='color_red bold'>Laravel 5</span>
+                                            <div class='data' data-percent='80'>
+                                                    <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>80%</span>
+                                        </li>
+                                        <li>Symphony
+                                            <div class='data' data-percent='70'>
+                                                    <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>70%</span>
+                                        </li>
+                                        <li>CMS : <span class='color_red'>Wordpress</span> & Drupal 
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="front_column">
+                                    <p>Front-end development:</p>
+                                    <ul class='web'>
+                                        <li><span class='color_red'>HTML 5</span>
+                                            <div class='data' data-percent='90'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>90%</span>
+                                        </li>
+                                        <li><span class='color_red'>CSS3</span>
+                                            <div class='data' data-percent='90'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>90%</span>
+                                        </li>
+                                        <li>Preprocessor : LESS, COMPASS
+                                        </li>
+                                        <li><span class='color_red'>JAVASCRIPT</span>
+                                            <div class='data' data-percent='60'>
+                                                <div class='rempl_data'></div>
+                                            </div>
+                                            <span class='percent'>70%</span>
+                                        </li>
+                                        <li>GRUNT, GULP</li>
+                                    </ul>
+                                </section>
+                            </div>
                         </article>
                         <article  class='about_box' id='exp'>
                             <h2>INTERNSHIPS</h2>
