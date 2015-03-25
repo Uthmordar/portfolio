@@ -1,6 +1,6 @@
 {
     "name": "uthmordar/static",
-    "description": "laravel package for web view static page generation",
+    "description": "package for web view static page generation, laravel 5 extra features (services provider, command line)",
     "authors": [
         {
             "name": "Tanguy Godin",

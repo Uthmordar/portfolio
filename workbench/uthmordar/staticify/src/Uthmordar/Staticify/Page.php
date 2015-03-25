@@ -11,11 +11,8 @@ class Page implements iPage{
     }
     
     public function setPage($page){
-        if(function_exists('config')){
-            $this->page=config('app.url') . '/' . $page;
-        }else{
-            $this->page=$page;
-        }
+        $this->page=$page;
+        return $this;
     }
     
     public function getPage(){
@@ -24,6 +21,7 @@ class Page implements iPage{
     
     public function setStatic($static){
         $this->static=$static;
+        return $this;
     }
     public function getStatic(){
         return $this->static;

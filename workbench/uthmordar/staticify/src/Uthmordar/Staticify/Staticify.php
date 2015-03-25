@@ -6,9 +6,9 @@ class Staticify{
      * generate static pages files from routes
      * @param array $pages
      */
-    public function generatePages(array $pages){
-        foreach($pages as $page){
-            $this->generateStatic(new Page($page['page'], $page['static']));
+    public function generatePages(PagesFactory $factory){
+        foreach($factory as $page){
+            $this->generateStatic($page);
         }
     }
     

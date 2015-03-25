@@ -23,10 +23,10 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'portfolio\Http\Middleware\Authenticate',
-		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'portfolio\Http\Middleware\RedirectIfAuthenticated',
-                'csrf' => 'portfolio\Http\Middleware\VerifyCsrfToken',
+            'auth' => 'portfolio\Http\Middleware\Authenticate',
+            'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
+            'guest' => 'portfolio\Http\Middleware\RedirectIfAuthenticated',
+            'csrf' => 'portfolio\Http\Middleware\VerifyCsrfToken',
 	];
 
 }

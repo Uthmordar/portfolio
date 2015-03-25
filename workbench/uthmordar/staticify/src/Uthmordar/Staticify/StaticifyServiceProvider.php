@@ -24,19 +24,25 @@ class StaticifyServiceProvider extends ServiceProvider {
         $this->app['page']=$this->app->share(function($app){
             return new Page;
         });
+        
+        $this->app['pagesfactory']=$this->app->share(function($app){
+            return new PagesFactory;
+        });
+
 
         // Shortcut so developers don't need to add an Alias in app/config/app.php
         $this->app->booting(function(){
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
             $loader->alias('Staticify', '\Uthmordar\Staticify\Facade\StaticifyFacade');
             $loader->alias('Page', '\Uthmordar\Staticify\Page');
+            $loader->alias('PagesFactory', '\Uthmordar\Staticify\Facade\PagesFactoryFacade');
         });
         
-        $this->app->bind('vendor::command.generate.static.page', function($app) {
-            return new Command\GenerateStaticPage();
+        $this->app->bind('vendor::command.generate.static.pages', function($app) {
+            return new Command\GenerateStaticPages();
         });
         $this->commands(array(
-            'vendor::command.generate.static.page'
+            'vendor::command.generate.static.pages'
         ));
     }
 
