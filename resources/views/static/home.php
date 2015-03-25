@@ -276,7 +276,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="9LBBckquJJGbkp8Wd2U30kB9j9btKwNKEoT8oLoe">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="14vVKXgruUMPIcwvTA7BkhaiWNw0IZVfyLS63bYr">
                     
                     
                     <label for="name">Name *</label>

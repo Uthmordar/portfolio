@@ -118,7 +118,7 @@
             }
             return (error)? false : true;
         },
-        resetFieldStatus: function(){
+        resetFieldsStatus: function(){
             $input_name.removeClass('error_form');
             $input_mail.removeClass('error_form');
             $input_message.removeClass('error_form');
