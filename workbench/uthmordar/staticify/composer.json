@@ -7,6 +7,7 @@
             "email": "tanguyrygodin@gmail.com"
         }
     ],
+	"license": "MIT",
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "5.0.*"
