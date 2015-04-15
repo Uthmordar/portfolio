@@ -15,7 +15,7 @@ class ProjectController extends Controller{
         public function __construct(Project $project, UploadImage $uploadImage){
             $this->upload=$uploadImage;
             $this->projects=$project;
-            $this->middleware('auth');
+            $this->middleware('auth', ['except'=>'show']);
         }
 	/**
 	 * Display a listing of the resource.
@@ -75,6 +75,23 @@ class ProjectController extends Controller{
 	 * @return Response
 	 */
 	public function show($id){
+            if(\Request::ajax()){
+                $project=Project::findOrFail($id);
+                $content="<div class='thumbnail'>
+                            <figure>
+                                <img src='" . asset('/uploads/'.$project->url_thumbnail) . "' alt='thumbnail'/>
+                            </figure>
+                        </div>
+                        <p class='link_project'>";
+                if(!empty($project->url)){
+                    $content.="<a href='" . $project->url . "' rel='nofollow'>Website</a>";
+                }
+                if(!empty($project->git_url)){
+                    $content.="<a href='" . $project->git_url . "' rel='nofollow'>Github repo</a>";
+                }
+                $content.="</p>".$project->content;
+                return ['data'=>$project, 'content'=>$content];
+            }
 	}
 
 	/**

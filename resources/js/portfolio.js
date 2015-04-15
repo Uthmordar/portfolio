@@ -189,8 +189,8 @@
 (function(ctx){
     "use strict";
     var fill, $projectBanner, $page=$('html, body'), $header=$('#header'), top, left, $window=$(window),
-    $elem, intro, text, $modal, $lightbox, $cross, $menuHeader=$('#menu_header'), $menuHeaderLi=$menuHeader.children('ul').children('li'),
-    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn');
+    $modal, $lightbox, $cross, $menuHeader=$('#menu_header'), $menuHeaderLi=$menuHeader.children('ul').children('li'),
+    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId;
     
     var portfolio={
         // Application Constructor
@@ -200,7 +200,14 @@
         },
         bindEvents: function(){
             $projectBanner.on('click', function(){
-                self.generateLightbox(this);
+                projectId=$(this).attr('data-project');
+                $.ajax({
+                    type: "GET",
+                    url: ctx.getBaseUrl() + "/project/" + projectId,
+                    success: function(data){
+                        self.generateLightbox(data);
+                    }
+                });
             });
                
             $window.on('resize', function(){
@@ -241,15 +248,13 @@
         dataUnfill: function($field){
             $($field).children('.rempl_data').css('width', '0');
         },
-        generateLightbox: function(elem){
-            //on récupére les contenus
-            $elem=$(elem);
-            intro=$elem.children('.com').html();
-            text=$elem.children('.banner_detail').html();
-
+        generateLightbox: function(data){
             //on crée le fond opaque et la lightbox
             $modal=$('<div class="modal"></div>').appendTo('body');
-            $lightbox=$('<div class="lightbox">'+intro+text+'</div>').appendTo('body');
+            $lightbox=$('<div class="lightbox">'+
+                    '<h3>'+data.data.title+'</h3>'+
+                    '<p>'+data.data.abstract+'</p>'+
+                    data.content+'</div>').appendTo('body');
             $cross=$('<div class="cross"></div>').appendTo($lightbox);
 
             $wrapper.addClass('blur');

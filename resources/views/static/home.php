@@ -71,28 +71,12 @@
                                                                                     <li data-filter="tag-1">javascript (1)</li>
                                                                                                                                                                                                                                     </ul>
                 </nav>
-                                <article class='project_banner tag-1 inactive project_filter' style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center;">
+                                <article class='project_banner tag-1 inactive project_filter' data-project="7" data-thumb="http://localhost/portfolio2/public/uploads/UPrNCGjddHSros4QadRuCpM1w.jpg" style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
                         <h3>CUSTOMIZABLE CONWAY&#039;S GAME OF LIFE</h3>
                         <p>algorythm, JQuery/JS, webGl render, perf studies</p>
-                    </div>
-                    <div class='banner_detail'>
-                        <div class='thumbnail'>
-                            <figure>
-                                <img src="http://localhost/portfolio2/public/uploads/UPrNCGjddHSros4QadRuCpM1w.jpg" alt='thumbnail'/>
-                            </figure>
-                        </div>
-                        <p class='link_project'>
-                                                                                        <a href='https://github.com/Uthmordar/gameOfLife' rel='nofollow'>Github repo</a>
-                                                    </p>
-                        <ul>
-                            <li class='low_res'>Developed as final year project in preparatory year.</li>
-                            <li class='low_res'>Include : a mini-site, algorythm and render performances test on multiple browsers tests.
-                            <li>Works : render system with <span class="color_red">PIXI.js</span>, game of life simulation which is able to run personnal algorytm of proliferation, seed/parent-child system which allows proliferation of some different species of entities</li>
-                        </ul>
-
                     </div>
                 </article>
                             </section>
@@ -276,7 +260,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="14vVKXgruUMPIcwvTA7BkhaiWNw0IZVfyLS63bYr">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="EUrtqzUC98V8IkjpEBfIeNk9LnKreiakzegVrkcY">
                     
                     
                     <label for="name">Name *</label>
@@ -286,7 +270,6 @@
                     <label for="email">Email *</label>
                     <input placeholder="name@domain.com" class="form_mail" name="email" type="email" id="email">
                     <div class="error_mail color_red"></div>
-
 
                     <label for="message">Message *</label>
                     <textarea placeholder="Your message..." class="form_message" name="message" cols="50" rows="10" id="message"></textarea>

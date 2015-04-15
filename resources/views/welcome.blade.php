@@ -76,28 +76,12 @@
                     </ul>
                 </nav>
                 @foreach($projects as $project)
-                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' style="background: url({{asset('/uploads/'.$project->url_image)}}) center center;">
+                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' data-project="{{$project->id}}" data-thumb="{{asset('/uploads/'.$project->url_thumbnail)}}" style="background: url({{asset('/uploads/'.$project->url_image)}}) center center;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
                         <h3>{{$project->title}}</h3>
                         <p>{{$project->abstract}}</p>
-                    </div>
-                    <div class='banner_detail'>
-                        <div class='thumbnail'>
-                            <figure>
-                                <img src="{{asset('/uploads/'.$project->url_thumbnail)}}" alt='thumbnail'/>
-                            </figure>
-                        </div>
-                        <p class='link_project'>
-                            @if(!empty($project->url))
-                                <a href='{{$project->url}}' rel='nofollow'>Website</a>
-                            @endif
-                            @if(!empty($project->git_url))
-                                <a href='{{$project->git_url}}' rel='nofollow'>Github repo</a>
-                            @endif
-                        </p>
-                        {!!$project->content!!}
                     </div>
                 </article>
                 @endforeach
@@ -292,7 +276,6 @@
                     {!!Form::label('email', 'Email *')!!}
                     {!!Form::email('email', Input::old('email'), array('placeholder'=>'name@domain.com', 'class'=>'form_mail'))!!}
                     {!!isset($errors)?'<div class="error_mail color_red">'.$errors->first('email').'</div>': ''!!}
-
 
                     {!!Form::label('message', 'Message *')!!}
                     {!!Form::textarea('message', Input::old('message'), array('placeholder'=>'Your message...', 'class'=>'form_message'))!!}
