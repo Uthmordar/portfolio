@@ -163,7 +163,7 @@ html {
 }
 body {
   width: 100%;
-  min-width: 1080px;
+  min-width: 710px;
   max-width: 1980px;
   margin: 0 auto;
   font-size: 1.5rem;
@@ -395,32 +395,38 @@ a.color_red {
     -moz-perspective: 500px;
   }
 }
-@media (max-width: 930px) {
+@media (max-width: 1100px) {
   #header #wrapper_header #menu_header {
-    margin-left: 5%;
-    top: 9rem;
-    left: 0rem;
-    position: fixed;
-    transition: all 0s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-    -moz-transition: all 0s;
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-delay: 0s;
-    -webkit-transition: all 0s;
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-delay: 0s;
-    -webkit-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -moz-perspective: 500px;
+    right: 5rem;
+    left: initial;
   }
-}
-@media (max-width: 600px) {
-  #header #wrapper_header #menu_header {
-    top: 10rem;
-    width: 35rem;
+  #header #wrapper_header #menu_header ul li {
+    min-width: 0;
+    margin: 0.6rem;
+    border-bottom: 0px solid #9fa1a3;
+    -webkit-box-reflect: none;
+  }
+  #header #wrapper_header #menu_header ul li .puce {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #9fa1a3;
+  }
+  #header #wrapper_header #menu_header ul li.active {
+    border-bottom: 0px solid #499478;
+  }
+  #header #wrapper_header #menu_header ul li.active span.puce {
+    background: #499478;
+  }
+  #header #wrapper_header #menu_header ul li:hover {
+    border-bottom: 0px solid #82c1aa;
+  }
+  #header #wrapper_header #menu_header ul li:hover span.puce {
+    background: #82c1aa;
+  }
+  #header #wrapper_header #menu_header ul .text {
+    display: none;
   }
 }
 @media (max-width: 930px) {
@@ -511,6 +517,11 @@ a.color_red {
   display: block;
   margin: 1rem auto 0;
   cursor: pointer;
+}
+@media (max-width: 970px) {
+  #wrapper #learn {
+    display: none;
+  }
 }
 @media (max-width: 1300px) {
   #wrapper #learn {

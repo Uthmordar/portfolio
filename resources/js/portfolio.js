@@ -392,7 +392,7 @@
     
     var menu={
         initialize: function(){
-            if(!window.matchMedia("(max-width: 1280px)").matches){
+            if(!window.matchMedia("(max-width: 1100px)").matches){
                 X=30;
                 self.transitionMenu($menuHeader, 'right', X);
             }
@@ -436,12 +436,9 @@
             $elem.css(prop, mvt+'px');
         },
         onResize: function(){
-            if(window.matchMedia("(max-width: 1280px)").matches && window.matchMedia("(min-width:990px)").matches){
-                $menuHeader.css('left', '35rem');
-            }
-
-            if(window.matchMedia("(max-width: 930px)").matches){
-                $menuHeader.css('left', '0');
+            if(!window.matchMedia("(max-width: 1100px)").matches){
+                X=30;
+                self.transitionMenu($menuHeader, 'right', X);
             }
         }
     };

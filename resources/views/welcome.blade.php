@@ -38,10 +38,10 @@
             </div>
             <nav id='menu_header'>
                 <ul>
-                    <li id='menu_head_home' class='active'>Hello</li>
-                    <li id='menu_head_work'>Works</li>
-                    <li id='menu_head_about'>More about me</li>
-                    <li id='menu_head_contact'>Contact me</li>
+                    <li id='menu_head_home' class='active'><span class="puce"></span><span class="text">Hello</span></li>
+                    <li id='menu_head_work'><span class="puce"></span><span class="text">Works</span></li>
+                    <li id='menu_head_about'><span class="puce"></span><span class="text">More about me</span></li>
+                    <li id='menu_head_contact'><span class="puce"></span><span class="text">Contact me</span></li>
                 </ul>
             </nav>
         </div>

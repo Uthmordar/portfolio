@@ -141,7 +141,7 @@ img.end,img.left,img.right,img.start{margin-bottom:.5em}
 .ie678 textarea{overflow:auto}
 .hidden{display:none}
 html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:62.5%}
-body{width:100%;min-width:1080px;max-width:1980px;margin:0 auto;font-size:1.5rem;font-family:Quicksand,sans-serif;background:#d3d4d5;-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-webkit-font-feature-settings:"liga","dlig";font-feature-settings:"liga","dlig";text-rendering:optimizeLegibility}
+body{width:100%;min-width:710px;max-width:1980px;margin:0 auto;font-size:1.5rem;font-family:Quicksand,sans-serif;background:#d3d4d5;-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-webkit-font-feature-settings:"liga","dlig";font-feature-settings:"liga","dlig";text-rendering:optimizeLegibility}
 a,h1,h2,h3,input,li,p,textarea{text-rendering:optimizeLegibility;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 #footer #wrapper_footer #contact #soc li,#header #wrapper_header #menu_header,#wrapper #about #about_pos #skills .data .rempl_data,#wrapper #works_slide .project_banner,#wrapper #works_slide .project_banner .veil{-ms-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d}
 body *{max-width:100%}
@@ -171,10 +171,16 @@ to{opacity:1;color:#71b99e}}
 #header #wrapper_header #menu_header ul li.active{color:#41836a;border-bottom:2px solid #499478}
 #header #wrapper_header #menu_header ul li:hover{color:#71b99e;border-bottom:4px solid #82c1aa}
 @media (max-width:1279px){#header #wrapper_header #menu_header{left:33rem;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}}
-@media (max-width:930px){#header #wrapper_header #menu_header{margin-left:5%;top:9rem;left:0;position:fixed;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}
-header{height:15rem}}
-@media (max-width:600px){#header #wrapper_header #menu_header{top:10rem;width:35rem}
-header{height:20rem}}
+@media (max-width:1100px){#header #wrapper_header #menu_header{right:5rem;left:initial}
+#header #wrapper_header #menu_header ul li{min-width:0;margin:.6rem;border-bottom:0 solid #9fa1a3;-webkit-box-reflect:none}
+#header #wrapper_header #menu_header ul li .puce{display:block;width:30px;height:30px;border-radius:50%;background:#9fa1a3}
+#header #wrapper_header #menu_header ul li.active{border-bottom:0 solid #499478}
+#header #wrapper_header #menu_header ul li.active span.puce{background:#499478}
+#header #wrapper_header #menu_header ul li:hover{border-bottom:0 solid #82c1aa}
+#header #wrapper_header #menu_header ul li:hover span.puce{background:#82c1aa}
+#header #wrapper_header #menu_header ul .text{display:none}}
+@media (max-width:930px){header{height:15rem}}
+@media (max-width:600px){header{height:20rem}}
 #wrapper{width:100%;position:relative;margin:0}
 #wrapper #fond_base{height:95rem;background:url(../../images/backgroundHome.png)fixed}
 #wrapper #intro_slide{background-color:transparent;margin:1rem;position:absolute;top:20rem;left:3%;max-width:90%}
@@ -186,6 +192,7 @@ header{height:20rem}}
 #wrapper #learn p:hover{color:#93cab5}
 #wrapper #learn p:hover:after{background:url(../../images/flecheHover.png)no-repeat}
 #wrapper #learn p:after{content:'';background:url(../../images/fleche.png)no-repeat;width:2.8rem;height:2.8rem;display:block;margin:1rem auto 0;cursor:pointer}
+@media (max-width:970px){#wrapper #learn{display:none}}
 @media (max-width:1300px){#wrapper #learn{max-width:40%}}
 @media (max-width:1200px){#wrapper #learn{max-width:45%}}
 @media (max-width:1100px){#wrapper #learn{max-width:50%;left:35%}}
