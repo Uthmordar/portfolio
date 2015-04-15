@@ -260,7 +260,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="EUrtqzUC98V8IkjpEBfIeNk9LnKreiakzegVrkcY">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="wQ1YHdBXe8nnK4kNZsGp4kX4M32AfsO0duTvKvNB">
                     
                     
                     <label for="name">Name *</label>
@@ -283,7 +283,7 @@
             <p>Copyright©2015 Tanguy Godin</p>
         </div>
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://localhost/portfolio2/public/js/portfolio/portfolio.js"></script>
     <script>
         $(function(){
