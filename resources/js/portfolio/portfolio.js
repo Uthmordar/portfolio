@@ -5,7 +5,6 @@
     $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId;
     
     var portfolio={
-        // Application Constructor
         initialize: function(){
             $projectBanner=$('.project_banner');
             self.bindEvents();

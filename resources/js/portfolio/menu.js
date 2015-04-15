@@ -1,12 +1,11 @@
 (function(ctx){
     "use strict";
     var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $footer=$('#footer'), $about=$('#about'), $menuHeader=$('#menu_header'), $wrapperFooter=$('#wrapper_footer'),
-    $menuHeaderLi=$menuHeader.children('ul').children('li'), $menuContact=$('#menu_head_contact'), $menuAbout=$('#menu_head_about'), $menuWork=$('#menu_head_work'), $menuHome=$('#menu_head_home'), $skillsTitle=$('#skills h2'), X;
+    $menuHeaderLi=$menuHeader.children('ul').children('li'), $menuContact=$('#menu_head_contact'), $menuAbout=$('#menu_head_about'), $menuWork=$('#menu_head_work'), $menuHome=$('#menu_head_home'), X;
     
     var menu={
         initialize: function(){
             if(!window.matchMedia("(max-width: 1280px)").matches){
-                //X=($skillsTitle.offset().left);
                 X=30;
                 self.transitionMenu($menuHeader, 'right', X);
             }
@@ -33,6 +32,7 @@
             });
         },
         controlMenuActiveLink: function(){
+            windowScroll=ctx.parallax.getWindowScroll();
             $menuHeaderLi.removeClass('active');
             if(windowScroll> $footer.offset().top - 600){
                 $menuContact.addClass('active');
@@ -49,11 +49,6 @@
             $elem.css(prop, mvt+'px');
         },
         onResize: function(){
-            if(window.matchMedia("(min-width : 1281px)").matches){
-                //X=($skillsTitle.offset().left);
-                //self.transitionMenu($menuHeader, 'left', X);
-            }
-
             if(window.matchMedia("(max-width: 1280px)").matches && window.matchMedia("(min-width:990px)").matches){
                 $menuHeader.css('left', '35rem');
             }

@@ -15,6 +15,9 @@
                 ctx.menu.controlMenuActiveLink();
             });
         },
+        getWindowScroll: function(){
+            return windowScroll;
+        },
         parallaxBG: function(elem, yPos, ySpeed){
             elem.css({'background-position' : '0px '+(yPos-(windowScroll/ySpeed))+'px'});
         },

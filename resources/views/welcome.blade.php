@@ -132,10 +132,6 @@
                                             <span class='percent'>60%</span>
                                         </li>
                                         <li>AJAX
-                                            <div class='data' data-percent='40'>
-                                                <div class='rempl_data'></div>
-                                            </div>
-                                            <span class='percent'>40%</span>
                                         </li>
                                         <li><span class='color_red bold'>Laravel 5</span>
                                             <div class='data' data-percent='80'>
@@ -143,7 +139,7 @@
                                             </div>
                                             <span class='percent'>80%</span>
                                         </li>
-                                        <li>Symphony
+                                        <li><span class='color_red bold'>Symfony</span>
                                             <div class='data' data-percent='70'>
                                                     <div class='rempl_data'></div>
                                             </div>
@@ -188,8 +184,8 @@
                                     <h3><a href="http://www.netemedia.fr/" alt="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
                                     <p>Avril-August 2014, 5 months</p>
                                     <p>Work as web developer: wordpress theme development, website maintenance...</p>
-                                    <p>Used: wordpress, php, symphony, ajax, js, html5, css3</p>
-                                    <p class="decal">Some project :</p>
+                                    <p>Used: wordpress, php, symfony, ajax, js, html5, css3</p>
+                                    <p class="decal">Some projects:</p>
                                     <ul>
                                         <li><a href="http://www.covoiture-art.com/" class="show" target="_blank">Carshare website</a></li>
                                         <li><a href="http://www.parquets-koval.com/" class="show" target="_blank">Parquet showroom & command website</a></li>
@@ -240,8 +236,8 @@
                 <h2>CONTACT ME</h2>
                 <p>I am available to hire and I am based in Alfortville, near Paris, FRANCE.</p>
                 <ul id='contact_data'>
-                    <li>Tel : 0033 647 764 006</li>
-                    <li>email : 
+                    <li>Tel: 0033 647 764 006</li>
+                    <li>mail: 
                         <a href='mailto:tanguyrygodin@gmail.com?subject=portfolioContact' class='color_red' title='my mail : click and send me your message.' rel='nofollow'>
                             tanguyrygodin@gmail.com
                         </a>
