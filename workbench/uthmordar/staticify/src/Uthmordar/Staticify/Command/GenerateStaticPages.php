@@ -48,7 +48,6 @@ class GenerateStaticPages extends Command{
             $static=trim($this->argument('static'), '{} ');
             $this->statics=explode('::', $static);
 
-            //$factory=new PagesFactory();
             for($i=0; $i<count($this->pages); $i++){
                 PagesFactory::addPage(config('app.url') . $this->pages[$i], $this->statics[$i]);
             }

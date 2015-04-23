@@ -755,6 +755,8 @@ a.color_red {
   z-index: 0;
   overflow: hidden;
   opacity: 1;
+  background: url(../../images/fond-code-filter.jpg) center center no-repeat;
+  background-size: 100%;
   transition: all 1s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
@@ -896,7 +898,7 @@ a.color_red {
   position: absolute;
   top: 0;
   left: 0;
-  height: 0%;
+  height: 100%;
   width: 100%;
   background: url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
   max-height: 100%;

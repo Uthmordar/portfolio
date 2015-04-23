@@ -29,10 +29,9 @@
                 self.parallaxBG($fondBase, 75, 0.5);
             }
 
-            if(windowScroll>$about.offset().top - 200 && windowScroll<3300){
-                self.parallaxBG($fondAbout, 75, 0.1);
-                self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
-            }
+            self.parallaxBG($fondAbout, 75, 0.01);
+            //self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
+            
 
             if(windowScroll>$about.offset().top - 200 && windowScroll<2600){
                 for(var i=0; i<$data.length; i++){

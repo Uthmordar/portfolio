@@ -49,7 +49,7 @@ class Project extends Model{
      * @return type
      */
     public function scopeIsPublish($query){
-        return $query->where('status', '=', 'publish');
+        return $query->where('status', '=', 'publish')->orderBy('date', 'desc');
     }
     
     /**
