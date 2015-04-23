@@ -8,7 +8,6 @@ class UserTableSeeder extends Seeder{
         DB::table('users')->insert(
             [
                 ['name'=>'Tanguy',
-                 'password'=> Hash::make('!drakkar47'),
                  'email'=>'tanguyrygodin@gmail.com'
                 ]
             ]
