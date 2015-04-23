@@ -77,10 +77,11 @@ class ProjectController extends Controller{
 	public function show($id){
             if(\Request::ajax()){
                 $project=Project::findOrFail($id);
-                $content="<div class='thumbnail'>
-                            <figure>
-                                <img src='" . asset('/uploads/'.$project->url_thumbnail) . "' alt='thumbnail'/>
-                            </figure>
+                $img=null;
+                if(!empty($project->url_thumbnail)){
+                    $img="style='background: url(" . asset('/uploads/'.$project->url_thumbnail) . ") no-repeat center center; background-size: cover;'";
+                }
+                $content="<div class='thumbnail' $img>
                         </div>
                         <p class='link_project'>";
                 if(!empty($project->url)){

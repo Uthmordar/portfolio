@@ -810,6 +810,7 @@ a.color_red {
 }
 #wrapper #works_slide .project_banner:hover {
   border: 6px solid #41836a;
+  background-size: 105% !important ;
 }
 #wrapper #works_slide .project_banner:hover .veil {
   opacity: 0.25;
@@ -1319,8 +1320,9 @@ a.color_red {
 }
 .lightbox .thumbnail {
   width: 100%;
-  max-height: 18rem;
-  overflow: hidden;
+  min-height: 18rem;
+  background: url(../../images/backgroundHome.png) 0% 0% no-repeat;
+  background-size: cover;
 }
 .lightbox .link_project {
   width: 90%;

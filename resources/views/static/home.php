@@ -69,14 +69,31 @@
                     <ul>
                         <li class='active' data-filter='All'>All</li>
                                                                                     <li data-filter="tag-1">javascript (1)</li>
-                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                        <li data-filter="tag-4">Back-end (2)</li>
+                                                                        </ul>
                 </nav>
-                                <article class='project_banner tag-1 inactive project_filter' data-project="7" data-thumb="http://localhost/portfolio2/public/uploads/UPrNCGjddHSros4QadRuCpM1w.jpg" style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center;">
+                                <article class='project_banner tag-1 inactive project_filter' data-project="7" style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center; background-size: 100%;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
                         <h3>CUSTOMIZABLE CONWAY&#039;S GAME OF LIFE</h3>
                         <p>algorythm, JQuery/JS, webGl render, perf studies</p>
+                    </div>
+                </article>
+                                <article class='project_banner tag-4 inactive project_filter' data-project="8" style="background: url(http://localhost/portfolio2/public/uploads/vRIF0KkMeNL997gCpInIdR81t.jpg) center center; background-size: 100%;">
+                    <div class='veil'>
+                    </div> 
+                    <div class='com'>
+                        <h3>Covoiture-art</h3>
+                        <p>PHP, Wordpress, e-commerce</p>
+                    </div>
+                </article>
+                                <article class='project_banner tag-4 inactive project_filter' data-project="9" style="background: url(http://localhost/portfolio2/public/uploads/eih3kUsQuboVHfCVrGBO3Mj8t.jpg) center center; background-size: 100%;">
+                    <div class='veil'>
+                    </div> 
+                    <div class='com'>
+                        <h3>Parquets koval</h3>
+                        <p>PHP, wordpress</p>
                     </div>
                 </article>
                             </section>
@@ -256,7 +273,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="EUdnFToi8HiuHcHndXlfiMWeKrsmxXLheOP1TelI">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="PuFoYQiIZTM3jjSCxCulPEm3mxosQErpgrGjC06I">
                     
                     
                     <label for="name">Name *</label>

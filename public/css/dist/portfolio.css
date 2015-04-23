@@ -242,7 +242,7 @@ to{opacity:1;color:#71b99e}}
 #wrapper #works_slide .project_banner.project_filter{width:100%;height:18rem;opacity:1;border:6px solid #0d1218}
 #wrapper #works_slide .project_banner .veil{width:100%;position:absolute;top:0;left:0;height:100%;z-index:0;background-color:#0d1218;opacity:.9;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 1s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
 #wrapper #works_slide .project_banner .project{width:100%;position:absolute;top:0;left:0;height:100%;z-index:-1}
-#wrapper #works_slide .project_banner:hover{border:6px solid #41836a}
+#wrapper #works_slide .project_banner:hover{border:6px solid #41836a;background-size:105%!important}
 #wrapper #works_slide .project_banner:hover .veil{opacity:.25}
 #wrapper #works_slide .project_banner .com{position:absolute;top:0;left:0;z-index:1}
 #wrapper #works_slide .project_banner .com h3{color:#fff;margin:1rem;padding:.5rem}
@@ -326,7 +326,7 @@ to{opacity:1;color:#71b99e}}
 .lightbox p{width:95%;font-size:2.66rem}
 .lightbox ul{list-style:disc;max-width:95%}
 .lightbox ul li{font-size:2.66rem;line-height:2.94rem;margin:.5rem;padding:.25rem}
-.lightbox .thumbnail{width:100%;max-height:18rem;overflow:hidden}
+.lightbox .thumbnail{width:100%;min-height:18rem;background:url(../../images/backgroundHome.png)no-repeat;background-size:cover}
 .lightbox .link_project{width:90%;margin:1rem auto;padding:.5rem}
 .lightbox .link_project a{font-size:2.52rem;padding:.5rem .65rem;color:#d3d4d5;background-color:#1f3f33;display:inline-block;margin-top:.5rem}
 .lightbox .link_project a:hover{background-color:#71b99e}

@@ -76,7 +76,7 @@
                     </ul>
                 </nav>
                 @foreach($projects as $project)
-                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' data-project="{{$project->id}}" data-thumb="{{asset('/uploads/'.$project->url_thumbnail)}}" style="background: url({{asset('/uploads/'.$project->url_image)}}) center center;">
+                <article class='project_banner tag-{{$project->tag_id}} inactive project_filter' data-project="{{$project->id}}" style="background: url({{asset('/uploads/'.$project->url_image)}}) center center; background-size: 100%;">
                     <div class='veil'>
                     </div> 
                     <div class='com'>
