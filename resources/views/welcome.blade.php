@@ -225,6 +225,12 @@
                             </ul>
                         </article>
                     </section>
+                    <article class='about_box' id="award">
+                        <h2>Award</h2>
+                        <ul>
+                            <li>Open du web 2013, Paris: 1st in Integration</li>
+                        </ul>
+                    </article>
                 </div>
             </section>
         </section>

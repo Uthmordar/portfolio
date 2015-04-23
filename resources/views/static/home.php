@@ -245,6 +245,12 @@
                             </ul>
                         </article>
                     </section>
+                    <article class='about_box' id="award">
+                        <h2>Award</h2>
+                        <ul>
+                            <li>Open du web 2013, Paris: 1st in Integration</li>
+                        </ul>
+                    </article>
                 </div>
             </section>
         </section>
@@ -282,7 +288,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="kgrKvFsiecObHFDoI1eXBdSiDXj35biEHWoJV3Sa">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="NsUoEmzZMlDYxkDRuzjfLcUr1wYmRbhzBMEHb4yx">
                     
                     
                     <label for="name">Name *</label>
