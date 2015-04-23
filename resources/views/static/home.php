@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tanguy Godin web developer, my résumé & works</title>
@@ -288,7 +288,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="NsUoEmzZMlDYxkDRuzjfLcUr1wYmRbhzBMEHb4yx">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="k43OqigTH8ORWXZsJg9r2SwYVZVkeQndzS5gxC7E">
                     
                     
                     <label for="name">Name *</label>

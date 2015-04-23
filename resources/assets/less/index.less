@@ -108,7 +108,11 @@
                  
             ul{
                 display: flex;
+                -ms-align-items: center;
+                -webkit-align-items: center;
                 align-items: center;
+                -ms-justify-content: center;
+                -webkit-justify-content: center;
                 justify-content: center;
                 margin: 0;
                 padding: 0;
@@ -718,22 +722,6 @@
             .banner_detail{
                 display: none;
             }
-
-            //------------------------------------------------------------
-            // 			BACKGROUND PROJECT
-            //------------------------------------------------------------
-            &[id='web_game']{
-                background: url(../../images/bg.jpg) 0% 0% repeat fixed;
-
-                .slide{
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    background:  url(../../images/webGameUp.png) 50% 0% repeat fixed;
-                }
-            }
         }
 
 
@@ -824,10 +812,16 @@
 
             .flex_container{
                 display: flex;
+                -ms-align-items: flex-start;
+                -webkit-align-items: flex-start;
                 align-items: flex-start;
+                -ms-justify-content: space-between;
+                -webkit-justify-content: space-between;
                 justify-content: space-between;
                 
                 @media (max-width: 1450px){
+                    -ms-flex-direction: column-reverse;
+                    -webkit-flex-direction: column-reverse;
                     flex-direction: column-reverse;
                 }
             }
@@ -950,6 +944,8 @@
             //--------------------------------------------------------------------
 
             #skills{
+                -ms-order: 2;
+                -webkit-order: 2;
                 order: 2;
                 
                 p{
@@ -990,7 +986,11 @@
                 @media (max-width: 1450px){
                     .skills_flex{
                         display: flex;
+                        -ms-align-items: flex-start;
+                        -webkit-align-items: flex-start;
                         align-items: flex-start;
+                        -ms-justify-content: space-around;
+                        -webkit-justify-content: space-around;
                         justify-content: space-around;
                     }
                 }
@@ -1004,6 +1004,8 @@
 
             #educ{
                 @media (max-width: 1450px){
+                    -ms-order: 2;
+                    -webkit-order: 2;
                     order: 2;
                 }
                 >ul>li{
@@ -1012,6 +1014,8 @@
             }
 
             #misc{
+                -ms-order: 1;
+                -webkit-order: 1;
                 order: 1;
                 >ul>li{
                     margin: @margin 0;
@@ -1038,7 +1042,11 @@
         width: @width-wrapper;
         margin: 3*@margin auto;
         display: flex;
+        -ms-align-items: center;
+        -webkit-align-items: center;
         align-items: center;
+        -ms-justify-content: space-around;
+        -webkit-justify-content: space-around;
         justify-content: space-around;
         position: relative;		
 
@@ -1197,6 +1205,8 @@
         //-----------------------------------------------------------------------------
 
         @media (max-width: 1200px){
+            -ms-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
             flex-direction: column-reverse;
         }
     }

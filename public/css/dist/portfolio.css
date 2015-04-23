@@ -166,7 +166,7 @@ to{opacity:1;color:#71b99e}}
 #header #wrapper_header #logo h1{font-size:3rem;color:#9fa1a3;font-weight:700;margin:0}
 #header #wrapper_header #logo p{font-size:2.2rem;margin:0;max-width:none}
 #header #wrapper_header #menu_header{position:fixed;right:30%;top:2.6rem;transition:all 1.5s;transition-timing-function:linear;transition-delay:.3s;-moz-transition:all 1.5s;-moz-transition-timing-function:linear;-moz-transition-delay:.3s;-webkit-transition:all 1.5s;-webkit-transition-timing-function:linear;-webkit-transition-delay:.3s;-moz-perspective:500px}
-#header #wrapper_header #menu_header ul{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0;padding:0}
+#header #wrapper_header #menu_header ul{display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-ms-justify-content:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0;padding:0}
 #header #wrapper_header #menu_header ul li{min-width:10.5rem;font-size:3.36rem;border-bottom:2px solid #9fa1a3;margin:.4rem;padding:.2rem;cursor:pointer;font-weight:700;-webkit-box-reflect:below -3px -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(255,255,255,.2)))}
 #header #wrapper_header #menu_header ul li.active{color:#41836a;border-bottom:2px solid #499478}
 #header #wrapper_header #menu_header ul li:hover{color:#71b99e;border-bottom:4px solid #82c1aa}
@@ -248,8 +248,6 @@ to{opacity:1;color:#71b99e}}
 #wrapper #works_slide .project_banner .com h3{color:#fff;margin:1rem;padding:.5rem}
 #wrapper #works_slide .project_banner .com p{font-size:3.22rem;color:#a2a4a5;margin:1rem;padding:.5rem}
 #wrapper #works_slide .project_banner .banner_detail{display:none}
-#wrapper #works_slide .project_banner[id=web_game]{background:url(../../images/bg.jpg)fixed}
-#wrapper #works_slide .project_banner[id=web_game] .slide{width:100%;position:absolute;top:0;left:0;height:100%;background:url(../../images/webGameUp.png)50% 0 fixed}
 @media (max-width:600px){#wrapper #works_slide .project_banner{width:100%;margin:1rem 0;border:6px solid #0d1218;height:18rem;position:relative;overflow:hidden}
 #wrapper #works_slide .project_banner .com{position:absolute;top:0;left:0;z-index:1}
 #wrapper #works_slide .project_banner .com h3{font-size:3rem;line-height:3.3rem;color:#fff;margin:.5rem;padding:.25rem}
@@ -259,7 +257,7 @@ to{opacity:1;color:#71b99e}}
 #wrapper #about{width:100%;background:#070A0E;position:relative;z-index:0}
 #wrapper #about #fond_about{position:absolute;top:0;left:0;height:100%;width:100%;background:url(../../images/backgroundAbout.png)fixed;max-height:100%}
 #wrapper #about #about_pos{width:90%;margin:2rem auto 0;padding:.5rem}
-#wrapper #about #about_pos .flex_container{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+#wrapper #about #about_pos .flex_container{display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:flex-start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-ms-justify-content:space-between;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 #wrapper #about #about_pos .about_box{margin:1rem 0 0;color:#9fa1a3;padding:2rem}
 #wrapper #about #about_pos .about_box h2{color:#edeeee;margin:1rem 0;padding:.5rem 0}
 #wrapper #about #about_pos .about_box h3{color:#c6c7c8;margin:.5rem 0;padding:.25rem 0}
@@ -278,7 +276,7 @@ to{opacity:1;color:#71b99e}}
 @media (max-width:480px){#wrapper #about #about_pos #pdf{padding:.25rem}
 #wrapper #about #about_pos #pdf a{font-size:3.08rem;padding:.75rem}
 #wrapper #about #about_pos #pdf a .lowRes{display:none}}
-#wrapper #about #about_pos #skills{-webkit-order:2;-ms-flex-order:2;order:2}
+#wrapper #about #about_pos #skills{-ms-order:2;-webkit-order:2;-ms-flex-order:2;order:2}
 #wrapper #about #about_pos #skills p{font-size:3.8rem}
 #wrapper #about #about_pos #skills section{margin-bottom:2rem;margin-right:2rem}
 #wrapper #about #about_pos #skills ul{margin-left:1.3rem}
@@ -286,12 +284,12 @@ to{opacity:1;color:#71b99e}}
 #wrapper #about #about_pos #skills .data{display:inline-block;width:7rem;margin:0 .8rem;height:1.82rem;border:2px solid #0d1218;position:relative}
 #wrapper #about #about_pos #skills .data .rempl_data{position:absolute;width:0;height:100%;background-color:#71b99e;transition:all 2s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 2s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 2s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
 #footer #wrapper_footer #contact #soc,#wrapper #about #about_pos #educ>ul>li,#wrapper #about #about_pos #exp>ul>li,#wrapper #about #about_pos #misc>ul>li{margin:1rem 0}
-@media (max-width:1450px){#wrapper #about #about_pos .flex_container{-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
-#wrapper #about #about_pos #skills .skills_flex{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
-#wrapper #about #about_pos #educ{-webkit-order:2;-ms-flex-order:2;order:2}}
-#wrapper #about #about_pos #misc{-webkit-order:1;-ms-flex-order:1;order:1}
+@media (max-width:1450px){#wrapper #about #about_pos .flex_container{-ms-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;flex-direction:column-reverse}
+#wrapper #about #about_pos #skills .skills_flex{display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:flex-start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-ms-justify-content:space-around;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
+#wrapper #about #about_pos #educ{-ms-order:2;-webkit-order:2;-ms-flex-order:2;order:2}}
+#wrapper #about #about_pos #misc{-ms-order:1;-webkit-order:1;-ms-flex-order:1;order:1}
 #footer{background-color:#0d1218;padding:.5rem;min-height:53rem;position:relative;z-index:1}
-#footer #wrapper_footer{width:90%;margin:3rem auto;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;position:relative}
+#footer #wrapper_footer{width:90%;margin:3rem auto;display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-ms-justify-content:space-around;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;position:relative}
 #footer #wrapper_footer #contact{width:38%;color:#9fa1a3}
 #footer #wrapper_footer #contact h2{font-size:4.8rem;line-height:5.2rem}
 #footer #wrapper_footer #contact p{max-width:90%;line-height:3.64rem;margin:.5rem 0}
@@ -330,7 +328,7 @@ to{opacity:1;color:#71b99e}}
 .lightbox .link_project{width:90%;margin:1rem auto;padding:.5rem}
 .lightbox .link_project a{font-size:2.52rem;padding:.5rem .65rem;color:#d3d4d5;background-color:#1f3f33;display:inline-block;margin-top:.5rem}
 .lightbox .link_project a:hover{background-color:#71b99e}
-@media (max-width:1200px){#footer #wrapper_footer{-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+@media (max-width:1200px){#footer #wrapper_footer{-ms-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;flex-direction:column-reverse}
 .lightbox{padding:2rem}
 .lightbox p{font-size:2.38rem;margin:.5rem auto;padding:.25rem}}
 @media (max-width:800px){.lightbox{padding:1.5rem 1.5rem 1rem}
