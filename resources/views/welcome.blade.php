@@ -8,8 +8,8 @@
 
     <!-- META -->
     <meta name='Author' content="Tanguy Godin">
-    <meta name='description' content="Find here my resumé and somes of my works">
-    <meta name='keywords' content="Tanguy Godin, developer, résumé, works">
+    <meta name='description' content="Find here my resumé and some projects I worked on">
+    <meta name='keywords' content="Tanguy Godin, web developer, back-end, php, laravel 5, résumé, works">
 
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
@@ -24,7 +24,6 @@
     <!-- FAVICON -->
     <link rel='shortcut icon' href="{{asset('/images/favicon.ico')}}"/>
     <link rel='icon' href="{{asset('/images/favicon.ico')}}"/>
-
     <!-- CSS -->
     <link rel='stylesheet' href="{{asset('/css/dist/portfolio.css')}}" type='text/css' media='all' />
 </head>
@@ -63,6 +62,7 @@
             </a>
 
             <!-- WORKS -->
+            
             <section id='works_slide'>
                 <h2 class='bold'>FIND SOME OF MY WORK HERE</h2>
                 <nav id='menu_filter'>
@@ -183,7 +183,7 @@
                                 <li>
                                     <h3><a href="http://www.netemedia.fr/" alt="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
                                     <p>Avril-August 2014, 5 months</p>
-                                    <p>Work as web developer: wordpress theme development, website maintenance...</p>
+                                    <p>Work as web developer: wordpress theme development, website upgrade...</p>
                                     <p>Used: wordpress, php, symfony, ajax, js, html5, css3</p>
                                     <p class="decal">Some projects:</p>
                                     <ul>
@@ -235,7 +235,7 @@
             </section>
         </section>
     </section>
-    <!-- FOOTER -->
+
     <footer id="footer">
         <div id='wrapper_footer'>
             <div id='contact'>
@@ -293,7 +293,7 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="{{asset('/js/portfolio/portfolio.js')}}"></script>
-    <script>
+    <script type="text/javascript">
         $(function(){
             window.app.initialize("{{URL::to('/')}}");
         });

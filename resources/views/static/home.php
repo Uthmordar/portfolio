@@ -8,8 +8,8 @@
 
     <!-- META -->
     <meta name='Author' content="Tanguy Godin">
-    <meta name='description' content="Find here my resumé and somes of my works">
-    <meta name='keywords' content="Tanguy Godin, developer, résumé, works">
+    <meta name='description' content="Find here my resumé and some projects I worked on">
+    <meta name='keywords' content="Tanguy Godin, web developer, back-end, php, laravel 5, résumé, works">
 
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
@@ -24,7 +24,6 @@
     <!-- FAVICON -->
     <link rel='shortcut icon' href="http://localhost/portfolio2/public/images/favicon.ico"/>
     <link rel='icon' href="http://localhost/portfolio2/public/images/favicon.ico"/>
-
     <!-- CSS -->
     <link rel='stylesheet' href="http://localhost/portfolio2/public/css/dist/portfolio.css" type='text/css' media='all' />
 </head>
@@ -63,22 +62,48 @@
             </a>
 
             <!-- WORKS -->
+            
             <section id='works_slide'>
                 <h2 class='bold'>FIND SOME OF MY WORK HERE</h2>
                 <nav id='menu_filter'>
                     <ul>
                         <li class='active' data-filter='All'>All</li>
-                                                                                    <li data-filter="tag-1">javascript (1)</li>
-                                                                                                                <li data-filter="tag-2">PHP OOP (1)</li>
-                                                                                                                                                                    <li data-filter="tag-4">Back-end (2)</li>
+                                                                                    <li data-filter="tag-1">javascript (2)</li>
+                                                                                                                <li data-filter="tag-2">PHP OOP (2)</li>
+                                                                                                                <li data-filter="tag-3">Laravel (1)</li>
+                                                                                                                <li data-filter="tag-4">Back-end (2)</li>
                                                                         </ul>
                 </nav>
+                                <article class='project_banner tag-2 inactive project_filter' data-project="11" >
+                    <div class='veil'>
+                    </div> 
+                    <div class='com'>
+                        <h3>Uthmordar/Drakkar</h3>
+                        <p>PHP object, framework</p>
+                    </div>
+                </article>
+                                <article class='project_banner tag-3 inactive project_filter' data-project="12" >
+                    <div class='veil'>
+                    </div> 
+                    <div class='com'>
+                        <h3>This portfolio</h3>
+                        <p>PHP, Laravel 5</p>
+                    </div>
+                </article>
                                 <article class='project_banner tag-2 inactive project_filter' data-project="10" >
                     <div class='veil'>
                     </div> 
                     <div class='com'>
                         <h3>Uthmordar/Staticify</h3>
                         <p>PHP object, Packagist, laravel command</p>
+                    </div>
+                </article>
+                                <article class='project_banner tag-1 inactive project_filter' data-project="13"   style="background: url(http://localhost/portfolio2/public/uploads/5SWOFMshmDB4xL5EbFvAgqZnK.jpg) center center; background-size: 100%;" >
+                    <div class='veil'>
+                    </div> 
+                    <div class='com'>
+                        <h3>Lab 201 CEA web game</h3>
+                        <p>Javascript, serious game, application</p>
                     </div>
                 </article>
                                 <article class='project_banner tag-4 inactive project_filter' data-project="9"   style="background: url(http://localhost/portfolio2/public/uploads/eih3kUsQuboVHfCVrGBO3Mj8t.jpg) center center; background-size: 100%;" >
@@ -203,7 +228,7 @@
                                 <li>
                                     <h3><a href="http://www.netemedia.fr/" alt="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
                                     <p>Avril-August 2014, 5 months</p>
-                                    <p>Work as web developer: wordpress theme development, website maintenance...</p>
+                                    <p>Work as web developer: wordpress theme development, website upgrade...</p>
                                     <p>Used: wordpress, php, symfony, ajax, js, html5, css3</p>
                                     <p class="decal">Some projects:</p>
                                     <ul>
@@ -255,7 +280,7 @@
             </section>
         </section>
     </section>
-    <!-- FOOTER -->
+
     <footer id="footer">
         <div id='wrapper_footer'>
             <div id='contact'>
@@ -288,7 +313,7 @@
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="k43OqigTH8ORWXZsJg9r2SwYVZVkeQndzS5gxC7E">
+                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="WbVtzhuTUuMxlsibYpWP0g6o8HHvf5FkNpsiVtxW">
                     
                     
                     <label for="name">Name *</label>
@@ -313,7 +338,7 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://localhost/portfolio2/public/js/portfolio/portfolio.js"></script>
-    <script>
+    <script type="text/javascript">
         $(function(){
             window.app.initialize("http://localhost/portfolio2/public");
         });
