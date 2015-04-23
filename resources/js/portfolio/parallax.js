@@ -1,11 +1,12 @@
 (function(ctx){
     "use strict";
-    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about');
+    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $skills=$('#skills'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about');
     
     var parallax={
         initialize: function(){
             $data=$('#skills .web .data');
             self.bindEvents();
+            console.log('skills:' + $skills.offset().top);
         },
         bindEvents: function(){
             $window.on('scroll', function(e){
@@ -32,14 +33,14 @@
             self.parallaxBG($fondAbout, 75, 0.01);
             //self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
             
-
-            if(windowScroll>$about.offset().top - 200 && windowScroll<2600){
+            console.log(windowScroll);
+            if(windowScroll>$skills.offset().top - 150 && windowScroll<$skills.offset().top + $skills.height() -150){
                 for(var i=0; i<$data.length; i++){
                     ctx.portfolio.dataFill($data[i]);
                 }
             }
 
-            if(windowScroll<1300 || windowScroll>2600){
+            if(windowScroll<$skills.offset().top - 300 || windowScroll>$skills.offset().top + $skills.height() - 150){
                 for(var i=0; i<$data.length; i++){
                     ctx.portfolio.dataUnfill($data[i]);
                 }
