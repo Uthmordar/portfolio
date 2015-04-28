@@ -298,7 +298,6 @@
         initialize: function(){
             $data=$('#skills .web .data');
             self.bindEvents();
-            console.log('skills:' + $skills.offset().top);
         },
         bindEvents: function(){
             $window.on('scroll', function(e){
@@ -322,10 +321,9 @@
                 self.parallaxBG($fondBase, 75, 0.5);
             }
 
-            self.parallaxBG($fondAbout, 75, 0.01);
+            self.parallaxBG($fondAbout, 75, 0.05);
             //self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
             
-            console.log(windowScroll);
             if(windowScroll>$skills.offset().top - 150 && windowScroll<$skills.offset().top + $skills.height() -150){
                 for(var i=0; i<$data.length; i++){
                     ctx.portfolio.dataFill($data[i]);

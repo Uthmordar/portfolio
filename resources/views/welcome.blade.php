@@ -104,7 +104,7 @@
                         <p>Hello my name is <span class='color_white'>Tanguy</span> GODIN, 25 years old.</p>
                         <p>I would like to work as a back-end developer.</p>
                         <p>Career objectives: I love algorythm challenges and would be pleased to work on PHP object development or unit testing team. I also enjoy using Laravel as framework.</p>
-                        <p>What's more? You could find some of my experiments or free time works on my <a href="https://github.com/Uthmordar" alt="uthmordar github" target="_blank" class="color_red">GITHUB account</a></p>
+                        <p>What's more? You could find some of my experiments or free time works on my <a href="https://github.com/Uthmordar" target="_blank" class="color_red">GITHUB account</a></p>
                     </article>
                     <section class="flex_container">
                         <article class='about_box' id='skills'>
@@ -181,7 +181,7 @@
                             <h2>INTERNSHIPS</h2>
                             <ul>
                                 <li>
-                                    <h3><a href="http://www.netemedia.fr/" alt="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
+                                    <h3><a href="http://www.netemedia.fr/" title="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
                                     <p>Avril-August 2014, 5 months</p>
                                     <p>Work as web developer: wordpress theme development, website upgrade...</p>
                                     <p>Used: wordpress, php, symfony, ajax, js, html5, css3</p>

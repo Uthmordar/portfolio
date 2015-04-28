@@ -52,6 +52,7 @@ blockquote,code,input,pre,table,td,textarea,video{max-width:100%}
 .row{display:table;table-layout:fixed;width:100%}
 .col,.row>*{display:table-cell}
 .inbl{display:inline-block}
+#wrapper #works_slide .project_banner .banner_detail,.hidden{display:none}
 img.left,img.start{margin-right:1em}
 .end,.right{float:right}
 img.end,img.right{margin-left:1em}
@@ -139,7 +140,6 @@ img.end,img.left,img.right,img.start{margin-bottom:.5em}
 .ie8 .grid>*>*,.ie8 [class*=autogrid]>*>*{letter-spacing:normal;word-spacing:normal;text-rendering:auto}
 .ie678 input[type=checkbox],.ie678 input[type=radio]{padding:0}
 .ie678 textarea{overflow:auto}
-.hidden{display:none}
 html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:62.5%}
 body{width:100%;min-width:710px;max-width:1980px;margin:0 auto;font-size:1.5rem;font-family:Quicksand,sans-serif;background:#d3d4d5;-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-webkit-font-feature-settings:"liga","dlig";font-feature-settings:"liga","dlig";text-rendering:optimizeLegibility}
 a,h1,h2,h3,input,li,p,textarea{text-rendering:optimizeLegibility;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
@@ -165,12 +165,12 @@ to{opacity:1;color:#71b99e}}
 #header #wrapper_header #logo{width:27rem;height:6rem;margin:.5rem;padding:.5rem;cursor:pointer;line-height:3.6rem}
 #header #wrapper_header #logo h1{font-size:3rem;color:#9fa1a3;font-weight:700;margin:0}
 #header #wrapper_header #logo p{font-size:2.2rem;margin:0;max-width:none}
-#header #wrapper_header #menu_header{position:fixed;right:30%;top:2.6rem;transition:all 1.5s;transition-timing-function:linear;transition-delay:.3s;-moz-transition:all 1.5s;-moz-transition-timing-function:linear;-moz-transition-delay:.3s;-webkit-transition:all 1.5s;-webkit-transition-timing-function:linear;-webkit-transition-delay:.3s;-moz-perspective:500px}
+#header #wrapper_header #menu_header{position:fixed;right:30%;top:2.6rem;-moz-transition:all 1.5s;-moz-transition-timing-function:linear;-moz-transition-delay:.3s;-webkit-transition:all 1.5s;-webkit-transition-timing-function:linear;-webkit-transition-delay:.3s;transition:all 1.5s;transition-timing-function:linear;transition-delay:.3s;-moz-perspective:500px}
 #header #wrapper_header #menu_header ul{display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-ms-justify-content:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:0;padding:0}
 #header #wrapper_header #menu_header ul li{min-width:10.5rem;font-size:3.36rem;border-bottom:2px solid #9fa1a3;margin:.4rem;padding:.2rem;cursor:pointer;font-weight:700;-webkit-box-reflect:below -3px -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(255,255,255,.2)))}
 #header #wrapper_header #menu_header ul li.active{color:#41836a;border-bottom:2px solid #499478}
 #header #wrapper_header #menu_header ul li:hover{color:#71b99e;border-bottom:4px solid #82c1aa}
-@media (max-width:1279px){#header #wrapper_header #menu_header{left:33rem;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}}
+@media (max-width:1279px){#header #wrapper_header #menu_header{left:33rem;-moz-transition:all 0s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 0s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;transition:all 0s;transition-timing-function:ease-out;transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;-moz-perspective:500px}}
 @media (max-width:1100px){#header #wrapper_header #menu_header{right:5rem;left:initial}
 #header #wrapper_header #menu_header ul li{min-width:0;margin:.6rem;border-bottom:0 solid #9fa1a3;-webkit-box-reflect:none}
 #header #wrapper_header #menu_header ul li .puce{display:block;width:30px;height:30px;border-radius:50%;background:#9fa1a3}
@@ -188,7 +188,7 @@ to{opacity:1;color:#71b99e}}
 #wrapper #intro_slide #intro h1{margin:1rem;padding:.5rem}
 #wrapper #intro_slide #intro p{font-size:4.06rem;line-height:4.62rem;margin:2rem auto;padding:1rem}
 #wrapper #learn{max-width:30%;display:block;margin:1rem auto;position:absolute;top:80rem;left:40%}
-#wrapper #learn p{margin:.5rem 0;padding:.25rem;width:100%;font-size:3.08rem;color:#51a686;cursor:pointer;animation-name:blink;animation-duration:2s;animation-iteration-count:infinite;animation-timing-function:ease-out;animation-direction:alternate;-webkit-animation-name:blink;-webkit-animation-duration:2s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-out;-webkit-animation-direction:alternate}
+#wrapper #learn p{margin:.5rem 0;padding:.25rem;width:100%;font-size:3.08rem;color:#51a686;cursor:pointer;-moz-animation-name:blink;-moz-animation-duration:2s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-out;-moz-animation-direction:alternate;-webkit-animation-name:blink;animation-name:blink;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-webkit-animation-direction:alternate;animation-direction:alternate}
 #wrapper #learn p:hover{color:#93cab5}
 #wrapper #learn p:hover:after{background:url(../../images/flecheHover.png)no-repeat}
 #wrapper #learn p:after{content:'';background:url(../../images/fleche.png)no-repeat;width:2.8rem;height:2.8rem;display:block;margin:1rem auto 0;cursor:pointer}
@@ -238,16 +238,16 @@ to{opacity:1;color:#71b99e}}
 #wrapper #works_slide #menu_filter li.active{color:#41836a;border-bottom:4px solid #499478}
 #wrapper #works_slide #menu_filter li:hover{color:#71b99e}
 @media (max-width:460px){#wrapper #works_slide #menu_filter li{width:50%;min-width:22rem}}
-#wrapper #works_slide .project_banner{width:0;margin:1rem auto;border:0 solid transparent;height:0;position:relative;cursor:pointer;z-index:0;overflow:hidden;opacity:1;background:url(../../images/fond-code-filter.jpg)center center no-repeat;background-size:100%;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 1s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
+#wrapper #works_slide .project_banner{width:0;margin:1rem auto;border:0 solid transparent;height:0;position:relative;cursor:pointer;z-index:0;overflow:hidden;opacity:1;background:url(../../images/fond-code-filter.jpg)center center no-repeat;background-size:100%;-moz-transition:all 1s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-perspective:500px}
+#wrapper #works_slide .project_banner,#wrapper #works_slide .project_banner .veil{-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition-delay:0s}
 #wrapper #works_slide .project_banner.project_filter{width:100%;height:18rem;opacity:1;border:6px solid #0d1218}
-#wrapper #works_slide .project_banner .veil{width:100%;position:absolute;top:0;left:0;height:100%;z-index:0;background-color:#0d1218;opacity:.9;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 1s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
+#wrapper #works_slide .project_banner .veil{width:100%;position:absolute;top:0;left:0;height:100%;z-index:0;background-color:#0d1218;opacity:.9;-moz-transition:all 1s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-perspective:500px}
 #wrapper #works_slide .project_banner .project{width:100%;position:absolute;top:0;left:0;height:100%;z-index:-1}
 #wrapper #works_slide .project_banner:hover{border:6px solid #41836a;background-size:105%!important}
 #wrapper #works_slide .project_banner:hover .veil{opacity:.25}
 #wrapper #works_slide .project_banner .com{position:absolute;top:0;left:0;z-index:1}
 #wrapper #works_slide .project_banner .com h3{color:#fff;margin:1rem;padding:.5rem}
 #wrapper #works_slide .project_banner .com p{font-size:3.22rem;color:#a2a4a5;margin:1rem;padding:.5rem}
-#wrapper #works_slide .project_banner .banner_detail{display:none}
 @media (max-width:600px){#wrapper #works_slide .project_banner{width:100%;margin:1rem 0;border:6px solid #0d1218;height:18rem;position:relative;overflow:hidden}
 #wrapper #works_slide .project_banner .com{position:absolute;top:0;left:0;z-index:1}
 #wrapper #works_slide .project_banner .com h3{font-size:3rem;line-height:3.3rem;color:#fff;margin:.5rem;padding:.25rem}
@@ -282,7 +282,8 @@ to{opacity:1;color:#71b99e}}
 #wrapper #about #about_pos #skills ul{margin-left:1.3rem}
 #wrapper #about #about_pos #skills ul li{font-size:3.5rem;line-height:5rem}
 #wrapper #about #about_pos #skills .data{display:inline-block;width:7rem;margin:0 .8rem;height:1.82rem;border:2px solid #0d1218;position:relative}
-#wrapper #about #about_pos #skills .data .rempl_data{position:absolute;width:0;height:100%;background-color:#71b99e;transition:all 2s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:all 2s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 2s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
+#wrapper #about #about_pos #skills .data .rempl_data{position:absolute;width:0;height:100%;background-color:#71b99e;-moz-transition:all 2s;-webkit-transition:all 2s;-webkit-transition-delay:0s;transition:all 2s;transition-timing-function:ease-out;transition-delay:0s;-moz-perspective:500px}
+#footer #wrapper_footer #contact #soc li,#wrapper #about #about_pos #skills .data .rempl_data{-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition-timing-function:ease-out}
 #footer #wrapper_footer #contact #soc,#wrapper #about #about_pos #educ>ul>li,#wrapper #about #about_pos #exp>ul>li,#wrapper #about #about_pos #misc>ul>li{margin:1rem 0}
 @media (max-width:1450px){#wrapper #about #about_pos .flex_container{-ms-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;flex-direction:column-reverse}
 #wrapper #about #about_pos #skills .skills_flex{display:-webkit-flex;display:-ms-flexbox;display:flex;-ms-align-items:flex-start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-ms-justify-content:space-around;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
@@ -294,7 +295,7 @@ to{opacity:1;color:#71b99e}}
 #footer #wrapper_footer #contact h2{font-size:4.8rem;line-height:5.2rem}
 #footer #wrapper_footer #contact p{max-width:90%;line-height:3.64rem;margin:.5rem 0}
 #footer #wrapper_footer #contact ul li{font-size:2.94rem;line-height:3.36rem}
-#footer #wrapper_footer #contact #soc li{margin-right:.5rem;display:inline-block;opacity:.5;transition:opacity 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-transition:opacity 1s;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:opacity 1s;-webkit-transition-timing-function:ease-out;-webkit-transition-delay:0s;-moz-perspective:500px}
+#footer #wrapper_footer #contact #soc li{margin-right:.5rem;display:inline-block;opacity:.5;-moz-transition:opacity 1s;-webkit-transition:opacity 1s;-webkit-transition-delay:0s;transition:opacity 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-perspective:500px}
 #footer #wrapper_footer #contact #soc li:hover{opacity:1}
 #footer #wrapper_footer #contact a:hover{color:#bd788a}
 #footer #wrapper_footer #contact a img{width:5rem;height:5rem}

@@ -22,10 +22,10 @@
     <![endif]-->
 
     <!-- FAVICON -->
-    <link rel='shortcut icon' href="http://localhost/portfolio2/public/images/favicon.ico"/>
-    <link rel='icon' href="http://localhost/portfolio2/public/images/favicon.ico"/>
+    <link rel='shortcut icon' href="http://tanguygodin.fr/images/favicon.ico"/>
+    <link rel='icon' href="http://tanguygodin.fr/images/favicon.ico"/>
     <!-- CSS -->
-    <link rel='stylesheet' href="http://localhost/portfolio2/public/css/dist/portfolio.css" type='text/css' media='all' />
+    <link rel='stylesheet' href="http://tanguygodin.fr/css/dist/portfolio.css" type='text/css' media='all' />
 </head>
 <body>
     <!-- HEADER -->
@@ -98,7 +98,7 @@
                         <p>PHP object, Packagist, laravel command</p>
                     </div>
                 </article>
-                                <article class='project_banner tag-1 inactive project_filter' data-project="13"   style="background: url(http://localhost/portfolio2/public/uploads/5SWOFMshmDB4xL5EbFvAgqZnK.jpg) center center; background-size: 100%;" >
+                                <article class='project_banner tag-1 inactive project_filter' data-project="13"   style="background: url(http://tanguygodin.fr/uploads/5SWOFMshmDB4xL5EbFvAgqZnK.jpg) center center; background-size: 100%;" >
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -106,7 +106,7 @@
                         <p>Javascript, serious game, application</p>
                     </div>
                 </article>
-                                <article class='project_banner tag-4 inactive project_filter' data-project="9"   style="background: url(http://localhost/portfolio2/public/uploads/eih3kUsQuboVHfCVrGBO3Mj8t.jpg) center center; background-size: 100%;" >
+                                <article class='project_banner tag-4 inactive project_filter' data-project="9"   style="background: url(http://tanguygodin.fr/uploads/eih3kUsQuboVHfCVrGBO3Mj8t.jpg) center center; background-size: 100%;" >
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -114,7 +114,7 @@
                         <p>PHP, wordpress</p>
                     </div>
                 </article>
-                                <article class='project_banner tag-4 inactive project_filter' data-project="8"   style="background: url(http://localhost/portfolio2/public/uploads/vRIF0KkMeNL997gCpInIdR81t.jpg) center center; background-size: 100%;" >
+                                <article class='project_banner tag-4 inactive project_filter' data-project="8"   style="background: url(http://tanguygodin.fr/uploads/vRIF0KkMeNL997gCpInIdR81t.jpg) center center; background-size: 100%;" >
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -122,7 +122,7 @@
                         <p>PHP, Wordpress, e-commerce</p>
                     </div>
                 </article>
-                                <article class='project_banner tag-1 inactive project_filter' data-project="7"   style="background: url(http://localhost/portfolio2/public/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center; background-size: 100%;" >
+                                <article class='project_banner tag-1 inactive project_filter' data-project="7"   style="background: url(http://tanguygodin.fr/uploads/ZlSy2sFKW0Kcl7t3h3zJn8M0s.jpg) center center; background-size: 100%;" >
                     <div class='veil'>
                     </div> 
                     <div class='com'>
@@ -139,8 +139,8 @@
                 </div>
                 <div id='about_pos'>
                     <div class='about_box' id='pdf'>
-                        <a href='http://localhost/portfolio2/public/dl/Godin_tanguy_cv_web_developer.pdf' class='pdf' title='Download résumé pdf' rel='nofollow'>
-                            <img src="http://localhost/portfolio2/public/images/pdfIcon.png" alt='pdf picto'/>
+                        <a href='http://tanguygodin.fr/dl/Godin_tanguy_cv_web_developer.pdf' class='pdf' title='Download résumé pdf' rel='nofollow'>
+                            <img src="http://tanguygodin.fr/images/pdfIcon.png" alt='pdf picto'/>
                             <span class='low_res'>Download</span> my résumé
                         </a>
                     </div>
@@ -149,7 +149,7 @@
                         <p>Hello my name is <span class='color_white'>Tanguy</span> GODIN, 25 years old.</p>
                         <p>I would like to work as a back-end developer.</p>
                         <p>Career objectives: I love algorythm challenges and would be pleased to work on PHP object development or unit testing team. I also enjoy using Laravel as framework.</p>
-                        <p>What's more? You could find some of my experiments or free time works on my <a href="https://github.com/Uthmordar" alt="uthmordar github" target="_blank" class="color_red">GITHUB account</a></p>
+                        <p>What's more? You could find some of my experiments or free time works on my <a href="https://github.com/Uthmordar" target="_blank" class="color_red">GITHUB account</a></p>
                     </article>
                     <section class="flex_container">
                         <article class='about_box' id='skills'>
@@ -226,7 +226,7 @@
                             <h2>INTERNSHIPS</h2>
                             <ul>
                                 <li>
-                                    <h3><a href="http://www.netemedia.fr/" alt="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
+                                    <h3><a href="http://www.netemedia.fr/" title="Netemedia, agence web">Netemedia</a>, web agency, Paris</h3>
                                     <p>Avril-August 2014, 5 months</p>
                                     <p>Work as web developer: wordpress theme development, website upgrade...</p>
                                     <p>Used: wordpress, php, symfony, ajax, js, html5, css3</p>
@@ -297,23 +297,23 @@
                 <ul id='soc'>
                     <li id='twitter'>
                         <a href="https://twitter.com/TanguyGodin" rel='nofollow'>
-                            <img src="http://localhost/portfolio2/public/images/logo-twitter.svg" alt='twitter icon' title='follow my twitter'/>
+                            <img src="http://tanguygodin.fr/images/logo-twitter.svg" alt='twitter icon' title='follow my twitter'/>
                         </a>
                     </li>
                     <li id='linkedIn'>
                         <a href="https://lnkd.in/d6mE7_Z" rel='nofollow'>
-                            <img src="http://localhost/portfolio2/public/images/logo-linkedin.svg" alt='linkIn icon' title='check my linkin'/>
+                            <img src="http://tanguygodin.fr/images/logo-linkedin.svg" alt='linkIn icon' title='check my linkin'/>
                         </a>
                     </li>
                     <li id='gith'>
                         <a href='https://github.com/Uthmordar' rel='nofollow'>
-                            <img src="http://localhost/portfolio2/public/images/logo-github.svg" alt='github icon' title='find my works on github'/>
+                            <img src="http://tanguygodin.fr/images/logo-github.svg" alt='github icon' title='find my works on github'/>
                         </a>
                     </li>
                 </ul>
             </div>
             <div id='contact_form_bloc'>
-                <form method="POST" action="http://localhost/portfolio2/public/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="Zj0bfKB4sp0EqOItOy8Fw0BmjVLNdlsO7vU6lLCN">
+                <form method="POST" action="http://tanguygodin.fr/contact" accept-charset="UTF-8" id="form_contact"><input name="_token" type="hidden" value="Zj0bfKB4sp0EqOItOy8Fw0BmjVLNdlsO7vU6lLCN">
                     
                     
                     <label for="name">Name *</label>
@@ -337,10 +337,10 @@
         </div>
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://localhost/portfolio2/public/js/portfolio/portfolio.js"></script>
+    <script type="text/javascript" src="http://tanguygodin.fr/js/portfolio/portfolio.js"></script>
     <script type="text/javascript">
         $(function(){
-            window.app.initialize("http://localhost/portfolio2/public");
+            window.app.initialize("http://tanguygodin.fr");
         });
     </script>
 </body>
