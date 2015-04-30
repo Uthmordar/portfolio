@@ -765,10 +765,7 @@
                         transparent 75%,
                         transparent
                     );
-                    -webkit-animation:stripe 2s linear infinite;
-                    -moz-animation:stripe 2s linear infinite;
-                    -ms-animation:stripe 2s linear infinite;
-                    animation:stripe 2s linear infinite;
+                    .animation(stripe; 2s; infinite; linear);
                 }
             }
 
@@ -1323,10 +1320,7 @@
                     -moz-background-size:50px 50px;
                     -ms-background-size:50px 50px;
                     background-size:50px 50px;
-                    -webkit-animation:stripe 2s linear infinite;
-                    -moz-animation:stripe 2s linear infinite;
-                    -ms-animation:stripe 2s linear infinite;
-                    animation:stripe 2s linear infinite;
+                    .animation(stripe; 2s; infinite; linear);
                     
                     &:hover{
                         background-color: @color-green;
@@ -1384,7 +1378,7 @@
     top: 0;
     left: -100%;
     padding: 8*@padding;
-    transition: left 1s ease-out;
+    .transition(left; 1s; ease-out);
 	
     .cross{
         position: absolute;
