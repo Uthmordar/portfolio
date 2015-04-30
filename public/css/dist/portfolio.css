@@ -341,7 +341,7 @@ to{opacity:1;color:#71b99e}}
 .lightbox ul li{font-size:2.66rem;line-height:2.94rem;margin:.5rem;padding:.25rem}
 .lightbox .thumbnail{width:100%;min-height:18rem;background:url(../../images/backgroundHome.png)no-repeat;background-size:cover}
 .lightbox .link_project{width:90%;margin:1rem auto;padding:.5rem}
-.lightbox .link_project a{font-size:2.52rem;padding:.5rem .65rem;color:#d3d4d5;background-color:#1f3f33;display:inline-block;margin-top:.5rem}
+.lightbox .link_project a{font-size:2.52rem;padding:.5rem .65rem;color:#d3d4d5;background-color:#1f3f33;display:inline-block;margin:.5rem 1.5rem 0 0}
 .lightbox .link_project a:hover{background-color:#71b99e}
 @media (max-width:1200px){#footer #wrapper_footer{-ms-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;flex-direction:column-reverse}
 .lightbox{padding:2rem}
