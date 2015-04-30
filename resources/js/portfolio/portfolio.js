@@ -2,7 +2,7 @@
     "use strict";
     var fill, $projectBanner, $page=$('html, body'), $header=$('#header'), top, left, $window=$(window),
     $modal, $lightbox, $cross, $menuHeader=$('#menu_header'), $menuHeaderLi=$menuHeader.children('ul').children('li'),
-    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId;
+    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId, $this;
     
     var portfolio={
         initialize: function(){
@@ -11,12 +11,15 @@
         },
         bindEvents: function(){
             $projectBanner.on('click', function(){
-                projectId=$(this).attr('data-project');
+                $this=$(this);
+                projectId=$this.attr('data-project');
+                $this.children('.veil').addClass('active');
                 $.ajax({
                     type: "GET",
                     url: ctx.getBaseUrl() + "/project/" + projectId,
                     success: function(data){
                         self.generateLightbox(data);
+                        $this.children('.veil').removeClass('active');
                     }
                 });
             });

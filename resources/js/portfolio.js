@@ -88,7 +88,7 @@
                 if(!token){
                     token++;
                     self.generateToken();
-                    $submit.val('Sending...');
+                    $submit.val('Sending...').addClass('active');
                     self.ajaxSendMail();
                 }
                
@@ -157,7 +157,7 @@
                 success: function(data){
                     token=0;
                     if(data.status==='success'){
-                        $submit.val('Send');
+                        $submit.removeClass('active').val('Send');
                     }else{
                         $submit.val('Error').addClass('submit_error');
                     }
@@ -190,7 +190,7 @@
     "use strict";
     var fill, $projectBanner, $page=$('html, body'), $header=$('#header'), top, left, $window=$(window),
     $modal, $lightbox, $cross, $menuHeader=$('#menu_header'), $menuHeaderLi=$menuHeader.children('ul').children('li'),
-    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId;
+    $worksSlide=$('#works_slide'), $wrapper=$('#wrapper'), $learn=$('#learn'), projectId, $this;
     
     var portfolio={
         initialize: function(){
@@ -199,12 +199,15 @@
         },
         bindEvents: function(){
             $projectBanner.on('click', function(){
-                projectId=$(this).attr('data-project');
+                $this=$(this);
+                projectId=$this.attr('data-project');
+                $this.children('.veil').addClass('active');
                 $.ajax({
                     type: "GET",
                     url: ctx.getBaseUrl() + "/project/" + projectId,
                     success: function(data){
                         self.generateLightbox(data);
+                        $this.children('.veil').removeClass('active');
                     }
                 });
             });
@@ -292,7 +295,7 @@
 })(app);
 (function(ctx){
     "use strict";
-    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $skills=$('#skills'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about');
+    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $skills=$('#skills'), $about=$('#about'), $data, $fondBase=$('#fond_base');
     
     var parallax={
         initialize: function(){
@@ -321,7 +324,7 @@
                 self.parallaxBG($fondBase, 75, 0.5);
             }
 
-            self.parallaxBG($fondAbout, 75, 0.05);
+            self.parallaxBG($about, 0, 0.1);
             //self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
             
             if(windowScroll>$skills.offset().top - 150 && windowScroll<$skills.offset().top + $skills.height() -150){

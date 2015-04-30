@@ -28,7 +28,7 @@
                 if(!token){
                     token++;
                     self.generateToken();
-                    $submit.val('Sending...');
+                    $submit.val('Sending...').addClass('active');
                     self.ajaxSendMail();
                 }
                
@@ -97,7 +97,7 @@
                 success: function(data){
                     token=0;
                     if(data.status==='success'){
-                        $submit.val('Send');
+                        $submit.removeClass('active').val('Send');
                     }else{
                         $submit.val('Error').addClass('submit_error');
                     }

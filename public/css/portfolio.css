@@ -271,7 +271,31 @@ a.color_red {
 }
 
 /*# sourceMappingURL=base.css.map */
-@keyframes blink {
+@-webkit-keyframes stripe {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-ms-keyframes stripe {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes stripe {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-ms-keyframes blink {
   from {
     color: #30614f;
     opacity: 0.6;
@@ -282,6 +306,16 @@ a.color_red {
   }
 }
 @-webkit-keyframes blink {
+  from {
+    color: #30614f;
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    color: #71b99e;
+  }
+}
+@keyframes blink {
   from {
     color: #30614f;
     opacity: 0.6;
@@ -302,6 +336,7 @@ a.color_red {
   left: 0;
 }
 #header #wrapper_header {
+  position: relative;
   width: 90%;
   max-width: 1900px;
   margin: 0 auto;
@@ -399,8 +434,15 @@ a.color_red {
 }
 @media (max-width: 1100px) {
   #header #wrapper_header #menu_header {
-    right: 5rem;
+    right: 1.5rem;
+    top: 10rem;
     left: initial;
+  }
+  #header #wrapper_header #menu_header ul {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   #header #wrapper_header #menu_header ul li {
     min-width: 0;
@@ -410,8 +452,8 @@ a.color_red {
   }
   #header #wrapper_header #menu_header ul li .puce {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #9fa1a3;
   }
@@ -448,7 +490,7 @@ a.color_red {
 }
 #wrapper #fond_base {
   height: 95rem;
-  background: url(../../images/backgroundHome.png) 0% 0% repeat fixed;
+  background: url(../../images/backgroundHome.png) repeat;
 }
 #wrapper #intro_slide {
   background-color: transparent;
@@ -793,6 +835,8 @@ a.color_red {
   height: 100%;
   z-index: 0;
   background-color: #0d1218;
+  -ms-background-size: 50px 50px;
+  background-size: 50px 50px;
   opacity: 0.9;
   -moz-transition: all 1s;
   -moz-transition-timing-function: ease-out;
@@ -809,13 +853,11 @@ a.color_red {
   transform-style: preserve-3d;
   -moz-perspective: 500px;
 }
-#wrapper #works_slide .project_banner .project {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: -1;
+#wrapper #works_slide .project_banner .veil.active {
+  background-image: linear-gradient(-45deg, #51a686 25%, transparent 25%, transparent 50%, #51a686 50%, #51a686 75%, transparent 75%, transparent);
+  -webkit-animation: stripe 2s linear infinite;
+  -ms-animation: stripe 2s linear infinite;
+  animation: stripe 2s linear infinite;
 }
 #wrapper #works_slide .project_banner:hover {
   border: 6px solid #41836a;
@@ -885,19 +927,11 @@ a.color_red {
 }
 #wrapper #about {
   width: 100%;
-  background: transparent;
   position: relative;
   z-index: 0;
-  background-color: #070A0E;
-}
-#wrapper #about #fond_about {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../../images/backgroundAbout.png) 0% 0% repeat fixed;
-  max-height: 100%;
+  background: url(../../images/backgroundAbout.png) repeat;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 #wrapper #about #about_pos {
   width: 90%;
@@ -1253,6 +1287,18 @@ a.color_red {
   cursor: pointer;
   color: #1f2a38;
 }
+#footer #wrapper_footer #contact_form_bloc input[type='submit'].active {
+  color: #FFF;
+  background-image: linear-gradient(-45deg, #51a686 25%, transparent 25%, transparent 50%, #51a686 50%, #51a686 75%, transparent 75%, transparent);
+  -ms-background-size: 50px 50px;
+  background-size: 50px 50px;
+  -webkit-animation: stripe 2s linear infinite;
+  -ms-animation: stripe 2s linear infinite;
+  animation: stripe 2s linear infinite;
+}
+#footer #wrapper_footer #contact_form_bloc input[type='submit'].active:hover {
+  background-color: #1f3f33;
+}
 @media (max-width: 1200px) {
   #footer #wrapper_footer {
     -ms-flex-direction: column-reverse;
@@ -1286,8 +1332,9 @@ a.color_red {
   position: fixed;
   z-index: 4000;
   top: 0;
-  left: 0;
+  left: -100%;
   padding: 4rem;
+  transition: left 1s ease-out;
 }
 .lightbox .cross {
   position: absolute;

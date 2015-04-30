@@ -90,8 +90,6 @@
             <!-- ABOUT -->
 
             <section id='about'>
-                <div id='fond_about'>
-                </div>
                 <div id='about_pos'>
                     <div class='about_box' id='pdf'>
                         <a href='{{asset("/dl/Godin_tanguy_cv_web_developer.pdf")}}' class='pdf' title='Download résumé pdf' rel='nofollow'>

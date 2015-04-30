@@ -149,7 +149,6 @@ return [
                 /* PACKAGE DEVELOPMENT */
                 'Illuminate\Workbench\WorkbenchServiceProvider',
                 'Uthmordar\Staticify\StaticifyServiceProvider',
-
 	],
 
 	/*

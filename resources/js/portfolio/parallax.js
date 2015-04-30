@@ -1,6 +1,6 @@
 (function(ctx){
     "use strict";
-    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $skills=$('#skills'), $about=$('#about'), $data, $fondBase=$('#fond_base'), $fondAbout=$('#fond_about');
+    var windowScroll=0, $window=$(window), $worksSlide=$('#works_slide'), $skills=$('#skills'), $about=$('#about'), $data, $fondBase=$('#fond_base');
     
     var parallax={
         initialize: function(){
@@ -29,7 +29,7 @@
                 self.parallaxBG($fondBase, 75, 0.5);
             }
 
-            self.parallaxBG($fondAbout, 75, 0.05);
+            self.parallaxBG($about, 0, 0.1);
             //self.parallaxHeight($fondAbout, 0, 20, 65, 1.6);
             
             if(windowScroll>$skills.offset().top - 150 && windowScroll<$skills.offset().top + $skills.height() -150){
