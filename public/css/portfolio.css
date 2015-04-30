@@ -379,6 +379,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 #header #wrapper_header #menu_header ul {
   display: -webkit-flex;
@@ -430,6 +432,8 @@ a.color_red {
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -moz-perspective: 500px;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 @media (max-width: 1100px) {
@@ -820,6 +824,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 #wrapper #works_slide .project_banner.project_filter {
   width: 100%;
@@ -852,6 +858,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 #wrapper #works_slide .project_banner .veil.active {
   background-image: linear-gradient(-45deg, #51a686 25%, transparent 25%, transparent 50%, #51a686 50%, #51a686 75%, transparent 75%, transparent);
@@ -1107,6 +1115,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 @media (max-width: 1450px) {
   #wrapper #about #about_pos #skills .skills_flex {
@@ -1207,6 +1217,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 #footer #wrapper_footer #contact #soc li:hover {
   opacity: 1;
@@ -1382,6 +1394,8 @@ a.color_red {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -moz-perspective: 500px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .lightbox .cross {
   position: absolute;
