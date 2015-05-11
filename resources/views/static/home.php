@@ -274,6 +274,7 @@
                         <h2>Award</h2>
                         <ul>
                             <li>Open du web 2013, Paris: 1st in Integration</li>
+                             <li>Open du web 5, 2015, Paris: 2nd in development</li>
                         </ul>
                     </article>
                 </div>

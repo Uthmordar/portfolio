@@ -519,12 +519,6 @@
 #wrapper #works_slide #menu_filter li:hover {
   color: #71b99e;
 }
-@media (max-width: 460px) {
-  #wrapper #works_slide #menu_filter li {
-    width: 50%;
-    min-width: 22rem;
-  }
-}
 #wrapper #works_slide .project_banner {
   width: 0;
   margin: 1rem auto;

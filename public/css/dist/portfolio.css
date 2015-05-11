@@ -249,7 +249,6 @@ to{opacity:1;color:#71b99e}}
 #wrapper #works_slide #menu_filter li{display:inline-block;font-size:2.8rem;color:#9fa1a3;background-color:#0d1218;margin:.2rem .4rem;padding:.6rem;cursor:pointer;font-weight:700}
 #wrapper #works_slide #menu_filter li.active{color:#41836a;border-bottom:4px solid #499478}
 #wrapper #works_slide #menu_filter li:hover{color:#71b99e}
-@media (max-width:460px){#wrapper #works_slide #menu_filter li{width:50%;min-width:22rem}}
 #wrapper #works_slide .project_banner{width:0;margin:1rem auto;border:0 solid transparent;height:0;position:relative;cursor:pointer;z-index:0;overflow:hidden;opacity:1;background:url(../../images/fond-code-filter.jpg)center center no-repeat;background-size:100%;-moz-transition-timing-function:ease-out;-moz-transition-delay:0s;-webkit-transition:all 1s;-webkit-transition-timing-function:ease-out;transition:all 1s;transition-timing-function:ease-out;transition-delay:0s;-moz-perspective:500px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 #wrapper #works_slide .project_banner,#wrapper #works_slide .project_banner .veil{-webkit-transition-delay:0s;-webkit-transform-style:preserve-3d;-o-transform-style:preserve-3d}
 #wrapper #works_slide .project_banner.project_filter{width:100%;height:18rem;opacity:1;border:6px solid #0d1218}
